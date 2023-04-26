@@ -1,0 +1,64 @@
+{
+  "status": "done",
+  "assets": {
+    "favicon.ico": {
+      "name": "favicon.ico",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/favicon.ico",
+      "publicPath": "http://0.0.0.0:8080/favicon.ico"
+    },
+    "index.html": {
+      "name": "index.html",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/index.html",
+      "publicPath": "http://0.0.0.0:8080/index.html"
+    },
+    "js/main.js": {
+      "name": "js/main.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/js/main.js",
+      "publicPath": "http://0.0.0.0:8080/js/main.js"
+    },
+    "main.1238eb10c89b1538.hot-update.js": {
+      "name": "main.1238eb10c89b1538.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.1238eb10c89b1538.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.1238eb10c89b1538.hot-update.js"
+    },
+    "main.1238eb10c89b1538.hot-update.json": {
+      "name": "main.1238eb10c89b1538.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.1238eb10c89b1538.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.1238eb10c89b1538.hot-update.json"
+    },
+    "main.62a8d3481cda3e97.hot-update.js": {
+      "name": "main.62a8d3481cda3e97.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.62a8d3481cda3e97.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.62a8d3481cda3e97.hot-update.js"
+    },
+    "main.62a8d3481cda3e97.hot-update.json": {
+      "name": "main.62a8d3481cda3e97.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.62a8d3481cda3e97.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.62a8d3481cda3e97.hot-update.json"
+    },
+    "main.e5541ab941d0286f.hot-update.js": {
+      "name": "main.e5541ab941d0286f.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e5541ab941d0286f.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.e5541ab941d0286f.hot-update.js"
+    },
+    "main.e5541ab941d0286f.hot-update.json": {
+      "name": "main.e5541ab941d0286f.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e5541ab941d0286f.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.e5541ab941d0286f.hot-update.json"
+    },
+    "main.html": {
+      "name": "main.html",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.html",
+      "publicPath": "http://0.0.0.0:8080/main.html"
+    }
+  },
+  "chunks": {
+    "main": [
+      "js/main.js",
+      "main.1238eb10c89b1538.hot-update.js"
+    ]
+  },
+  "publicPath": "http://0.0.0.0:8080/",
+  "error": "ModuleError",
+  "message": "Module Error (from ./node_modules/vue-loader/dist/index.js):\nAt least one <template> or <script> is required in a single file component."
+}
