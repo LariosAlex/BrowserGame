@@ -6,6 +6,8 @@ class Season(models.Model):
     game_datetime_ends = models.DateTimeField()
     time_between_recharge = models.IntegerField()
     last_datetime_recharge = models.DateTimeField()
+    def __str__(self):
+        return str(self.id)
 
 class Character(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -15,6 +17,8 @@ class Character(models.Model):
     mana = models.IntegerField()
     level = models.IntegerField()
     exp = models.IntegerField()
+    def __str__(self):
+        return self.nickname
 
 class Action(models.Model):
     name = models.CharField(max_length=255)
@@ -45,4 +49,3 @@ class Log(models.Model):
     message = models.CharField(max_length=255)
     failed_document = models.CharField(max_length=255, blank=True, null=True)
     failed_line = models.IntegerField(blank=True, null=True)
-    user_admin = models.ForeignKey(User, related_name='admin', on_delete=models.CASCADE)
