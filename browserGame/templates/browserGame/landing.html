@@ -1,6 +1,5 @@
-{% if user.is_authenticated %}
+{% if user.is_authenticated and character %}
     <p>Welcome to the season {{ season.id }}</p>
-    {% if character %}
     <div>
         <h2>Character Name: {{ character.nickname }}</h2>
         <p>Lvl: {{ character.level }}</p>
@@ -8,9 +7,45 @@
         <p>Energy: {{ character.mana }}</p>
         <p>Life: {{ character.life }}</p>
     </div>
-    {% else %}
-        <p>The season started on <strong>{{ season.game_datetime_starts }}</strong></p>
-        <p>Season ends <strong>{{ season.game_datetime_ends }}</strong></p>
-        <p>WHAT ARE YOU WAITING TO JOIN!</p>
-    {% endif %}
+    <table>
+        <thead>
+            <tr>
+            <th>TIPO</th>
+            <th>OBJETIVO</th>
+            <th>ATAQUE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for action in actions %}
+            <tr>
+                <td>{{ action.action.category }}</td>
+                <td>{{ action.target }}</td>
+                <td>{{ action.action.name }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+            <th>USER</th>
+            <th>PERSONAJE</th>
+            <th>NIVEL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for character in characters %}
+            <tr>
+                <td>{{ character.user }}</td>
+                <td>{{ character.nickname }}</td>
+                <td>{{ character.level }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>The season started on <strong>{{ season.game_datetime_starts }}</strong></p>
+    <p>Season ends <strong>{{ season.game_datetime_ends }}</strong></p>
+    <p>Next recharge <strong>{{ season.time_until_next_recharge }}</strong></p>
+    <p>WHAT ARE YOU WAITING TO JOIN!</p>
 {% endif %}
