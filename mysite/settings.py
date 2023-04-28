@@ -152,3 +152,5 @@ WEBPACK_LOADER = {
         'LOADER_CLASS': 'webpack_loader.loader.WebpackLoader',
     }
 }
+
+LOGIN_REDIRECT_URL = 'landing'
