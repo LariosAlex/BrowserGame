@@ -19,15 +19,15 @@ class Character(models.Model):
 class Action(models.Model):
     name = models.CharField(max_length=255)
     category = models.CharField(max_length=255)
-    cost = models.IntegerField()
+    mana = models.IntegerField()
     success_rate = models.IntegerField()
-    e_points = models.IntegerField()
-    d_points = models.IntegerField()
-    h_points = models.IntegerField()
+    exp = models.IntegerField()
+    damage = models.IntegerField()
+    health = models.IntegerField()
 
 class ActionLog(models.Model):
-    attacker = models.ForeignKey(User, related_name='attacker', on_delete=models.CASCADE)
-    victim = models.ForeignKey(User, related_name='victim', on_delete=models.CASCADE)
+    performer = models.ForeignKey(User, related_name='performers', on_delete=models.CASCADE)
+    target = models.ForeignKey(User, related_name='target', on_delete=models.CASCADE)
     action = models.ForeignKey(Action, on_delete=models.CASCADE)
     succeed = models.BooleanField()
     datetime = models.DateTimeField()
@@ -39,9 +39,9 @@ class Log(models.Model):
         ('ERR', 'Error'),
         ('FAT', 'Fatal'),
     )
-    type = models.CharField(max_length=4, choices=TYPE_CHOICES)
+    type_log = models.CharField(max_length=4, choices=TYPE_CHOICES)
     current_time = models.DateTimeField(auto_now_add=True)
-    id_user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     message = models.CharField(max_length=255)
     failed_document = models.CharField(max_length=255, blank=True, null=True)
     failed_line = models.IntegerField(blank=True, null=True)
