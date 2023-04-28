@@ -1,7 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm
 from .models import *
-# Create your views here.
-from django.shortcuts import render
 from django.http import HttpRequest
 from django.core.exceptions import *
 from django.utils import timezone
@@ -10,6 +9,16 @@ def vue(request):
 
     return render(request, 'browserGame/index.html', context)
 
+def signup(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')
+    else:
+        form = UserCreationForm()
+    return render(request, 'registration/signup.html', {'form': form})
+    
 def landing(request):
     active_season = Season.objects.get(id=1)
     actions = None
