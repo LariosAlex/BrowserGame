@@ -25,13 +25,13 @@ class Action(models.Model):
     category = models.CharField(max_length=255)
     mana = models.IntegerField()
     success_rate = models.IntegerField()
-    experience = models.IntegerField()
+    exp = models.IntegerField()
     damage = models.IntegerField()
     health = models.IntegerField()
 
 class ActionLog(models.Model):
-    attacker = models.ForeignKey(User, related_name='attacker', on_delete=models.CASCADE)
-    victim = models.ForeignKey(User, related_name='victim', on_delete=models.CASCADE)
+    performer = models.ForeignKey(User, related_name='performers', on_delete=models.CASCADE)
+    target = models.ForeignKey(User, related_name='target', on_delete=models.CASCADE)
     action = models.ForeignKey(Action, on_delete=models.CASCADE)
     succeed = models.BooleanField()
     datetime = models.DateTimeField()
