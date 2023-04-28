@@ -1,0 +1,16 @@
+{% if user.is_authenticated %}
+    <p>Welcome to the season {{ season.id }}</p>
+    {% if character %}
+    <div>
+        <h2>Character Name: {{ character.nickname }}</h2>
+        <p>Lvl: {{ character.level }}</p>
+        <p>Experience: {{ character.exp }}</p>
+        <p>Energy: {{ character.mana }}</p>
+        <p>Life: {{ character.life }}</p>
+    </div>
+    {% else %}
+        <p>The season started on <strong>{{ season.game_datetime_starts }}</strong></p>
+        <p>Season ends <strong>{{ season.game_datetime_ends }}</strong></p>
+        <p>WHAT ARE YOU WAITING TO JOIN!</p>
+    {% endif %}
+{% endif %}
