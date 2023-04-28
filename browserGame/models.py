@@ -21,13 +21,21 @@ class Character(models.Model):
         return self.nickname
 
 class Action(models.Model):
+    TYPE_ACTION = (
+        ('DEF', 'Defensive'),
+        ('OFF', 'Offensive'),
+        ('PAS', 'Passive'),
+    )
     name = models.CharField(max_length=255)
-    category = models.CharField(max_length=255)
+    category = models.CharField(max_length=4, choices=TYPE_ACTION)
     mana = models.IntegerField()
     success_rate = models.IntegerField()
-    experience = models.IntegerField()
+    exp = models.IntegerField()
     damage = models.IntegerField()
     health = models.IntegerField()
+    def __str__(self):
+        return self.name
+
 
 class ActionLog(models.Model):
     performer = models.ForeignKey(User, related_name='performer', on_delete=models.CASCADE)
@@ -35,6 +43,8 @@ class ActionLog(models.Model):
     action = models.ForeignKey(Action, on_delete=models.CASCADE)
     succeed = models.BooleanField()
     datetime = models.DateTimeField()
+    def __str__(self):
+        return self.performer.nickname+'--'+str(self.succeed)
 
 class Log(models.Model):
     TYPE_CHOICES = (
