@@ -42,3 +42,31 @@ class Command(BaseCommand):
             character.mana = random.randint(0, (lvl*10))
             character.exp = random.randint(0, (lvl*10)-1)
             character.save()
+        
+        for i in range(30):
+            action = Action()
+            animals = ['cat', 'dog', 'elephant', 'lion', 'tiger', 'bear', 'giraffe', 'zebra', 'hippopotamus', 'rhinoceros', 'monkey', 'crocodile', 'snake', 'lizard', 'turtle', 'kangaroo', 'penguin', 'panda', 'koala', 'wolf', 'fox', 'deer', 'rabbit', 'hamster', 'mouse', 'guinea pig', 'parrot', 'seagull', 'octopus', 'shark']
+            action.name = random.choice(animals).capitalize()
+            typeOfAction = ['DEF','OFF','PAS']
+            action.category = random.choice(typeOfAction)
+            action.success_rate = random.randint(10, 100)
+            action.exp = random.randint(10, 50)
+            action.damage = random.randint(10, 50)
+            action.health = random.randint(10, 50)
+            action.mana = random.randint(1, 20)
+            action.save()
+        
+        for character in Character.objects.filter(season=season):
+            for i in range(10):
+                ch_action = ActionLog()
+                ch_action.performer = character
+                rand_action = Action.objects.order_by("?").first()
+                ch_action.action = rand_action
+                successfully = [True, False]
+                if rand_action.category == 'OFF':
+                    ch_action.target = Character.objects.filter(season=season).order_by("?").first()
+                else:
+                    ch_action.target = character
+                ch_action.succeed = random.choice(successfully)
+                ch_action.datetime = datetime.now()
+                ch_action.save()
