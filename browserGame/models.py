@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import datetime, timedelta
+from django.utils import timezone
 
 class Season(models.Model):
     game_datetime_starts = models.DateTimeField()
@@ -8,6 +10,12 @@ class Season(models.Model):
     last_datetime_recharge = models.DateTimeField()
     def __str__(self):
         return str(self.id)
+    
+    def time_until_next_recharge(self):
+        now = timezone.make_aware(datetime.now(), timezone.get_default_timezone())
+        next_recharge = self.last_datetime_recharge + timedelta(minutes=self.time_between_recharge)
+        time_left = next_recharge - now
+        return time_left
 
 class Character(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -38,8 +46,8 @@ class Action(models.Model):
 
 
 class ActionLog(models.Model):
-    performer = models.ForeignKey(User, related_name='performer', on_delete=models.CASCADE)
-    target = models.ForeignKey(User, related_name='target', on_delete=models.CASCADE)
+    performer = models.ForeignKey(Character, related_name='performer', on_delete=models.CASCADE)
+    target = models.ForeignKey(Character, related_name='target', on_delete=models.CASCADE)
     action = models.ForeignKey(Action, on_delete=models.CASCADE)
     succeed = models.BooleanField()
     datetime = models.DateTimeField()
