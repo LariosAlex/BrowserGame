@@ -38,8 +38,8 @@ class Action(models.Model):
 
 
 class ActionLog(models.Model):
-    performer = models.ForeignKey(Character, related_name='performers', on_delete=models.CASCADE)
-    target = models.ForeignKey(Character, related_name='target', on_delete=models.CASCADE)
+    performer = models.ForeignKey(User, related_name='performer', on_delete=models.CASCADE)
+    target = models.ForeignKey(User, related_name='target', on_delete=models.CASCADE)
     action = models.ForeignKey(Action, on_delete=models.CASCADE)
     succeed = models.BooleanField()
     datetime = models.DateTimeField()
