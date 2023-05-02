@@ -4,6 +4,8 @@ from .models import *
 from django.http import HttpRequest
 from django.core.exceptions import *
 from django.utils import timezone
+from .utils import save_log
+
 def vue(request):
     context = {}
 
@@ -21,8 +23,10 @@ def signup(request):
     
 def landing(request):
     active_season = Season.objects.get(id=1)
+    save_log('INF', 'SQL-'+str(active_season), request)
     actions = None
     characters = Character.objects.filter(season=active_season).order_by('-level', '-exp')
+    save_log('INF', 'Accediendo a vista', request)
     if request.user.is_authenticated:
         try:
             character = Character.objects.get(season=active_season, user=request.user)

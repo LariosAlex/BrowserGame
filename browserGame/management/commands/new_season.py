@@ -7,7 +7,6 @@ from datetime import timedelta, datetime
 
 
 from browserGame.models import *
-from django.contrib.auth.models import User
 
 faker = Faker(["es_CA","es_ES"])
 
