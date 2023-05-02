@@ -23,9 +23,12 @@ def signup(request):
     
 def landing(request):
     active_season = Season.objects.get(id=1)
-    save_log('INF', 'SQL-'+str(active_season), request)
+    save_log('SQL', 'Season.objects.get(id=1)', request)
+    save_log('SQL', str(Season.objects.get(id=1)), request)
     actions = None
     characters = Character.objects.filter(season=active_season).order_by('-level', '-exp')
+    save_log('SQL', "Character.objects.filter(season=active_season).order_by('-level', '-exp')", request)
+    save_log('SQL', str(characters), request)
     save_log('INF', 'Accediendo a vista', request)
     if request.user.is_authenticated:
         try:

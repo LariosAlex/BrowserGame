@@ -70,6 +70,7 @@ class Log(models.Model):
         ('WAR', 'Warning'),
         ('ERR', 'Error'),
         ('FAT', 'Fatal'),
+        ('SQL', 'SQL'),
     )
     type_log = models.CharField(max_length=4, choices=TYPE_CHOICES)
     current_time = models.DateTimeField(auto_now_add=True)
