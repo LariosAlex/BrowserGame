@@ -20,7 +20,7 @@ def signup(request):
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('index')
+            return redirect('landing')
     else:
         form = CustomUserCreationForm()
     return render(request, 'registration/signup.html', {'form': form})

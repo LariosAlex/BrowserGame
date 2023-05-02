@@ -153,4 +153,4 @@ WEBPACK_LOADER = {
     }
 }
 
-LOGIN_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = 'landing'
