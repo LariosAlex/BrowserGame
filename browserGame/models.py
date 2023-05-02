@@ -7,6 +7,7 @@ from django.utils import timezone
 class User(AbstractUser):
     last_login = models.DateTimeField(default=timezone.now)
 
+
     def get_all_actions(self):
         character_ids = self.characters.values_list('id', flat=True)
         actions = ActionLog.objects.filter(character_id__in=character_ids)[:10]
@@ -74,10 +75,10 @@ class Log(models.Model):
     )
     type_log = models.CharField(max_length=4, choices=TYPE_CHOICES)
     current_time = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     message = models.CharField(max_length=255)
     document = models.CharField(max_length=255, blank=True, null=True)
     line = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
-        return self.type_log+'-'+self.user.username
+        return self.type_log

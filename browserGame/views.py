@@ -6,6 +6,7 @@ from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.forms import UserCreationForm
 from .models import *
 from django.http import HttpRequest
+from django.http import HttpResponse
 from django.core.exceptions import *
 from django.utils import timezone
 from .utils import save_log
@@ -63,3 +64,17 @@ def landing(request):
         'characters': characters
     }
     return render(request, 'browserGame/landing.html', context)
+
+def activate_cron(request):
+
+    for i in Character.objects.all():
+        if i.life > 0:
+            if i.level*10 - i.mana > i.level:
+                i.mana += i.level
+            else:
+                i.mana = i.level*10
+            i.save()
+    
+    #data_cron = Seasons.objects.
+
+    return HttpResponse('Cron activated!')
