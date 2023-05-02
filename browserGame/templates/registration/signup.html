@@ -1,9 +1,14 @@
+{% extends 'base.html' %}
 
 {% block content %}
-  <h2>Registre de nou usuari</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Registra't</button>
-  </form>
+<div class="log-reg-content">
+  <div class="card">
+    <h2 class="card-title">Registre de nou usuari</h2>
+    <form method="post" class="card-content">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Registra't</button>
+    </form>
+  </div>
+</div>
 {% endblock %}
