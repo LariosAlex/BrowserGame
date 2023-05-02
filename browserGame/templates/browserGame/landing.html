@@ -1,18 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
 {% if user.is_authenticated and character %}
     <p>Welcome to the season {{ season.id }}</p>
     <div>
-        <h2>Character Name: {{ character.nickname }}</h2>
-        <p>Lvl: {{ character.level }}</p>
-        <p>Experience: {{ character.exp }}</p>
-        <p>Energy: {{ character.mana }}</p>
-        <p>Life: {{ character.life }}</p>
+        <h2>NOM: {{ character.nickname }}</h2>
+        <p>LVL: {{ character.level }}</p>
+        <p>EXP: {{ character.exp }}</p>
+        <p>MANA: {{ character.mana }}</p>
+        <p>VIDA: {{ character.life }}</p>
     </div>
-    <table>
+    <table class="action-table">
         <thead>
             <tr>
-            <th>TIPO</th>
-            <th>OBJETIVO</th>
-            <th>ATAQUE</th>
+            <th colspan="3">ACCIONS</th>
+            </tr>
+        </thead>
+        <thead>
+            <tr>
+            <th>TIPUS</th>
+            <th>OBJECTIU</th>
+            <th>ATAC</th>
             </tr>
         </thead>
         <tbody>
@@ -25,12 +32,17 @@
             {% endfor %}
         </tbody>
     </table>
-    <table>
+    <table class="ranking-table">
         <thead>
             <tr>
-            <th>USER</th>
-            <th>PERSONAJE</th>
-            <th>NIVEL</th>
+            <th colspan="3">RANKING</th>
+            </tr>
+        </thead>
+        <thead>
+            <tr>
+            <th>USUARI</th>
+            <th>PERSONATGE</th>
+            <th>NIVELL</th>
             </tr>
         </thead>
         <tbody>
@@ -49,3 +61,4 @@
     <p>Next recharge <strong>{{ season.time_until_next_recharge }}</strong></p>
     <p>WHAT ARE YOU WAITING TO JOIN!</p>
 {% endif %}
+{% endblock %}

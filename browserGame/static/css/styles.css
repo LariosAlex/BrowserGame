@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#base-page{
+body{
     background-color: rgb(241, 201, 113);
     height: 100vh;
 }
@@ -40,4 +40,32 @@
     width: 150px;
     height: 30px;
     font-size: 20px;
+}
+
+
+.ranking-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.ranking-table th,
+.ranking-table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.action-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: 5%;
+}
+
+.action-table th,
+.action-table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
 }
