@@ -1,7 +1,16 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser, User
 from datetime import datetime, timedelta
+from django.contrib import admin
 from django.utils import timezone
+
+class User(AbstractUser):
+    last_login = models.DateTimeField(default=timezone.now)
+
+    def get_all_actions(self):
+        character_ids = self.characters.values_list('id', flat=True)
+        actions = ActionLog.objects.filter(character_id__in=character_ids)[:10]
+        return actions
 
 class Season(models.Model):
     game_datetime_starts = models.DateTimeField()
@@ -27,6 +36,7 @@ class Character(models.Model):
     exp = models.IntegerField()
     def __str__(self):
         return self.nickname
+
 
 class Action(models.Model):
     TYPE_ACTION = (
@@ -60,10 +70,14 @@ class Log(models.Model):
         ('WAR', 'Warning'),
         ('ERR', 'Error'),
         ('FAT', 'Fatal'),
+        ('SQL', 'SQL'),
     )
     type_log = models.CharField(max_length=4, choices=TYPE_CHOICES)
     current_time = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     message = models.CharField(max_length=255)
-    failed_document = models.CharField(max_length=255, blank=True, null=True)
-    failed_line = models.IntegerField(blank=True, null=True)
+    document = models.CharField(max_length=255, blank=True, null=True)
+    line = models.IntegerField(blank=True, null=True)
+
+    def __str__(self):
+        return self.type_log+'-'+self.user.username
