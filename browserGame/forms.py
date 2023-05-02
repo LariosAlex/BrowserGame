@@ -18,6 +18,12 @@ class CustomUserCreationForm(UserCreationForm):
         max_length=25,
         widget=forms.TextInput(attrs={'autofocus': True}),
     )
+    email = forms.EmailField(
+        label=_("Correo Electrónico:"),
+        help_text=_("Introduce tu correo electrónico"),
+        max_length=254,
+        widget=forms.EmailInput(),
+    )
     password1 = forms.CharField(
         label=_("Contraseña:"),
         help_text=_(""),
@@ -35,4 +41,4 @@ class CustomUserCreationForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ['username', 'password1', 'password2']
+        fields = ['username', 'email', 'password1', 'password2']
