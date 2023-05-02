@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <!-- Barra de navegación -->
+    </nav>
+
+    <main id="base-page">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // hide the password help text on page load
+            $('.helptext').hide();
+            
+            // show the password help text if the password is invalid
+            $('form').submit(function(event) {
+                var password = $('input[name="password1"]').val();
+                var confirm = $('input[name="password2"]').val();
+                var regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+                
+                if (!regex.test(password)) {
+                    $('.helptext').show();
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
