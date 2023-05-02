@@ -18,9 +18,13 @@ class CharactersInline(admin.TabularInline):
     readonly_fields = fields
 
 class UserAdmin(admin.ModelAdmin):
-    fields = ['username', 'first_name', 'last_name', 'email', 'last_login']
+    fields = ['username', 'first_name', 'last_name', 'email', 'last_login', 'password']
     inlines = [CharactersInline]
     list_per_page = 25
+    def save_model(self, request, obj, form, change):
+        # Encriptar la contraseña antes de guardar el usuario
+        obj.set_password(form.cleaned_data["password"])
+        super().save_model(request, obj, form, change)
 
 class LogsAdmin(admin.ModelAdmin):
     list_per_page = 25
