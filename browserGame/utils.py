@@ -4,7 +4,10 @@ from django.contrib.auth import get_user_model
 import inspect
 
 def save_log(type_log, message, request):
-    user = request.user if request.user.is_authenticated else None
+    if request.user.is_authenticated:
+        user = request.user 
+    else:
+        user = None
     log = Log(
         type_log=type_log,
         current_time=timezone.now(),

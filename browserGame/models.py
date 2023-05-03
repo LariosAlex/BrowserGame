@@ -74,7 +74,7 @@ class Log(models.Model):
     )
     type_log = models.CharField(max_length=4, choices=TYPE_CHOICES)
     current_time = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null = True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     message = models.CharField(max_length=255)
     document = models.CharField(max_length=255, blank=True, null=True)
     line = models.IntegerField(blank=True, null=True)
