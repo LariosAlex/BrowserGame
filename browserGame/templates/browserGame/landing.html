@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
+<p>Benvingut a la temporada {{ season.id }}</p>
 {% if user.is_authenticated and character %}
-    <p>Welcome to the season {{ season.id }}</p>
     <div>
         <h2>NOM: {{ character.nickname }}</h2>
         <p>LVL: {{ character.level }}</p>
@@ -56,9 +56,29 @@
         </tbody>
     </table>
 {% else %}
-    <p>The season started on <strong>{{ season.game_datetime_starts }}</strong></p>
-    <p>Season ends <strong>{{ season.game_datetime_ends }}</strong></p>
-    <p>Next recharge <strong>{{ season.time_until_next_recharge }}</strong></p>
-    <p>WHAT ARE YOU WAITING TO JOIN!</p>
+<table  class="infoSeason-table">
+    <thead>
+      <tr>
+        <th colspan="2">Información de la temporada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>La temporada va començar</td>
+        <td><strong>{{ season.game_datetime_starts }}</strong></td>
+      </tr>
+      <tr>
+        <td>La temporada finalitza</td>
+        <td><strong>{{ season.game_datetime_ends }}</strong></td>
+      </tr>
+      <tr>
+        <td>Proxima recarga de Mana</td>
+        <td><strong>{{ season.time_until_next_recharge }}</strong></td>
+      </tr>
+      <tr>
+        <td colspan="2">A QUÈ ESPEREU PER PARTICIPAR!</td>
+      </tr>
+    </tbody>
+  </table>
 {% endif %}
 {% endblock %}

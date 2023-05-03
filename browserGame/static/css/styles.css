@@ -69,3 +69,16 @@ body{
     padding: 10px;
     border: 1px solid black;
 }
+
+.infoSeason-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: 5%;
+}
+.infoSeason-table th,
+.infoSeason-table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
