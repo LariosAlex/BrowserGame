@@ -11,6 +11,7 @@ class User(AbstractUser):
         character_ids = self.characters.values_list('id', flat=True)
         actions = ActionLog.objects.filter(character_id__in=character_ids)[:10]
         return actions
+        
 
 class Season(models.Model):
     game_datetime_starts = models.DateTimeField()

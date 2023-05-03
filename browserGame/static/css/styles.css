@@ -138,10 +138,5 @@ body{
 .action-table td,
 .infoSeason-table td,
 .ranking-table td {
-    background-color: #ffe6b3;
+    background-color: #d5c7a5;
 }
-
-.container {
-    display: flex;
-    justify-content: center;
-  }
