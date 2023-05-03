@@ -9,30 +9,36 @@ class CustomUserCreationForm(UserCreationForm):
         super().__init__(*args, **kwargs)
         self.fields['password1'].validators = []
 
-        # Optionally, you can also remove the help text for the password field:
+        # Opcionalment, també es pot eliminar el text d'ajuda per al camp de la contrasenya:
         self.fields['password1'].help_text = ''
 
     username = forms.CharField(
-        label=_("Nombre de Usuario:"),
-        help_text=_("Debe de tener como mucho 25 caracteres se aceptan solo letras, digitos y estos caracteres especiales: @/./+/-/_"),
+        label=_("Nom d'usuari:"),
+        help_text=_("Ha de tenir com a màxim 25 caràcters i només s'accepten lletres, dígits i aquests caràcters especials: @/./+/-/_"),
         max_length=25,
         widget=forms.TextInput(attrs={'autofocus': True}),
     )
+    email = forms.EmailField(
+        label=_("Correu electrònic:"),
+        help_text=_("Introdueix el teu correu electrònic"),
+        max_length=254,
+        widget=forms.EmailInput(),
+    )
     password1 = forms.CharField(
-        label=_("Contraseña:"),
+        label=_("Contrasenya:"),
         help_text=_(""),
         max_length=30,
         strip=False,
         widget=forms.PasswordInput(attrs={'autocomplete': 'new-password'}),
     )
     password2 = forms.CharField(
-        label=_("Repite la contraseña:"),
+        label=_("Repeteix la contrasenya:"),
         max_length=30,
         strip=False,
-        help_text=_("Debe ser identica a la contraseña!"),
+        help_text=_("Ha de ser idèntica a la contrasenya!"),
         widget=forms.PasswordInput(attrs={'autocomplete': 'new-password'}),
     )
 
     class Meta:
         model = User
-        fields = ['username', 'password1', 'password2']
+        fields = ['username', 'email', 'password1', 'password2']

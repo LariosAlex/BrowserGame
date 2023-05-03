@@ -3,12 +3,14 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import *
 from django.contrib.auth import login
 from django.utils.translation import gettext_lazy as _
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import PasswordResetForm
 from .models import *
 from django.http import HttpRequest
 from django.core.exceptions import *
 from django.utils import timezone
 from .utils import save_log
+from django.core.mail import send_mail
+from django.conf import settings
 
 def vue(request):
     context = {}
@@ -21,6 +23,7 @@ def signup(request):
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
+            
             return redirect('landing')
     else:
         form = CustomUserCreationForm()
@@ -38,7 +41,19 @@ def login_view(request):
         form = AuthenticationForm()
     return render(request, 'registration/login.html', {'form': form})
 
-    
+def password_reset_done(request):
+    return render(request, 'browserGame/password_reset_done.html')
+
+def password_reset(request):
+    if request.method == 'POST':
+        form = PasswordResetForm(request.POST)
+        if form.is_valid():
+            form.save(request=request)
+    else:
+        form = PasswordResetForm()
+    context = {'form': form}
+    return render(request, 'browserGame/password_reset_form.html', context)
+
 def landing(request):
     active_season = Season.objects.latest("id")
     save_log('SQL', 'Season.objects.latest("id")', request)
