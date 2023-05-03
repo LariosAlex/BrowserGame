@@ -23,23 +23,36 @@ body{
 .card-title{
     border-radius: 10px 10px 0 0;
     background-color: white;
-    width: 30%;
+    width: 40%;
     text-align: center;
     padding: 15px;  
 }
 .card-content{
     border-radius: 0px 0px 10px 10px;
     background-color: rgba(255, 255, 255, 0.384);
-    width: 30%;
-    text-align: center;
+    width: 40%;
     padding: 15px;
 }
 
-.log-reg-content button{
-    margin: 30px;
-    width: 150px;
+.card-content p{
+    margin: 10px auto;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.card-content p input{
+    width: 100%;
+    box-sizing: border-box;
     height: 30px;
-    font-size: 20px;
+    border-radius: 3px;
+}
+
+.log-reg-content button{
+    width: 120px;
+    height: 28px;
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
 }
 
 

@@ -26,3 +26,8 @@ vue-bg/webpack-stats.json
 .mysite/__pycache__/
 .browserGame/__pycache__/
 db.sqlite3
+./browserGame/__pycache__
+./mysite/__pycache__
+mysite/__pycache__/
+browserGame/__pycache__/
+*/__pycache__
