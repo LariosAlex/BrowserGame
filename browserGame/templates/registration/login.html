@@ -3,12 +3,12 @@
 {% block content %}
 <div class="log-reg-content">
   <div class="card">
-    <h2 class="card-title">Iniciar sesión</h2>
+    <h2 class="card-title">Iniciar sessió</h2>
     <form method="post" class="card-content">
       {% csrf_token %}
       {{ form.as_p }}
-      <button type="submit">Iniciar sesión</button>
-      <p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+      <button type="submit">Iniciar sessió</button>
+      <p><a href="{% url 'password_reset' %}">Has oblidat la contrasenya?</a></p>
     </form>
   </div>
 </div>

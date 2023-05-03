@@ -77,6 +77,17 @@ body{
     box-sizing: border-box;
 }
 
+.card-content button{
+    background-color: white;
+    border: #50300F 2px solid;
+    border-radius: 5px;
+    background-color: #ccaf76;
+}
+
+.card-content button:hover{
+    background-color: #9e885d;
+}
+
 .card-content p input{
     width: 100%;
     box-sizing: border-box;
@@ -84,9 +95,9 @@ body{
     border-radius: 3px;
 }
 
-.log-reg-content button{
-    width: 120px;
-    height: 28px;
+.card-content button{
+    width: auto;
+    padding: 4px;
     font-size: 16px;
     margin: 20px auto;
     display: block;
@@ -123,7 +134,8 @@ body{
 }
 
 .infoSeason-table {
-    width: 100%;
+    width: 80%;
+    margin: 10px auto;
     table-layout: fixed;
     border-collapse: collapse;
     margin-bottom: 5%;

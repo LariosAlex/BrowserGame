@@ -9,6 +9,8 @@ from django.http import HttpRequest
 from django.core.exceptions import *
 from django.utils import timezone
 from .utils import save_log
+from django.core.mail import send_mail
+from django.conf import settings
 
 def vue(request):
     context = {}
@@ -21,6 +23,7 @@ def signup(request):
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
+            
             return redirect('landing')
     else:
         form = CustomUserCreationForm()
