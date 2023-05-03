@@ -38,7 +38,9 @@ def login_view(request):
         form = AuthenticationForm()
     return render(request, 'registration/login.html', {'form': form})
 
-    
+def password_reset_done(request):
+    return render(request, 'browserGame/password_reset_done.html')
+
 def landing(request):
     active_season = Season.objects.latest("id")
     save_log('SQL', 'Season.objects.latest("id")', request)
