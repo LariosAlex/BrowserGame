@@ -129,7 +129,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'public/media/')
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static_dev/'),
+    #os.path.join(BASE_DIR, 'static_dev/'),
     os.path.join(BASE_DIR, "vue-bg/dist"), # Bundle de VUE
 )
 
@@ -165,4 +165,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'browserGame.middleware.MyMiddleware',
+
+    'browserGame.views.activate_cron_auto'
 ]
