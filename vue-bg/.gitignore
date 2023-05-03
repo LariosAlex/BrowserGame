@@ -21,3 +21,8 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+vue-bg/webpack-stats.json
+./mysite/__pycache__/
+./browserGame/__pycache__/
+db.sqlite3

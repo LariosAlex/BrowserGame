@@ -33,16 +33,16 @@ def login_view(request):
             user = form.get_user()
             login(request, user)
             # Redireccionar a la página de inicio después de iniciar sesión exitosamente
-            return redirect('index')
+            return redirect('landing')
     else:
         form = AuthenticationForm()
     return render(request, 'registration/login.html', {'form': form})
 
     
 def landing(request):
-    active_season = Season.objects.get(id=1)
-    save_log('SQL', 'Season.objects.get(id=1)', request)
-    save_log('SQL', str(Season.objects.get(id=1)), request)
+    active_season = Season.objects.latest("id")
+    save_log('SQL', 'Season.objects.latest("id")', request)
+    save_log('SQL', str(Season.objects.latest("id")), request)
     actions = None
     characters = Character.objects.filter(season=active_season).order_by('-level', '-exp')
     save_log('SQL', "Character.objects.filter(season=active_season).order_by('-level', '-exp')", request)

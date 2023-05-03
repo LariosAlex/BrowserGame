@@ -28,7 +28,8 @@ class Command(BaseCommand):
             animals = ['cat', 'dog', 'elephant', 'lion', 'tiger', 'bear', 'giraffe', 'zebra', 'hippopotamus', 'rhinoceros', 'monkey', 'crocodile', 'snake', 'lizard', 'turtle', 'kangaroo', 'penguin', 'panda', 'koala', 'wolf', 'fox', 'deer', 'rabbit', 'hamster', 'mouse', 'guinea pig', 'parrot', 'seagull', 'octopus', 'shark']
             name = faker.first_name()
             last_name = faker.last_name()
-            user = User(username=name+'_'+last_name,first_name=name, last_name=last_name)
+            password = name+'1234'
+            user = User(username=name+'_'+last_name,first_name=name, last_name=last_name, password=password)
             user.save()            
             print('--Creeem personatge per a: '+user.username+'--')
             character = Character()

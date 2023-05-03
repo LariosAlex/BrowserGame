@@ -28,7 +28,7 @@
             $('.helptext').hide();
             
             // show the password help text if the password is invalid
-            $('form').submit(function(event) {
+            $('#formReg form').submit(function(event) {
                 var password = $('input[name="password1"]').val();
                 var confirm = $('input[name="password2"]').val();
                 var regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;

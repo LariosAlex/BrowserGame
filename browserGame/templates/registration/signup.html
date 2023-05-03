@@ -4,7 +4,7 @@
 <div class="log-reg-content">
   <div class="card">
     <h2 class="card-title">Registre de nou usuari</h2>
-    <form method="post" class="card-content">
+    <form method="post" class="card-content" id="formReg">
       {% csrf_token %}
       {{ form.as_p }}
       <button type="submit">Registra't</button>
