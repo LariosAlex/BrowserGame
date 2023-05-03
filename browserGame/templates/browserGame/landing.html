@@ -1,7 +1,83 @@
 {% extends 'base.html' %}
 {% block content %}
-<p>Benvingut a la temporada {{ season.id }}</p>
 {% if user.is_authenticated and character %}
+<<<<<<< HEAD
+  <table class = "infoSeason-table">
+    <thead>
+      <tr>
+        <th colspan="2">TEMPORADA {{ season.id }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NOM</td>
+        <td>{{ character.nickname }}</td>
+      </tr>
+      <tr>
+        <td>LVL</td>
+        <td>{{ character.level }}</td>
+      </tr>
+      <tr>
+        <td>EXP</td>
+        <td>{{ character.exp }}</td>
+      </tr>
+      <tr>
+        <td>MANA</td>
+        <td>{{ character.mana }}</td>
+      </tr>
+      <tr>
+        <td>VIDA</td>
+        <td>{{ character.life }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="action-table">
+      <thead>
+          <tr>
+          <th colspan="3"><h2>ACCIONS</h2></th>
+          </tr>
+      </thead>
+      <thead>
+          <tr>
+          <th>TIPUS</th>
+          <th>OBJECTIU</th>
+          <th>ATAC</th>
+          </tr>
+      </thead>
+      <tbody>
+          {% for action in actions %}
+          <tr>
+              <td>{{ action.action.category }}</td>
+              <td>{{ action.target }}</td>
+              <td>{{ action.action.name }}</td>
+          </tr>
+          {% endfor %}
+      </tbody>
+  </table>
+  <table class="ranking-table">
+      <thead>
+          <tr>
+          <th colspan="3"><h2>RANKING</h2></th>
+          </tr>
+      </thead>
+      <thead>
+          <tr>
+          <th>USUARI</th>
+          <th>PERSONATGE</th>
+          <th>NIVELL</th>
+          </tr>
+      </thead>
+      <tbody>
+          {% for character in characters %}
+          <tr>
+              <td>{{ character.user }}</td>
+              <td>{{ character.nickname }}</td>
+              <td>{{ character.level }}</td>
+          </tr>
+          {% endfor %}
+      </tbody>
+  </table>
+=======
     <div>
         <h2>NOM: {{ character.nickname }}</h2>
         <p>LVL: {{ character.level }}</p>
@@ -59,11 +135,16 @@
             {% endfor %}
         </tbody>
     </table>
+>>>>>>> a0729d3938a91444f0669b6e16944efe1ee6c644
 {% else %}
 <table  class="infoSeason-table">
     <thead>
       <tr>
+<<<<<<< HEAD
+        <th colspan="2">TEMPORADA {{ season.id }}</th>
+=======
         <th colspan="2">Informació de la temporada</th>
+>>>>>>> a0729d3938a91444f0669b6e16944efe1ee6c644
       </tr>
     </thead>
     <tbody>
