@@ -4,6 +4,7 @@ from faker import Faker
 from random import randint
 import random
 from datetime import timedelta, datetime
+from django.contrib.auth.hashers import make_password
 
 
 from browserGame.models import *
@@ -25,17 +26,17 @@ class Command(BaseCommand):
 
         print("--CREEM USUARIS--")
         for i in range(8):
-            animals = ['cat', 'dog', 'elephant', 'lion', 'tiger', 'bear', 'giraffe', 'zebra', 'hippopotamus', 'rhinoceros', 'monkey', 'crocodile', 'snake', 'lizard', 'turtle', 'kangaroo', 'penguin', 'panda', 'koala', 'wolf', 'fox', 'deer', 'rabbit', 'hamster', 'mouse', 'guinea pig', 'parrot', 'seagull', 'octopus', 'shark']
+            personajes = ['Vaquero', 'Sheriff', 'Bandido', 'Forajido', 'Explorador', 'Ganadero', 'Pistolero', 'Minero', 'Juez', 'Indio', 'Bandolero', 'Carroñero', 'Cazador de recompensas', 'Leñador', 'Granjero', 'Proveedor', 'Banquero', 'Misionero', 'Empresario ferroviario', 'Fronterizo']
             name = faker.first_name()
             last_name = faker.last_name()
-            password = name+'1234'
+            password = make_password(name+'1234')
             user = User(username=name+'_'+last_name,first_name=name, last_name=last_name, password=password)
             user.save()            
             print('--Creeem personatge per a: '+user.username+'--')
             character = Character()
             character.user = user
             character.season = season
-            character.nickname = f"{faker.color_name().capitalize()} {random.choice(animals).capitalize()}"
+            character.nickname = f"{random.choice(personajes).capitalize()} {faker.first_name().capitalize()}"
             lvl = random.randint(1, 10)
             character.level = lvl
             character.life = random.randint(1, (lvl*10))
@@ -45,15 +46,26 @@ class Command(BaseCommand):
         
         for i in range(30):
             action = Action()
-            animals = ['cat', 'dog', 'elephant', 'lion', 'tiger', 'bear', 'giraffe', 'zebra', 'hippopotamus', 'rhinoceros', 'monkey', 'crocodile', 'snake', 'lizard', 'turtle', 'kangaroo', 'penguin', 'panda', 'koala', 'wolf', 'fox', 'deer', 'rabbit', 'hamster', 'mouse', 'guinea pig', 'parrot', 'seagull', 'octopus', 'shark']
-            action.name = random.choice(animals).capitalize()
+            OFF = ['Disparar', 'Acuchillar', 'Golpear', 'Lanzar', 'Embestir', 'Aplastar', 'Disparar flechas', 'Empujar', 'Lanzar lazo', 'Intimidar']
+            DEF = ['Esquivar', 'Bloquear', 'Parar', 'Correr', 'Agacharse', 'Saltar', 'Rodar', 'Desarmar', 'Luchar cuerpo a cuerpo', 'Gritar']
+            PAS = ['Descansar', 'Consumir', 'Dormir', 'Socializar', 'Explorar', 'Vigilar', 'Acariciar', 'Aseo', 'Observar', 'Revisar']
             typeOfAction = ['DEF','OFF','PAS']
             action.category = random.choice(typeOfAction)
+            action.damage = 0
+            action.health = 0
+            action.mana = 0
+            if action.category == 'OFF':
+                action.name = random.choice(OFF)
+                action.damage = random.randint(10, 50)
+            elif action.category == 'DEF':
+                action.name = random.choice(DEF)
+                action.health = random.randint(10, 50)
+            else: 
+                action.name = random.choice(PAS)
+                action.mana = random.randint(1, 10)
             action.success_rate = random.randint(10, 100)
             action.exp = random.randint(10, 50)
-            action.damage = random.randint(10, 50)
-            action.health = random.randint(10, 50)
-            action.mana = random.randint(1, 20)
+            action.cost = random.randint(1, 20)
             action.save()
         
         for character in Character.objects.filter(season=season):

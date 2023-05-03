@@ -2,24 +2,29 @@ from django.contrib import admin
 from .models import *
 
 
-class CharactersActionsInline(admin.TabularInline):
+class UserActionsInline(admin.TabularInline):
     model = ActionLog
     extra = 0
     fk_name = 'performer'
     
 class CharactersAdmin(admin.ModelAdmin):
-    inlines = [CharactersActionsInline]
+    inlines = [UserActionsInline]
 
-class CharactersInline(admin.TabularInline):
+class UserCharactersInline(admin.TabularInline):
     model = Character
     extra = 0
-    inlines = [CharactersActionsInline]
+    inlines = [UserActionsInline]
     fields = ['nickname', 'season', 'level']
     readonly_fields = fields
 
+class UserLogsInline(admin.TabularInline):
+    model = Log
+    extra = 0
+    fields = ['type_log', 'message']
+
 class UserAdmin(admin.ModelAdmin):
     fields = ['username', 'first_name', 'last_name', 'email', 'password', 'last_login']
-    inlines = [CharactersInline]
+    inlines = [UserCharactersInline, UserLogsInline]
     list_per_page = 25
     def save_model(self, request, obj, form, change):
         obj.set_password(form.cleaned_data["password"])

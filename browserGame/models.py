@@ -46,11 +46,12 @@ class Action(models.Model):
     )
     name = models.CharField(max_length=255)
     category = models.CharField(max_length=4, choices=TYPE_ACTION)
-    mana = models.IntegerField()
+    cost = models.IntegerField()
     success_rate = models.IntegerField()
     exp = models.IntegerField()
     damage = models.IntegerField()
     health = models.IntegerField()
+    mana = models.IntegerField()
     def __str__(self):
         return self.name
 
