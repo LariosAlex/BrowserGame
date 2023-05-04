@@ -167,6 +167,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'browserGame.middleware.MyMiddleware',
+    #'browserGame.views.activate_cron_auto'
+    #'browserGame.middleware.process_view'
 ]
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'

@@ -5,7 +5,7 @@ from django.contrib.auth import login
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.forms import PasswordResetForm
 from .models import *
-from django.http import HttpRequest
+from django.http import HttpRequest, HttpResponse
 from django.core.exceptions import *
 from django.utils import timezone
 from .utils import save_log
@@ -78,3 +78,23 @@ def landing(request):
         'characters': characters
     }
     return render(request, 'browserGame/landing.html', context)
+
+def activate_cron(request):
+
+    cur_season=Character.objects.last().season
+    dif_time = timezone.make_aware(datetime.now(), timezone.get_default_timezone()) - Season.objects.get(id=str(cur_season)).last_datetime_recharge
+    h_dif_time = str(dif_time).split(':')
+    if int(h_dif_time[0]) >= 1:
+        for i in Character.objects.all():
+            if i.life > 0:
+                if i.level*10 - i.mana > i.level*int(h_dif_time[0]):
+                    i.mana += i.level*int(h_dif_time[0])
+                else:
+                    i.mana = i.level*10
+                i.save()
+        
+        a = Season.objects.get(id=str(cur_season))
+        a.last_datetime_recharge = timezone.make_aware(datetime.now(), timezone.get_default_timezone())
+        a.save()
+
+    return HttpResponse('Cron activated!')
