@@ -84,8 +84,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'railway',
+        'USER':'root',
+        'PASSWORD':'yUJP8LfewLsqlfXzf4vn',
+        'HOST':'containers-us-west-53.railway.app',
+        'PORT':'6688'
     }
 }
 
@@ -174,5 +178,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "uriccomoyano.cf@iesesteveterradas.cat"
-EMAIL_HOST_PASSWORD = "UnayDog37"
+EMAIL_HOST_USER = "correo@gmail.com"
+EMAIL_HOST_PASSWORD = "contraseña"
