@@ -64,7 +64,7 @@ class ActionLog(models.Model):
     succeed = models.BooleanField()
     datetime = models.DateTimeField()
     def __str__(self):
-        return self.performer.nickname+'--'+str(self.succeed)
+        return self.performer.nickname+'--'+self.target.nickname+'--'+str(self.succeed)
 
 class Log(models.Model):
     TYPE_CHOICES = (
@@ -82,4 +82,4 @@ class Log(models.Model):
     line = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
-        return self.type_log
+        return self.type_log + ' ' + self.message + ' ' + str(self.current_time)
