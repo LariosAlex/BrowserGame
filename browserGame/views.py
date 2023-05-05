@@ -49,6 +49,7 @@ def password_reset(request):
         form = PasswordResetForm(request.POST)
         if form.is_valid():
             form.save(request=request)
+            return redirect('password_reset_done')
     else:
         form = PasswordResetForm()
     context = {'form': form}
