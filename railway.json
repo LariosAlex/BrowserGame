@@ -4,7 +4,7 @@
       "builder": "NIXPACKS"
     },
     "deploy": {
-      "startCommand": "sudo apt-get update && sudo apt-get install -y python3 && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py && pip install -r requirements.txt && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic --noinput && gunicorn mysite.wsgi && python3 manage.py runserver",
+      "startCommand": "sudo apt-get update && sudo apt-get install -y python3 && apt-get install python3-pip && pip install -r requirements.txt && python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic --noinput && gunicorn mysite.wsgi && python3 manage.py runserver",
       "restartPolicyType": "ON_FAILURE",
       "restartPolicyMaxRetries": 10
     }
