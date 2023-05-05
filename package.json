@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "webpack-bundle-tracker": "^1.8.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.4"
   }
 }

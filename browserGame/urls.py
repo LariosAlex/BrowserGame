@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from . import views, api
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -11,7 +11,9 @@ urlpatterns = [
     path('reset_password/done/', views.password_reset_done),
     path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
     path('reset/done/', auth_views.PasswordResetCompleteView.as_view(), name='password_reset_complete'),
-    path('', views.landing, name='landingPage'),
-    path('landing', views.landing, name='landing'),
+    path('', views.landing, name='landing'),
     #path('activate_cron/', views.activate_cron, name='activate_cron'),
+    path('ranking', views.ranking, name='landing'),
+
+    path('api/getRanking', api.getRanking, name='getRanking'),
 ]

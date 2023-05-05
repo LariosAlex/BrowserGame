@@ -3,29 +3,1682 @@
   "assets": {
     "favicon.ico": {
       "name": "favicon.ico",
-      "path": "C:\\Users\\poltj\\Desktop\\proj3\\BrowserGame\\vue-bg\\dist\\favicon.ico",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/favicon.ico",
       "publicPath": "http://0.0.0.0:8080/favicon.ico"
     },
     "index.html": {
       "name": "index.html",
-      "path": "C:\\Users\\poltj\\Desktop\\proj3\\BrowserGame\\vue-bg\\dist\\index.html",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/index.html",
       "publicPath": "http://0.0.0.0:8080/index.html"
     },
     "js/main.js": {
       "name": "js/main.js",
-      "path": "C:\\Users\\poltj\\Desktop\\proj3\\BrowserGame\\vue-bg\\dist\\js\\main.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/js/main.js",
       "publicPath": "http://0.0.0.0:8080/js/main.js"
+    },
+    "main.01fac952c5b9668d.hot-update.js": {
+      "name": "main.01fac952c5b9668d.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.01fac952c5b9668d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.01fac952c5b9668d.hot-update.js"
+    },
+    "main.01fac952c5b9668d.hot-update.json": {
+      "name": "main.01fac952c5b9668d.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.01fac952c5b9668d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.01fac952c5b9668d.hot-update.json"
+    },
+    "main.0236e121320b48fe.hot-update.js": {
+      "name": "main.0236e121320b48fe.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0236e121320b48fe.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.0236e121320b48fe.hot-update.js"
+    },
+    "main.0236e121320b48fe.hot-update.json": {
+      "name": "main.0236e121320b48fe.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0236e121320b48fe.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.0236e121320b48fe.hot-update.json"
+    },
+    "main.02ed8c7bf927cfee.hot-update.js": {
+      "name": "main.02ed8c7bf927cfee.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.02ed8c7bf927cfee.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.02ed8c7bf927cfee.hot-update.js"
+    },
+    "main.02ed8c7bf927cfee.hot-update.json": {
+      "name": "main.02ed8c7bf927cfee.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.02ed8c7bf927cfee.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.02ed8c7bf927cfee.hot-update.json"
+    },
+    "main.040e0c71f7d3ac58.hot-update.js": {
+      "name": "main.040e0c71f7d3ac58.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.040e0c71f7d3ac58.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.040e0c71f7d3ac58.hot-update.js"
+    },
+    "main.040e0c71f7d3ac58.hot-update.json": {
+      "name": "main.040e0c71f7d3ac58.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.040e0c71f7d3ac58.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.040e0c71f7d3ac58.hot-update.json"
+    },
+    "main.06286eeb58602fd7.hot-update.js": {
+      "name": "main.06286eeb58602fd7.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.06286eeb58602fd7.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.06286eeb58602fd7.hot-update.js"
+    },
+    "main.06286eeb58602fd7.hot-update.json": {
+      "name": "main.06286eeb58602fd7.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.06286eeb58602fd7.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.06286eeb58602fd7.hot-update.json"
+    },
+    "main.0845100178c49a5a.hot-update.js": {
+      "name": "main.0845100178c49a5a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0845100178c49a5a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.0845100178c49a5a.hot-update.js"
+    },
+    "main.0845100178c49a5a.hot-update.json": {
+      "name": "main.0845100178c49a5a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0845100178c49a5a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.0845100178c49a5a.hot-update.json"
+    },
+    "main.092446a34dc98a48.hot-update.js": {
+      "name": "main.092446a34dc98a48.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.092446a34dc98a48.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.092446a34dc98a48.hot-update.js"
+    },
+    "main.092446a34dc98a48.hot-update.json": {
+      "name": "main.092446a34dc98a48.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.092446a34dc98a48.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.092446a34dc98a48.hot-update.json"
+    },
+    "main.0aab619a3a288182.hot-update.js": {
+      "name": "main.0aab619a3a288182.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0aab619a3a288182.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.0aab619a3a288182.hot-update.js"
+    },
+    "main.0aab619a3a288182.hot-update.json": {
+      "name": "main.0aab619a3a288182.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0aab619a3a288182.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.0aab619a3a288182.hot-update.json"
+    },
+    "main.0ac3598780479df4.hot-update.js": {
+      "name": "main.0ac3598780479df4.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0ac3598780479df4.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.0ac3598780479df4.hot-update.js"
+    },
+    "main.0ac3598780479df4.hot-update.json": {
+      "name": "main.0ac3598780479df4.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0ac3598780479df4.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.0ac3598780479df4.hot-update.json"
+    },
+    "main.0b5b985b8e534b9e.hot-update.js": {
+      "name": "main.0b5b985b8e534b9e.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0b5b985b8e534b9e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.0b5b985b8e534b9e.hot-update.js"
+    },
+    "main.0b5b985b8e534b9e.hot-update.json": {
+      "name": "main.0b5b985b8e534b9e.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0b5b985b8e534b9e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.0b5b985b8e534b9e.hot-update.json"
+    },
+    "main.0cab268cc5391330.hot-update.js": {
+      "name": "main.0cab268cc5391330.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0cab268cc5391330.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.0cab268cc5391330.hot-update.js"
+    },
+    "main.0cab268cc5391330.hot-update.json": {
+      "name": "main.0cab268cc5391330.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0cab268cc5391330.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.0cab268cc5391330.hot-update.json"
+    },
+    "main.0dd01b19a5cc01c7.hot-update.js": {
+      "name": "main.0dd01b19a5cc01c7.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0dd01b19a5cc01c7.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.0dd01b19a5cc01c7.hot-update.js"
+    },
+    "main.0dd01b19a5cc01c7.hot-update.json": {
+      "name": "main.0dd01b19a5cc01c7.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.0dd01b19a5cc01c7.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.0dd01b19a5cc01c7.hot-update.json"
+    },
+    "main.10169887bab9a4dd.hot-update.js": {
+      "name": "main.10169887bab9a4dd.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.10169887bab9a4dd.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.10169887bab9a4dd.hot-update.js"
+    },
+    "main.10169887bab9a4dd.hot-update.json": {
+      "name": "main.10169887bab9a4dd.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.10169887bab9a4dd.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.10169887bab9a4dd.hot-update.json"
+    },
+    "main.104e9bbc81a2c614.hot-update.js": {
+      "name": "main.104e9bbc81a2c614.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.104e9bbc81a2c614.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.104e9bbc81a2c614.hot-update.js"
+    },
+    "main.104e9bbc81a2c614.hot-update.json": {
+      "name": "main.104e9bbc81a2c614.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.104e9bbc81a2c614.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.104e9bbc81a2c614.hot-update.json"
+    },
+    "main.109a5069eeff62e9.hot-update.js": {
+      "name": "main.109a5069eeff62e9.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.109a5069eeff62e9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.109a5069eeff62e9.hot-update.js"
+    },
+    "main.109a5069eeff62e9.hot-update.json": {
+      "name": "main.109a5069eeff62e9.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.109a5069eeff62e9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.109a5069eeff62e9.hot-update.json"
+    },
+    "main.13f2eaefec63e0d5.hot-update.js": {
+      "name": "main.13f2eaefec63e0d5.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.13f2eaefec63e0d5.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.13f2eaefec63e0d5.hot-update.js"
+    },
+    "main.13f2eaefec63e0d5.hot-update.json": {
+      "name": "main.13f2eaefec63e0d5.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.13f2eaefec63e0d5.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.13f2eaefec63e0d5.hot-update.json"
+    },
+    "main.15a7724afa9b7dbf.hot-update.js": {
+      "name": "main.15a7724afa9b7dbf.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.15a7724afa9b7dbf.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.15a7724afa9b7dbf.hot-update.js"
+    },
+    "main.15a7724afa9b7dbf.hot-update.json": {
+      "name": "main.15a7724afa9b7dbf.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.15a7724afa9b7dbf.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.15a7724afa9b7dbf.hot-update.json"
+    },
+    "main.15f353ea8a6d789b.hot-update.js": {
+      "name": "main.15f353ea8a6d789b.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.15f353ea8a6d789b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.15f353ea8a6d789b.hot-update.js"
+    },
+    "main.15f353ea8a6d789b.hot-update.json": {
+      "name": "main.15f353ea8a6d789b.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.15f353ea8a6d789b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.15f353ea8a6d789b.hot-update.json"
+    },
+    "main.1933a3c40f873194.hot-update.js": {
+      "name": "main.1933a3c40f873194.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.1933a3c40f873194.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.1933a3c40f873194.hot-update.js"
+    },
+    "main.1933a3c40f873194.hot-update.json": {
+      "name": "main.1933a3c40f873194.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.1933a3c40f873194.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.1933a3c40f873194.hot-update.json"
+    },
+    "main.1d35c1f3f07725a6.hot-update.js": {
+      "name": "main.1d35c1f3f07725a6.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.1d35c1f3f07725a6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.1d35c1f3f07725a6.hot-update.js"
+    },
+    "main.1d35c1f3f07725a6.hot-update.json": {
+      "name": "main.1d35c1f3f07725a6.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.1d35c1f3f07725a6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.1d35c1f3f07725a6.hot-update.json"
+    },
+    "main.210d49d8e6f03015.hot-update.js": {
+      "name": "main.210d49d8e6f03015.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.210d49d8e6f03015.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.210d49d8e6f03015.hot-update.js"
+    },
+    "main.210d49d8e6f03015.hot-update.json": {
+      "name": "main.210d49d8e6f03015.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.210d49d8e6f03015.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.210d49d8e6f03015.hot-update.json"
+    },
+    "main.22a0b6c9c6bba23d.hot-update.js": {
+      "name": "main.22a0b6c9c6bba23d.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.22a0b6c9c6bba23d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.22a0b6c9c6bba23d.hot-update.js"
+    },
+    "main.22a0b6c9c6bba23d.hot-update.json": {
+      "name": "main.22a0b6c9c6bba23d.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.22a0b6c9c6bba23d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.22a0b6c9c6bba23d.hot-update.json"
+    },
+    "main.246ef4b311fa10ef.hot-update.js": {
+      "name": "main.246ef4b311fa10ef.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.246ef4b311fa10ef.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.246ef4b311fa10ef.hot-update.js"
+    },
+    "main.246ef4b311fa10ef.hot-update.json": {
+      "name": "main.246ef4b311fa10ef.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.246ef4b311fa10ef.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.246ef4b311fa10ef.hot-update.json"
+    },
+    "main.249b1a299c3cb353.hot-update.js": {
+      "name": "main.249b1a299c3cb353.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.249b1a299c3cb353.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.249b1a299c3cb353.hot-update.js"
+    },
+    "main.249b1a299c3cb353.hot-update.json": {
+      "name": "main.249b1a299c3cb353.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.249b1a299c3cb353.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.249b1a299c3cb353.hot-update.json"
+    },
+    "main.260932163e4e700a.hot-update.js": {
+      "name": "main.260932163e4e700a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.260932163e4e700a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.260932163e4e700a.hot-update.js"
+    },
+    "main.260932163e4e700a.hot-update.json": {
+      "name": "main.260932163e4e700a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.260932163e4e700a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.260932163e4e700a.hot-update.json"
+    },
+    "main.277a201059f941ee.hot-update.js": {
+      "name": "main.277a201059f941ee.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.277a201059f941ee.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.277a201059f941ee.hot-update.js"
+    },
+    "main.277a201059f941ee.hot-update.json": {
+      "name": "main.277a201059f941ee.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.277a201059f941ee.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.277a201059f941ee.hot-update.json"
+    },
+    "main.2d4ed830f3c9fd4e.hot-update.js": {
+      "name": "main.2d4ed830f3c9fd4e.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.2d4ed830f3c9fd4e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.2d4ed830f3c9fd4e.hot-update.js"
+    },
+    "main.2d4ed830f3c9fd4e.hot-update.json": {
+      "name": "main.2d4ed830f3c9fd4e.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.2d4ed830f3c9fd4e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.2d4ed830f3c9fd4e.hot-update.json"
+    },
+    "main.30e09aa4ed8525f2.hot-update.js": {
+      "name": "main.30e09aa4ed8525f2.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.30e09aa4ed8525f2.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.30e09aa4ed8525f2.hot-update.js"
+    },
+    "main.30e09aa4ed8525f2.hot-update.json": {
+      "name": "main.30e09aa4ed8525f2.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.30e09aa4ed8525f2.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.30e09aa4ed8525f2.hot-update.json"
+    },
+    "main.3167ef536d29fd4f.hot-update.js": {
+      "name": "main.3167ef536d29fd4f.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3167ef536d29fd4f.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.3167ef536d29fd4f.hot-update.js"
+    },
+    "main.3167ef536d29fd4f.hot-update.json": {
+      "name": "main.3167ef536d29fd4f.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3167ef536d29fd4f.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.3167ef536d29fd4f.hot-update.json"
+    },
+    "main.3389b7ff515416e4.hot-update.js": {
+      "name": "main.3389b7ff515416e4.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3389b7ff515416e4.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.3389b7ff515416e4.hot-update.js"
+    },
+    "main.3389b7ff515416e4.hot-update.json": {
+      "name": "main.3389b7ff515416e4.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3389b7ff515416e4.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.3389b7ff515416e4.hot-update.json"
+    },
+    "main.33f055dc66d982c3.hot-update.js": {
+      "name": "main.33f055dc66d982c3.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.33f055dc66d982c3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.33f055dc66d982c3.hot-update.js"
+    },
+    "main.33f055dc66d982c3.hot-update.json": {
+      "name": "main.33f055dc66d982c3.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.33f055dc66d982c3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.33f055dc66d982c3.hot-update.json"
+    },
+    "main.35635c05071c1fa5.hot-update.js": {
+      "name": "main.35635c05071c1fa5.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.35635c05071c1fa5.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.35635c05071c1fa5.hot-update.js"
+    },
+    "main.35635c05071c1fa5.hot-update.json": {
+      "name": "main.35635c05071c1fa5.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.35635c05071c1fa5.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.35635c05071c1fa5.hot-update.json"
+    },
+    "main.35c8d9b20c9251eb.hot-update.js": {
+      "name": "main.35c8d9b20c9251eb.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.35c8d9b20c9251eb.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.35c8d9b20c9251eb.hot-update.js"
+    },
+    "main.35c8d9b20c9251eb.hot-update.json": {
+      "name": "main.35c8d9b20c9251eb.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.35c8d9b20c9251eb.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.35c8d9b20c9251eb.hot-update.json"
+    },
+    "main.363cfcf8d6214dd4.hot-update.js": {
+      "name": "main.363cfcf8d6214dd4.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.363cfcf8d6214dd4.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.363cfcf8d6214dd4.hot-update.js"
+    },
+    "main.363cfcf8d6214dd4.hot-update.json": {
+      "name": "main.363cfcf8d6214dd4.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.363cfcf8d6214dd4.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.363cfcf8d6214dd4.hot-update.json"
+    },
+    "main.3c10dfceea158f2a.hot-update.js": {
+      "name": "main.3c10dfceea158f2a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3c10dfceea158f2a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.3c10dfceea158f2a.hot-update.js"
+    },
+    "main.3c10dfceea158f2a.hot-update.json": {
+      "name": "main.3c10dfceea158f2a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3c10dfceea158f2a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.3c10dfceea158f2a.hot-update.json"
+    },
+    "main.3d0e77ae79c8f50f.hot-update.js": {
+      "name": "main.3d0e77ae79c8f50f.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3d0e77ae79c8f50f.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.3d0e77ae79c8f50f.hot-update.js"
+    },
+    "main.3d0e77ae79c8f50f.hot-update.json": {
+      "name": "main.3d0e77ae79c8f50f.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3d0e77ae79c8f50f.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.3d0e77ae79c8f50f.hot-update.json"
+    },
+    "main.3e0058c970eafbca.hot-update.js": {
+      "name": "main.3e0058c970eafbca.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3e0058c970eafbca.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.3e0058c970eafbca.hot-update.js"
+    },
+    "main.3e0058c970eafbca.hot-update.json": {
+      "name": "main.3e0058c970eafbca.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3e0058c970eafbca.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.3e0058c970eafbca.hot-update.json"
+    },
+    "main.3e0adf06a0518ae9.hot-update.js": {
+      "name": "main.3e0adf06a0518ae9.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3e0adf06a0518ae9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.3e0adf06a0518ae9.hot-update.js"
+    },
+    "main.3e0adf06a0518ae9.hot-update.json": {
+      "name": "main.3e0adf06a0518ae9.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3e0adf06a0518ae9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.3e0adf06a0518ae9.hot-update.json"
+    },
+    "main.3f1cd84b45bafc12.hot-update.js": {
+      "name": "main.3f1cd84b45bafc12.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3f1cd84b45bafc12.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.3f1cd84b45bafc12.hot-update.js"
+    },
+    "main.3f1cd84b45bafc12.hot-update.json": {
+      "name": "main.3f1cd84b45bafc12.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.3f1cd84b45bafc12.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.3f1cd84b45bafc12.hot-update.json"
+    },
+    "main.42ec4f525dc530ab.hot-update.js": {
+      "name": "main.42ec4f525dc530ab.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.42ec4f525dc530ab.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.42ec4f525dc530ab.hot-update.js"
+    },
+    "main.42ec4f525dc530ab.hot-update.json": {
+      "name": "main.42ec4f525dc530ab.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.42ec4f525dc530ab.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.42ec4f525dc530ab.hot-update.json"
+    },
+    "main.44392e502a2fd3a5.hot-update.js": {
+      "name": "main.44392e502a2fd3a5.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.44392e502a2fd3a5.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.44392e502a2fd3a5.hot-update.js"
+    },
+    "main.44392e502a2fd3a5.hot-update.json": {
+      "name": "main.44392e502a2fd3a5.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.44392e502a2fd3a5.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.44392e502a2fd3a5.hot-update.json"
+    },
+    "main.4512d3cfced6b7bc.hot-update.js": {
+      "name": "main.4512d3cfced6b7bc.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4512d3cfced6b7bc.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.4512d3cfced6b7bc.hot-update.js"
+    },
+    "main.4512d3cfced6b7bc.hot-update.json": {
+      "name": "main.4512d3cfced6b7bc.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4512d3cfced6b7bc.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.4512d3cfced6b7bc.hot-update.json"
+    },
+    "main.45630a4cb2682600.hot-update.js": {
+      "name": "main.45630a4cb2682600.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.45630a4cb2682600.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.45630a4cb2682600.hot-update.js"
+    },
+    "main.45630a4cb2682600.hot-update.json": {
+      "name": "main.45630a4cb2682600.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.45630a4cb2682600.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.45630a4cb2682600.hot-update.json"
+    },
+    "main.463a4ed1d926cdbe.hot-update.js": {
+      "name": "main.463a4ed1d926cdbe.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.463a4ed1d926cdbe.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.463a4ed1d926cdbe.hot-update.js"
+    },
+    "main.463a4ed1d926cdbe.hot-update.json": {
+      "name": "main.463a4ed1d926cdbe.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.463a4ed1d926cdbe.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.463a4ed1d926cdbe.hot-update.json"
+    },
+    "main.468b79c6fcdcfec8.hot-update.js": {
+      "name": "main.468b79c6fcdcfec8.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.468b79c6fcdcfec8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.468b79c6fcdcfec8.hot-update.js"
+    },
+    "main.468b79c6fcdcfec8.hot-update.json": {
+      "name": "main.468b79c6fcdcfec8.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.468b79c6fcdcfec8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.468b79c6fcdcfec8.hot-update.json"
+    },
+    "main.47191559e98cfec8.hot-update.js": {
+      "name": "main.47191559e98cfec8.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.47191559e98cfec8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.47191559e98cfec8.hot-update.js"
+    },
+    "main.47191559e98cfec8.hot-update.json": {
+      "name": "main.47191559e98cfec8.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.47191559e98cfec8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.47191559e98cfec8.hot-update.json"
+    },
+    "main.4891a11f27f4d80a.hot-update.js": {
+      "name": "main.4891a11f27f4d80a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4891a11f27f4d80a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.4891a11f27f4d80a.hot-update.js"
+    },
+    "main.4891a11f27f4d80a.hot-update.json": {
+      "name": "main.4891a11f27f4d80a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4891a11f27f4d80a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.4891a11f27f4d80a.hot-update.json"
+    },
+    "main.4aa1911b6203ce46.hot-update.js": {
+      "name": "main.4aa1911b6203ce46.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4aa1911b6203ce46.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.4aa1911b6203ce46.hot-update.js"
+    },
+    "main.4aa1911b6203ce46.hot-update.json": {
+      "name": "main.4aa1911b6203ce46.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4aa1911b6203ce46.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.4aa1911b6203ce46.hot-update.json"
+    },
+    "main.4b65abf455b3dc13.hot-update.js": {
+      "name": "main.4b65abf455b3dc13.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4b65abf455b3dc13.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.4b65abf455b3dc13.hot-update.js"
+    },
+    "main.4b65abf455b3dc13.hot-update.json": {
+      "name": "main.4b65abf455b3dc13.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4b65abf455b3dc13.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.4b65abf455b3dc13.hot-update.json"
+    },
+    "main.4bfe76f234263eaf.hot-update.js": {
+      "name": "main.4bfe76f234263eaf.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4bfe76f234263eaf.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.4bfe76f234263eaf.hot-update.js"
+    },
+    "main.4bfe76f234263eaf.hot-update.json": {
+      "name": "main.4bfe76f234263eaf.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4bfe76f234263eaf.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.4bfe76f234263eaf.hot-update.json"
+    },
+    "main.4d1b67e3bebc101e.hot-update.js": {
+      "name": "main.4d1b67e3bebc101e.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4d1b67e3bebc101e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.4d1b67e3bebc101e.hot-update.js"
+    },
+    "main.4d1b67e3bebc101e.hot-update.json": {
+      "name": "main.4d1b67e3bebc101e.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4d1b67e3bebc101e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.4d1b67e3bebc101e.hot-update.json"
+    },
+    "main.4fbcd6c23386ac7d.hot-update.js": {
+      "name": "main.4fbcd6c23386ac7d.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4fbcd6c23386ac7d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.4fbcd6c23386ac7d.hot-update.js"
+    },
+    "main.4fbcd6c23386ac7d.hot-update.json": {
+      "name": "main.4fbcd6c23386ac7d.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.4fbcd6c23386ac7d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.4fbcd6c23386ac7d.hot-update.json"
+    },
+    "main.5342c4227b5ec909.hot-update.js": {
+      "name": "main.5342c4227b5ec909.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.5342c4227b5ec909.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.5342c4227b5ec909.hot-update.js"
+    },
+    "main.5342c4227b5ec909.hot-update.json": {
+      "name": "main.5342c4227b5ec909.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.5342c4227b5ec909.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.5342c4227b5ec909.hot-update.json"
+    },
+    "main.53d417c5e6595708.hot-update.js": {
+      "name": "main.53d417c5e6595708.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.53d417c5e6595708.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.53d417c5e6595708.hot-update.js"
+    },
+    "main.53d417c5e6595708.hot-update.json": {
+      "name": "main.53d417c5e6595708.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.53d417c5e6595708.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.53d417c5e6595708.hot-update.json"
+    },
+    "main.585a63c09d8a90c6.hot-update.js": {
+      "name": "main.585a63c09d8a90c6.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.585a63c09d8a90c6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.585a63c09d8a90c6.hot-update.js"
+    },
+    "main.585a63c09d8a90c6.hot-update.json": {
+      "name": "main.585a63c09d8a90c6.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.585a63c09d8a90c6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.585a63c09d8a90c6.hot-update.json"
+    },
+    "main.593ee024542a0c4e.hot-update.js": {
+      "name": "main.593ee024542a0c4e.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.593ee024542a0c4e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.593ee024542a0c4e.hot-update.js"
+    },
+    "main.593ee024542a0c4e.hot-update.json": {
+      "name": "main.593ee024542a0c4e.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.593ee024542a0c4e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.593ee024542a0c4e.hot-update.json"
+    },
+    "main.5ba599c3f97da224.hot-update.js": {
+      "name": "main.5ba599c3f97da224.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.5ba599c3f97da224.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.5ba599c3f97da224.hot-update.js"
+    },
+    "main.5ba599c3f97da224.hot-update.json": {
+      "name": "main.5ba599c3f97da224.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.5ba599c3f97da224.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.5ba599c3f97da224.hot-update.json"
+    },
+    "main.5ebd1d76ccd959d8.hot-update.js": {
+      "name": "main.5ebd1d76ccd959d8.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.5ebd1d76ccd959d8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.5ebd1d76ccd959d8.hot-update.js"
+    },
+    "main.5ebd1d76ccd959d8.hot-update.json": {
+      "name": "main.5ebd1d76ccd959d8.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.5ebd1d76ccd959d8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.5ebd1d76ccd959d8.hot-update.json"
+    },
+    "main.631a180eb67259c9.hot-update.js": {
+      "name": "main.631a180eb67259c9.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.631a180eb67259c9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.631a180eb67259c9.hot-update.js"
+    },
+    "main.631a180eb67259c9.hot-update.json": {
+      "name": "main.631a180eb67259c9.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.631a180eb67259c9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.631a180eb67259c9.hot-update.json"
+    },
+    "main.63888727d8d1e132.hot-update.js": {
+      "name": "main.63888727d8d1e132.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.63888727d8d1e132.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.63888727d8d1e132.hot-update.js"
+    },
+    "main.63888727d8d1e132.hot-update.json": {
+      "name": "main.63888727d8d1e132.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.63888727d8d1e132.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.63888727d8d1e132.hot-update.json"
+    },
+    "main.643152c447a593d6.hot-update.js": {
+      "name": "main.643152c447a593d6.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.643152c447a593d6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.643152c447a593d6.hot-update.js"
+    },
+    "main.643152c447a593d6.hot-update.json": {
+      "name": "main.643152c447a593d6.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.643152c447a593d6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.643152c447a593d6.hot-update.json"
+    },
+    "main.647b13e2e16888f8.hot-update.js": {
+      "name": "main.647b13e2e16888f8.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.647b13e2e16888f8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.647b13e2e16888f8.hot-update.js"
+    },
+    "main.647b13e2e16888f8.hot-update.json": {
+      "name": "main.647b13e2e16888f8.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.647b13e2e16888f8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.647b13e2e16888f8.hot-update.json"
+    },
+    "main.65283535cdbe417b.hot-update.js": {
+      "name": "main.65283535cdbe417b.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.65283535cdbe417b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.65283535cdbe417b.hot-update.js"
+    },
+    "main.65283535cdbe417b.hot-update.json": {
+      "name": "main.65283535cdbe417b.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.65283535cdbe417b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.65283535cdbe417b.hot-update.json"
+    },
+    "main.6595d365a54ac453.hot-update.js": {
+      "name": "main.6595d365a54ac453.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.6595d365a54ac453.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.6595d365a54ac453.hot-update.js"
+    },
+    "main.6595d365a54ac453.hot-update.json": {
+      "name": "main.6595d365a54ac453.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.6595d365a54ac453.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.6595d365a54ac453.hot-update.json"
+    },
+    "main.65a0bed2091a5d1c.hot-update.js": {
+      "name": "main.65a0bed2091a5d1c.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.65a0bed2091a5d1c.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.65a0bed2091a5d1c.hot-update.js"
+    },
+    "main.65a0bed2091a5d1c.hot-update.json": {
+      "name": "main.65a0bed2091a5d1c.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.65a0bed2091a5d1c.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.65a0bed2091a5d1c.hot-update.json"
+    },
+    "main.67015776691c66a1.hot-update.js": {
+      "name": "main.67015776691c66a1.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.67015776691c66a1.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.67015776691c66a1.hot-update.js"
+    },
+    "main.67015776691c66a1.hot-update.json": {
+      "name": "main.67015776691c66a1.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.67015776691c66a1.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.67015776691c66a1.hot-update.json"
+    },
+    "main.69ac82a21b661be7.hot-update.js": {
+      "name": "main.69ac82a21b661be7.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.69ac82a21b661be7.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.69ac82a21b661be7.hot-update.js"
+    },
+    "main.69ac82a21b661be7.hot-update.json": {
+      "name": "main.69ac82a21b661be7.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.69ac82a21b661be7.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.69ac82a21b661be7.hot-update.json"
+    },
+    "main.6a7b559a6ae2a79d.hot-update.js": {
+      "name": "main.6a7b559a6ae2a79d.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.6a7b559a6ae2a79d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.6a7b559a6ae2a79d.hot-update.js"
+    },
+    "main.6a7b559a6ae2a79d.hot-update.json": {
+      "name": "main.6a7b559a6ae2a79d.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.6a7b559a6ae2a79d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.6a7b559a6ae2a79d.hot-update.json"
+    },
+    "main.6adb11825be2afde.hot-update.js": {
+      "name": "main.6adb11825be2afde.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.6adb11825be2afde.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.6adb11825be2afde.hot-update.js"
+    },
+    "main.6adb11825be2afde.hot-update.json": {
+      "name": "main.6adb11825be2afde.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.6adb11825be2afde.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.6adb11825be2afde.hot-update.json"
+    },
+    "main.7075db65b12a1385.hot-update.js": {
+      "name": "main.7075db65b12a1385.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.7075db65b12a1385.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.7075db65b12a1385.hot-update.js"
+    },
+    "main.7075db65b12a1385.hot-update.json": {
+      "name": "main.7075db65b12a1385.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.7075db65b12a1385.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.7075db65b12a1385.hot-update.json"
+    },
+    "main.73b8fb44d73db8f8.hot-update.js": {
+      "name": "main.73b8fb44d73db8f8.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.73b8fb44d73db8f8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.73b8fb44d73db8f8.hot-update.js"
+    },
+    "main.73b8fb44d73db8f8.hot-update.json": {
+      "name": "main.73b8fb44d73db8f8.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.73b8fb44d73db8f8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.73b8fb44d73db8f8.hot-update.json"
+    },
+    "main.762e8717c4a695ee.hot-update.js": {
+      "name": "main.762e8717c4a695ee.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.762e8717c4a695ee.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.762e8717c4a695ee.hot-update.js"
+    },
+    "main.762e8717c4a695ee.hot-update.json": {
+      "name": "main.762e8717c4a695ee.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.762e8717c4a695ee.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.762e8717c4a695ee.hot-update.json"
+    },
+    "main.77b11e639f3cf107.hot-update.js": {
+      "name": "main.77b11e639f3cf107.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.77b11e639f3cf107.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.77b11e639f3cf107.hot-update.js"
+    },
+    "main.77b11e639f3cf107.hot-update.json": {
+      "name": "main.77b11e639f3cf107.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.77b11e639f3cf107.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.77b11e639f3cf107.hot-update.json"
+    },
+    "main.7e6cafdb3d2a4e0b.hot-update.js": {
+      "name": "main.7e6cafdb3d2a4e0b.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.7e6cafdb3d2a4e0b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.7e6cafdb3d2a4e0b.hot-update.js"
+    },
+    "main.7e6cafdb3d2a4e0b.hot-update.json": {
+      "name": "main.7e6cafdb3d2a4e0b.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.7e6cafdb3d2a4e0b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.7e6cafdb3d2a4e0b.hot-update.json"
+    },
+    "main.811747c1b59c58f1.hot-update.js": {
+      "name": "main.811747c1b59c58f1.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.811747c1b59c58f1.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.811747c1b59c58f1.hot-update.js"
+    },
+    "main.811747c1b59c58f1.hot-update.json": {
+      "name": "main.811747c1b59c58f1.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.811747c1b59c58f1.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.811747c1b59c58f1.hot-update.json"
+    },
+    "main.847461427eb5c07c.hot-update.js": {
+      "name": "main.847461427eb5c07c.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.847461427eb5c07c.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.847461427eb5c07c.hot-update.js"
+    },
+    "main.847461427eb5c07c.hot-update.json": {
+      "name": "main.847461427eb5c07c.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.847461427eb5c07c.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.847461427eb5c07c.hot-update.json"
+    },
+    "main.84dc17410e1dad0b.hot-update.js": {
+      "name": "main.84dc17410e1dad0b.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.84dc17410e1dad0b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.84dc17410e1dad0b.hot-update.js"
+    },
+    "main.84dc17410e1dad0b.hot-update.json": {
+      "name": "main.84dc17410e1dad0b.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.84dc17410e1dad0b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.84dc17410e1dad0b.hot-update.json"
+    },
+    "main.85db18902d52788c.hot-update.js": {
+      "name": "main.85db18902d52788c.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.85db18902d52788c.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.85db18902d52788c.hot-update.js"
+    },
+    "main.85db18902d52788c.hot-update.json": {
+      "name": "main.85db18902d52788c.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.85db18902d52788c.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.85db18902d52788c.hot-update.json"
+    },
+    "main.8a67e220bc0a85c6.hot-update.js": {
+      "name": "main.8a67e220bc0a85c6.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.8a67e220bc0a85c6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.8a67e220bc0a85c6.hot-update.js"
+    },
+    "main.8a67e220bc0a85c6.hot-update.json": {
+      "name": "main.8a67e220bc0a85c6.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.8a67e220bc0a85c6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.8a67e220bc0a85c6.hot-update.json"
+    },
+    "main.8ad6d07436fe71a0.hot-update.js": {
+      "name": "main.8ad6d07436fe71a0.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.8ad6d07436fe71a0.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.8ad6d07436fe71a0.hot-update.js"
+    },
+    "main.8ad6d07436fe71a0.hot-update.json": {
+      "name": "main.8ad6d07436fe71a0.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.8ad6d07436fe71a0.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.8ad6d07436fe71a0.hot-update.json"
+    },
+    "main.8ae860a74fbcb234.hot-update.js": {
+      "name": "main.8ae860a74fbcb234.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.8ae860a74fbcb234.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.8ae860a74fbcb234.hot-update.js"
+    },
+    "main.8ae860a74fbcb234.hot-update.json": {
+      "name": "main.8ae860a74fbcb234.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.8ae860a74fbcb234.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.8ae860a74fbcb234.hot-update.json"
+    },
+    "main.8f2968d88ff89431.hot-update.js": {
+      "name": "main.8f2968d88ff89431.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.8f2968d88ff89431.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.8f2968d88ff89431.hot-update.js"
+    },
+    "main.8f2968d88ff89431.hot-update.json": {
+      "name": "main.8f2968d88ff89431.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.8f2968d88ff89431.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.8f2968d88ff89431.hot-update.json"
+    },
+    "main.92abce9cf6107b86.hot-update.js": {
+      "name": "main.92abce9cf6107b86.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.92abce9cf6107b86.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.92abce9cf6107b86.hot-update.js"
+    },
+    "main.92abce9cf6107b86.hot-update.json": {
+      "name": "main.92abce9cf6107b86.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.92abce9cf6107b86.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.92abce9cf6107b86.hot-update.json"
+    },
+    "main.935eb91efa40c945.hot-update.js": {
+      "name": "main.935eb91efa40c945.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.935eb91efa40c945.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.935eb91efa40c945.hot-update.js"
+    },
+    "main.935eb91efa40c945.hot-update.json": {
+      "name": "main.935eb91efa40c945.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.935eb91efa40c945.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.935eb91efa40c945.hot-update.json"
+    },
+    "main.94eb6613303bff2c.hot-update.js": {
+      "name": "main.94eb6613303bff2c.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.94eb6613303bff2c.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.94eb6613303bff2c.hot-update.js"
+    },
+    "main.94eb6613303bff2c.hot-update.json": {
+      "name": "main.94eb6613303bff2c.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.94eb6613303bff2c.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.94eb6613303bff2c.hot-update.json"
+    },
+    "main.9770f358d0f6b2d2.hot-update.js": {
+      "name": "main.9770f358d0f6b2d2.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9770f358d0f6b2d2.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.9770f358d0f6b2d2.hot-update.js"
+    },
+    "main.9770f358d0f6b2d2.hot-update.json": {
+      "name": "main.9770f358d0f6b2d2.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9770f358d0f6b2d2.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.9770f358d0f6b2d2.hot-update.json"
+    },
+    "main.99e6b56b9f76b01b.hot-update.js": {
+      "name": "main.99e6b56b9f76b01b.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.99e6b56b9f76b01b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.99e6b56b9f76b01b.hot-update.js"
+    },
+    "main.99e6b56b9f76b01b.hot-update.json": {
+      "name": "main.99e6b56b9f76b01b.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.99e6b56b9f76b01b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.99e6b56b9f76b01b.hot-update.json"
+    },
+    "main.9bd68f7a5a7aace7.hot-update.js": {
+      "name": "main.9bd68f7a5a7aace7.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9bd68f7a5a7aace7.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.9bd68f7a5a7aace7.hot-update.js"
+    },
+    "main.9bd68f7a5a7aace7.hot-update.json": {
+      "name": "main.9bd68f7a5a7aace7.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9bd68f7a5a7aace7.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.9bd68f7a5a7aace7.hot-update.json"
+    },
+    "main.9ccc9dc93fe1c52e.hot-update.js": {
+      "name": "main.9ccc9dc93fe1c52e.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9ccc9dc93fe1c52e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.9ccc9dc93fe1c52e.hot-update.js"
+    },
+    "main.9ccc9dc93fe1c52e.hot-update.json": {
+      "name": "main.9ccc9dc93fe1c52e.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9ccc9dc93fe1c52e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.9ccc9dc93fe1c52e.hot-update.json"
+    },
+    "main.9d81ed3a87f99dd2.hot-update.js": {
+      "name": "main.9d81ed3a87f99dd2.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9d81ed3a87f99dd2.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.9d81ed3a87f99dd2.hot-update.js"
+    },
+    "main.9d81ed3a87f99dd2.hot-update.json": {
+      "name": "main.9d81ed3a87f99dd2.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9d81ed3a87f99dd2.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.9d81ed3a87f99dd2.hot-update.json"
+    },
+    "main.9e0facd346b95ac8.hot-update.js": {
+      "name": "main.9e0facd346b95ac8.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9e0facd346b95ac8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.9e0facd346b95ac8.hot-update.js"
+    },
+    "main.9e0facd346b95ac8.hot-update.json": {
+      "name": "main.9e0facd346b95ac8.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9e0facd346b95ac8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.9e0facd346b95ac8.hot-update.json"
+    },
+    "main.9e7a1c4ea9b6fe1a.hot-update.js": {
+      "name": "main.9e7a1c4ea9b6fe1a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9e7a1c4ea9b6fe1a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.9e7a1c4ea9b6fe1a.hot-update.js"
+    },
+    "main.9e7a1c4ea9b6fe1a.hot-update.json": {
+      "name": "main.9e7a1c4ea9b6fe1a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.9e7a1c4ea9b6fe1a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.9e7a1c4ea9b6fe1a.hot-update.json"
+    },
+    "main.a24e08018f91d83b.hot-update.js": {
+      "name": "main.a24e08018f91d83b.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a24e08018f91d83b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.a24e08018f91d83b.hot-update.js"
+    },
+    "main.a24e08018f91d83b.hot-update.json": {
+      "name": "main.a24e08018f91d83b.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a24e08018f91d83b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.a24e08018f91d83b.hot-update.json"
+    },
+    "main.a3d889481a802eb8.hot-update.js": {
+      "name": "main.a3d889481a802eb8.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a3d889481a802eb8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.a3d889481a802eb8.hot-update.js"
+    },
+    "main.a3d889481a802eb8.hot-update.json": {
+      "name": "main.a3d889481a802eb8.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a3d889481a802eb8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.a3d889481a802eb8.hot-update.json"
+    },
+    "main.a623a1d4baf8b8ff.hot-update.js": {
+      "name": "main.a623a1d4baf8b8ff.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a623a1d4baf8b8ff.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.a623a1d4baf8b8ff.hot-update.js"
+    },
+    "main.a623a1d4baf8b8ff.hot-update.json": {
+      "name": "main.a623a1d4baf8b8ff.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a623a1d4baf8b8ff.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.a623a1d4baf8b8ff.hot-update.json"
+    },
+    "main.a65f290b825c9ea3.hot-update.js": {
+      "name": "main.a65f290b825c9ea3.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a65f290b825c9ea3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.a65f290b825c9ea3.hot-update.js"
+    },
+    "main.a65f290b825c9ea3.hot-update.json": {
+      "name": "main.a65f290b825c9ea3.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a65f290b825c9ea3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.a65f290b825c9ea3.hot-update.json"
+    },
+    "main.a785787ba4875be3.hot-update.js": {
+      "name": "main.a785787ba4875be3.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a785787ba4875be3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.a785787ba4875be3.hot-update.js"
+    },
+    "main.a785787ba4875be3.hot-update.json": {
+      "name": "main.a785787ba4875be3.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a785787ba4875be3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.a785787ba4875be3.hot-update.json"
+    },
+    "main.a7c480c57c7280b6.hot-update.js": {
+      "name": "main.a7c480c57c7280b6.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a7c480c57c7280b6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.a7c480c57c7280b6.hot-update.js"
+    },
+    "main.a7c480c57c7280b6.hot-update.json": {
+      "name": "main.a7c480c57c7280b6.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.a7c480c57c7280b6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.a7c480c57c7280b6.hot-update.json"
+    },
+    "main.acdfa0ff4820401a.hot-update.js": {
+      "name": "main.acdfa0ff4820401a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.acdfa0ff4820401a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.acdfa0ff4820401a.hot-update.js"
+    },
+    "main.acdfa0ff4820401a.hot-update.json": {
+      "name": "main.acdfa0ff4820401a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.acdfa0ff4820401a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.acdfa0ff4820401a.hot-update.json"
+    },
+    "main.ad63fdc01c8f52c3.hot-update.js": {
+      "name": "main.ad63fdc01c8f52c3.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ad63fdc01c8f52c3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.ad63fdc01c8f52c3.hot-update.js"
+    },
+    "main.ad63fdc01c8f52c3.hot-update.json": {
+      "name": "main.ad63fdc01c8f52c3.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ad63fdc01c8f52c3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.ad63fdc01c8f52c3.hot-update.json"
+    },
+    "main.ae730840faf4cece.hot-update.js": {
+      "name": "main.ae730840faf4cece.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ae730840faf4cece.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.ae730840faf4cece.hot-update.js"
+    },
+    "main.ae730840faf4cece.hot-update.json": {
+      "name": "main.ae730840faf4cece.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ae730840faf4cece.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.ae730840faf4cece.hot-update.json"
+    },
+    "main.aecd017d9ecd44a3.hot-update.js": {
+      "name": "main.aecd017d9ecd44a3.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.aecd017d9ecd44a3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.aecd017d9ecd44a3.hot-update.js"
+    },
+    "main.aecd017d9ecd44a3.hot-update.json": {
+      "name": "main.aecd017d9ecd44a3.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.aecd017d9ecd44a3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.aecd017d9ecd44a3.hot-update.json"
+    },
+    "main.b1404d18317e2d80.hot-update.js": {
+      "name": "main.b1404d18317e2d80.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b1404d18317e2d80.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.b1404d18317e2d80.hot-update.js"
+    },
+    "main.b1404d18317e2d80.hot-update.json": {
+      "name": "main.b1404d18317e2d80.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b1404d18317e2d80.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.b1404d18317e2d80.hot-update.json"
+    },
+    "main.b28a4170ac1924eb.hot-update.js": {
+      "name": "main.b28a4170ac1924eb.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b28a4170ac1924eb.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.b28a4170ac1924eb.hot-update.js"
+    },
+    "main.b28a4170ac1924eb.hot-update.json": {
+      "name": "main.b28a4170ac1924eb.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b28a4170ac1924eb.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.b28a4170ac1924eb.hot-update.json"
+    },
+    "main.b451b2a415565e76.hot-update.js": {
+      "name": "main.b451b2a415565e76.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b451b2a415565e76.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.b451b2a415565e76.hot-update.js"
+    },
+    "main.b451b2a415565e76.hot-update.json": {
+      "name": "main.b451b2a415565e76.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b451b2a415565e76.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.b451b2a415565e76.hot-update.json"
+    },
+    "main.b511c8930b264868.hot-update.js": {
+      "name": "main.b511c8930b264868.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b511c8930b264868.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.b511c8930b264868.hot-update.js"
+    },
+    "main.b511c8930b264868.hot-update.json": {
+      "name": "main.b511c8930b264868.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b511c8930b264868.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.b511c8930b264868.hot-update.json"
+    },
+    "main.b8652b7e26413298.hot-update.js": {
+      "name": "main.b8652b7e26413298.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b8652b7e26413298.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.b8652b7e26413298.hot-update.js"
+    },
+    "main.b8652b7e26413298.hot-update.json": {
+      "name": "main.b8652b7e26413298.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b8652b7e26413298.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.b8652b7e26413298.hot-update.json"
+    },
+    "main.b8c1c930ad9d2b33.hot-update.js": {
+      "name": "main.b8c1c930ad9d2b33.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b8c1c930ad9d2b33.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.b8c1c930ad9d2b33.hot-update.js"
+    },
+    "main.b8c1c930ad9d2b33.hot-update.json": {
+      "name": "main.b8c1c930ad9d2b33.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b8c1c930ad9d2b33.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.b8c1c930ad9d2b33.hot-update.json"
+    },
+    "main.b91ae7f15aa77542.hot-update.js": {
+      "name": "main.b91ae7f15aa77542.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b91ae7f15aa77542.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.b91ae7f15aa77542.hot-update.js"
+    },
+    "main.b91ae7f15aa77542.hot-update.json": {
+      "name": "main.b91ae7f15aa77542.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.b91ae7f15aa77542.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.b91ae7f15aa77542.hot-update.json"
+    },
+    "main.ba111fb33ae6674d.hot-update.js": {
+      "name": "main.ba111fb33ae6674d.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ba111fb33ae6674d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.ba111fb33ae6674d.hot-update.js"
+    },
+    "main.ba111fb33ae6674d.hot-update.json": {
+      "name": "main.ba111fb33ae6674d.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ba111fb33ae6674d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.ba111fb33ae6674d.hot-update.json"
+    },
+    "main.bacd2c9cc047c8fd.hot-update.js": {
+      "name": "main.bacd2c9cc047c8fd.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.bacd2c9cc047c8fd.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.bacd2c9cc047c8fd.hot-update.js"
+    },
+    "main.bacd2c9cc047c8fd.hot-update.json": {
+      "name": "main.bacd2c9cc047c8fd.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.bacd2c9cc047c8fd.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.bacd2c9cc047c8fd.hot-update.json"
+    },
+    "main.bbda403f33299148.hot-update.js": {
+      "name": "main.bbda403f33299148.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.bbda403f33299148.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.bbda403f33299148.hot-update.js"
+    },
+    "main.bbda403f33299148.hot-update.json": {
+      "name": "main.bbda403f33299148.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.bbda403f33299148.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.bbda403f33299148.hot-update.json"
+    },
+    "main.bd5db9a6e2d5bb23.hot-update.js": {
+      "name": "main.bd5db9a6e2d5bb23.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.bd5db9a6e2d5bb23.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.bd5db9a6e2d5bb23.hot-update.js"
+    },
+    "main.bd5db9a6e2d5bb23.hot-update.json": {
+      "name": "main.bd5db9a6e2d5bb23.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.bd5db9a6e2d5bb23.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.bd5db9a6e2d5bb23.hot-update.json"
+    },
+    "main.bdbfcb7cbd1a15cc.hot-update.js": {
+      "name": "main.bdbfcb7cbd1a15cc.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.bdbfcb7cbd1a15cc.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.bdbfcb7cbd1a15cc.hot-update.js"
+    },
+    "main.bdbfcb7cbd1a15cc.hot-update.json": {
+      "name": "main.bdbfcb7cbd1a15cc.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.bdbfcb7cbd1a15cc.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.bdbfcb7cbd1a15cc.hot-update.json"
+    },
+    "main.be464196c3c1bb07.hot-update.js": {
+      "name": "main.be464196c3c1bb07.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.be464196c3c1bb07.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.be464196c3c1bb07.hot-update.js"
+    },
+    "main.be464196c3c1bb07.hot-update.json": {
+      "name": "main.be464196c3c1bb07.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.be464196c3c1bb07.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.be464196c3c1bb07.hot-update.json"
+    },
+    "main.be645be7e2c84f9c.hot-update.js": {
+      "name": "main.be645be7e2c84f9c.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.be645be7e2c84f9c.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.be645be7e2c84f9c.hot-update.js"
+    },
+    "main.be645be7e2c84f9c.hot-update.json": {
+      "name": "main.be645be7e2c84f9c.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.be645be7e2c84f9c.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.be645be7e2c84f9c.hot-update.json"
+    },
+    "main.bf56227862c01ab1.hot-update.js": {
+      "name": "main.bf56227862c01ab1.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.bf56227862c01ab1.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.bf56227862c01ab1.hot-update.js"
+    },
+    "main.bf56227862c01ab1.hot-update.json": {
+      "name": "main.bf56227862c01ab1.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.bf56227862c01ab1.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.bf56227862c01ab1.hot-update.json"
+    },
+    "main.c128b76fe5a04e30.hot-update.js": {
+      "name": "main.c128b76fe5a04e30.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c128b76fe5a04e30.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c128b76fe5a04e30.hot-update.js"
+    },
+    "main.c128b76fe5a04e30.hot-update.json": {
+      "name": "main.c128b76fe5a04e30.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c128b76fe5a04e30.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c128b76fe5a04e30.hot-update.json"
+    },
+    "main.c21b5d4e2b133760.hot-update.js": {
+      "name": "main.c21b5d4e2b133760.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c21b5d4e2b133760.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c21b5d4e2b133760.hot-update.js"
+    },
+    "main.c21b5d4e2b133760.hot-update.json": {
+      "name": "main.c21b5d4e2b133760.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c21b5d4e2b133760.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c21b5d4e2b133760.hot-update.json"
+    },
+    "main.c265a574729ff7a0.hot-update.js": {
+      "name": "main.c265a574729ff7a0.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c265a574729ff7a0.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c265a574729ff7a0.hot-update.js"
+    },
+    "main.c265a574729ff7a0.hot-update.json": {
+      "name": "main.c265a574729ff7a0.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c265a574729ff7a0.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c265a574729ff7a0.hot-update.json"
+    },
+    "main.c351967d86950052.hot-update.js": {
+      "name": "main.c351967d86950052.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c351967d86950052.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c351967d86950052.hot-update.js"
+    },
+    "main.c351967d86950052.hot-update.json": {
+      "name": "main.c351967d86950052.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c351967d86950052.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c351967d86950052.hot-update.json"
+    },
+    "main.c4722a0be06f2968.hot-update.js": {
+      "name": "main.c4722a0be06f2968.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c4722a0be06f2968.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c4722a0be06f2968.hot-update.js"
+    },
+    "main.c4722a0be06f2968.hot-update.json": {
+      "name": "main.c4722a0be06f2968.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c4722a0be06f2968.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c4722a0be06f2968.hot-update.json"
+    },
+    "main.c4cdf93e2cee3f41.hot-update.js": {
+      "name": "main.c4cdf93e2cee3f41.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c4cdf93e2cee3f41.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c4cdf93e2cee3f41.hot-update.js"
+    },
+    "main.c4cdf93e2cee3f41.hot-update.json": {
+      "name": "main.c4cdf93e2cee3f41.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c4cdf93e2cee3f41.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c4cdf93e2cee3f41.hot-update.json"
+    },
+    "main.c63498ec524a069a.hot-update.js": {
+      "name": "main.c63498ec524a069a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c63498ec524a069a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c63498ec524a069a.hot-update.js"
+    },
+    "main.c63498ec524a069a.hot-update.json": {
+      "name": "main.c63498ec524a069a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c63498ec524a069a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c63498ec524a069a.hot-update.json"
+    },
+    "main.c681d39f7dd5edd4.hot-update.js": {
+      "name": "main.c681d39f7dd5edd4.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c681d39f7dd5edd4.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c681d39f7dd5edd4.hot-update.js"
+    },
+    "main.c681d39f7dd5edd4.hot-update.json": {
+      "name": "main.c681d39f7dd5edd4.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.c681d39f7dd5edd4.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c681d39f7dd5edd4.hot-update.json"
+    },
+    "main.ca0d8c2dcc40233f.hot-update.js": {
+      "name": "main.ca0d8c2dcc40233f.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ca0d8c2dcc40233f.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.ca0d8c2dcc40233f.hot-update.js"
+    },
+    "main.ca0d8c2dcc40233f.hot-update.json": {
+      "name": "main.ca0d8c2dcc40233f.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ca0d8c2dcc40233f.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.ca0d8c2dcc40233f.hot-update.json"
+    },
+    "main.ce3c17a3a286385e.hot-update.js": {
+      "name": "main.ce3c17a3a286385e.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ce3c17a3a286385e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.ce3c17a3a286385e.hot-update.js"
+    },
+    "main.ce3c17a3a286385e.hot-update.json": {
+      "name": "main.ce3c17a3a286385e.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ce3c17a3a286385e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.ce3c17a3a286385e.hot-update.json"
+    },
+    "main.cf3a587aad5f304e.hot-update.js": {
+      "name": "main.cf3a587aad5f304e.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.cf3a587aad5f304e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.cf3a587aad5f304e.hot-update.js"
+    },
+    "main.cf3a587aad5f304e.hot-update.json": {
+      "name": "main.cf3a587aad5f304e.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.cf3a587aad5f304e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.cf3a587aad5f304e.hot-update.json"
+    },
+    "main.d064bd4d5034d162.hot-update.js": {
+      "name": "main.d064bd4d5034d162.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d064bd4d5034d162.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d064bd4d5034d162.hot-update.js"
+    },
+    "main.d064bd4d5034d162.hot-update.json": {
+      "name": "main.d064bd4d5034d162.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d064bd4d5034d162.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d064bd4d5034d162.hot-update.json"
+    },
+    "main.d07a866a49740aef.hot-update.js": {
+      "name": "main.d07a866a49740aef.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d07a866a49740aef.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d07a866a49740aef.hot-update.js"
+    },
+    "main.d07a866a49740aef.hot-update.json": {
+      "name": "main.d07a866a49740aef.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d07a866a49740aef.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d07a866a49740aef.hot-update.json"
+    },
+    "main.d08ae8a0b824fc5b.hot-update.js": {
+      "name": "main.d08ae8a0b824fc5b.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d08ae8a0b824fc5b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d08ae8a0b824fc5b.hot-update.js"
+    },
+    "main.d08ae8a0b824fc5b.hot-update.json": {
+      "name": "main.d08ae8a0b824fc5b.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d08ae8a0b824fc5b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d08ae8a0b824fc5b.hot-update.json"
+    },
+    "main.d105cf41edc23064.hot-update.js": {
+      "name": "main.d105cf41edc23064.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d105cf41edc23064.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d105cf41edc23064.hot-update.js"
+    },
+    "main.d105cf41edc23064.hot-update.json": {
+      "name": "main.d105cf41edc23064.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d105cf41edc23064.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d105cf41edc23064.hot-update.json"
+    },
+    "main.d1123d24f43b6329.hot-update.js": {
+      "name": "main.d1123d24f43b6329.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d1123d24f43b6329.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d1123d24f43b6329.hot-update.js"
+    },
+    "main.d1123d24f43b6329.hot-update.json": {
+      "name": "main.d1123d24f43b6329.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d1123d24f43b6329.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d1123d24f43b6329.hot-update.json"
+    },
+    "main.d130be1cf10850e3.hot-update.js": {
+      "name": "main.d130be1cf10850e3.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d130be1cf10850e3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d130be1cf10850e3.hot-update.js"
+    },
+    "main.d130be1cf10850e3.hot-update.json": {
+      "name": "main.d130be1cf10850e3.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d130be1cf10850e3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d130be1cf10850e3.hot-update.json"
+    },
+    "main.d2eb1298c6044c1e.hot-update.js": {
+      "name": "main.d2eb1298c6044c1e.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d2eb1298c6044c1e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d2eb1298c6044c1e.hot-update.js"
+    },
+    "main.d2eb1298c6044c1e.hot-update.json": {
+      "name": "main.d2eb1298c6044c1e.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d2eb1298c6044c1e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d2eb1298c6044c1e.hot-update.json"
+    },
+    "main.d4ce1bf3f51d63d8.hot-update.js": {
+      "name": "main.d4ce1bf3f51d63d8.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d4ce1bf3f51d63d8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d4ce1bf3f51d63d8.hot-update.js"
+    },
+    "main.d4ce1bf3f51d63d8.hot-update.json": {
+      "name": "main.d4ce1bf3f51d63d8.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d4ce1bf3f51d63d8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d4ce1bf3f51d63d8.hot-update.json"
+    },
+    "main.d63173db806d3785.hot-update.js": {
+      "name": "main.d63173db806d3785.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d63173db806d3785.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d63173db806d3785.hot-update.js"
+    },
+    "main.d63173db806d3785.hot-update.json": {
+      "name": "main.d63173db806d3785.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d63173db806d3785.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d63173db806d3785.hot-update.json"
+    },
+    "main.d6370f49a10bc0ee.hot-update.js": {
+      "name": "main.d6370f49a10bc0ee.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d6370f49a10bc0ee.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d6370f49a10bc0ee.hot-update.js"
+    },
+    "main.d6370f49a10bc0ee.hot-update.json": {
+      "name": "main.d6370f49a10bc0ee.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.d6370f49a10bc0ee.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d6370f49a10bc0ee.hot-update.json"
+    },
+    "main.da59b83793e5ef5a.hot-update.js": {
+      "name": "main.da59b83793e5ef5a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.da59b83793e5ef5a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.da59b83793e5ef5a.hot-update.js"
+    },
+    "main.da59b83793e5ef5a.hot-update.json": {
+      "name": "main.da59b83793e5ef5a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.da59b83793e5ef5a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.da59b83793e5ef5a.hot-update.json"
+    },
+    "main.da832cd273831b18.hot-update.js": {
+      "name": "main.da832cd273831b18.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.da832cd273831b18.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.da832cd273831b18.hot-update.js"
+    },
+    "main.da832cd273831b18.hot-update.json": {
+      "name": "main.da832cd273831b18.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.da832cd273831b18.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.da832cd273831b18.hot-update.json"
+    },
+    "main.dc8b9799dc1bf6e2.hot-update.js": {
+      "name": "main.dc8b9799dc1bf6e2.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.dc8b9799dc1bf6e2.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.dc8b9799dc1bf6e2.hot-update.js"
+    },
+    "main.dc8b9799dc1bf6e2.hot-update.json": {
+      "name": "main.dc8b9799dc1bf6e2.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.dc8b9799dc1bf6e2.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.dc8b9799dc1bf6e2.hot-update.json"
+    },
+    "main.dd34fc199f8ef72c.hot-update.js": {
+      "name": "main.dd34fc199f8ef72c.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.dd34fc199f8ef72c.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.dd34fc199f8ef72c.hot-update.js"
+    },
+    "main.dd34fc199f8ef72c.hot-update.json": {
+      "name": "main.dd34fc199f8ef72c.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.dd34fc199f8ef72c.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.dd34fc199f8ef72c.hot-update.json"
+    },
+    "main.e3ffb199ec635164.hot-update.js": {
+      "name": "main.e3ffb199ec635164.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e3ffb199ec635164.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.e3ffb199ec635164.hot-update.js"
+    },
+    "main.e3ffb199ec635164.hot-update.json": {
+      "name": "main.e3ffb199ec635164.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e3ffb199ec635164.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.e3ffb199ec635164.hot-update.json"
+    },
+    "main.e443adf6a8c782ed.hot-update.js": {
+      "name": "main.e443adf6a8c782ed.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e443adf6a8c782ed.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.e443adf6a8c782ed.hot-update.js"
+    },
+    "main.e443adf6a8c782ed.hot-update.json": {
+      "name": "main.e443adf6a8c782ed.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e443adf6a8c782ed.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.e443adf6a8c782ed.hot-update.json"
+    },
+    "main.e867748d7e7faf43.hot-update.js": {
+      "name": "main.e867748d7e7faf43.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e867748d7e7faf43.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.e867748d7e7faf43.hot-update.js"
+    },
+    "main.e867748d7e7faf43.hot-update.json": {
+      "name": "main.e867748d7e7faf43.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e867748d7e7faf43.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.e867748d7e7faf43.hot-update.json"
+    },
+    "main.e93da4f317996da6.hot-update.js": {
+      "name": "main.e93da4f317996da6.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e93da4f317996da6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.e93da4f317996da6.hot-update.js"
+    },
+    "main.e93da4f317996da6.hot-update.json": {
+      "name": "main.e93da4f317996da6.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e93da4f317996da6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.e93da4f317996da6.hot-update.json"
+    },
+    "main.e946a04fa73edcb6.hot-update.js": {
+      "name": "main.e946a04fa73edcb6.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e946a04fa73edcb6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.e946a04fa73edcb6.hot-update.js"
+    },
+    "main.e946a04fa73edcb6.hot-update.json": {
+      "name": "main.e946a04fa73edcb6.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.e946a04fa73edcb6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.e946a04fa73edcb6.hot-update.json"
+    },
+    "main.eb97a03e28655c4a.hot-update.js": {
+      "name": "main.eb97a03e28655c4a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.eb97a03e28655c4a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.eb97a03e28655c4a.hot-update.js"
+    },
+    "main.eb97a03e28655c4a.hot-update.json": {
+      "name": "main.eb97a03e28655c4a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.eb97a03e28655c4a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.eb97a03e28655c4a.hot-update.json"
+    },
+    "main.ecc06453f37ec21a.hot-update.js": {
+      "name": "main.ecc06453f37ec21a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ecc06453f37ec21a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.ecc06453f37ec21a.hot-update.js"
+    },
+    "main.ecc06453f37ec21a.hot-update.json": {
+      "name": "main.ecc06453f37ec21a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ecc06453f37ec21a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.ecc06453f37ec21a.hot-update.json"
+    },
+    "main.ee16e2d62f5b2ed4.hot-update.js": {
+      "name": "main.ee16e2d62f5b2ed4.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ee16e2d62f5b2ed4.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.ee16e2d62f5b2ed4.hot-update.js"
+    },
+    "main.ee16e2d62f5b2ed4.hot-update.json": {
+      "name": "main.ee16e2d62f5b2ed4.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ee16e2d62f5b2ed4.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.ee16e2d62f5b2ed4.hot-update.json"
+    },
+    "main.efcb1671acffb1ae.hot-update.js": {
+      "name": "main.efcb1671acffb1ae.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.efcb1671acffb1ae.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.efcb1671acffb1ae.hot-update.js"
+    },
+    "main.efcb1671acffb1ae.hot-update.json": {
+      "name": "main.efcb1671acffb1ae.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.efcb1671acffb1ae.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.efcb1671acffb1ae.hot-update.json"
+    },
+    "main.f03898c385d14ae9.hot-update.js": {
+      "name": "main.f03898c385d14ae9.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f03898c385d14ae9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f03898c385d14ae9.hot-update.js"
+    },
+    "main.f03898c385d14ae9.hot-update.json": {
+      "name": "main.f03898c385d14ae9.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f03898c385d14ae9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f03898c385d14ae9.hot-update.json"
+    },
+    "main.f0686452af5070a9.hot-update.js": {
+      "name": "main.f0686452af5070a9.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f0686452af5070a9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f0686452af5070a9.hot-update.js"
+    },
+    "main.f0686452af5070a9.hot-update.json": {
+      "name": "main.f0686452af5070a9.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f0686452af5070a9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f0686452af5070a9.hot-update.json"
+    },
+    "main.f33d622a6809091a.hot-update.js": {
+      "name": "main.f33d622a6809091a.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f33d622a6809091a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f33d622a6809091a.hot-update.js"
+    },
+    "main.f33d622a6809091a.hot-update.json": {
+      "name": "main.f33d622a6809091a.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f33d622a6809091a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f33d622a6809091a.hot-update.json"
+    },
+    "main.f36f615c92f614a7.hot-update.js": {
+      "name": "main.f36f615c92f614a7.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f36f615c92f614a7.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f36f615c92f614a7.hot-update.js"
+    },
+    "main.f36f615c92f614a7.hot-update.json": {
+      "name": "main.f36f615c92f614a7.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f36f615c92f614a7.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f36f615c92f614a7.hot-update.json"
+    },
+    "main.f3c8509a8864bc3d.hot-update.js": {
+      "name": "main.f3c8509a8864bc3d.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f3c8509a8864bc3d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f3c8509a8864bc3d.hot-update.js"
+    },
+    "main.f3c8509a8864bc3d.hot-update.json": {
+      "name": "main.f3c8509a8864bc3d.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f3c8509a8864bc3d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f3c8509a8864bc3d.hot-update.json"
+    },
+    "main.f511eedb08cb185b.hot-update.js": {
+      "name": "main.f511eedb08cb185b.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f511eedb08cb185b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f511eedb08cb185b.hot-update.js"
+    },
+    "main.f511eedb08cb185b.hot-update.json": {
+      "name": "main.f511eedb08cb185b.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f511eedb08cb185b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f511eedb08cb185b.hot-update.json"
+    },
+    "main.f6547cd506816e6d.hot-update.js": {
+      "name": "main.f6547cd506816e6d.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f6547cd506816e6d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f6547cd506816e6d.hot-update.js"
+    },
+    "main.f6547cd506816e6d.hot-update.json": {
+      "name": "main.f6547cd506816e6d.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f6547cd506816e6d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f6547cd506816e6d.hot-update.json"
+    },
+    "main.f787225caa260038.hot-update.js": {
+      "name": "main.f787225caa260038.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f787225caa260038.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f787225caa260038.hot-update.js"
+    },
+    "main.f787225caa260038.hot-update.json": {
+      "name": "main.f787225caa260038.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f787225caa260038.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f787225caa260038.hot-update.json"
+    },
+    "main.f896406899aaac47.hot-update.js": {
+      "name": "main.f896406899aaac47.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f896406899aaac47.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f896406899aaac47.hot-update.js"
+    },
+    "main.f896406899aaac47.hot-update.json": {
+      "name": "main.f896406899aaac47.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f896406899aaac47.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f896406899aaac47.hot-update.json"
+    },
+    "main.f9f3f8da1fdf8e1d.hot-update.js": {
+      "name": "main.f9f3f8da1fdf8e1d.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f9f3f8da1fdf8e1d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f9f3f8da1fdf8e1d.hot-update.js"
+    },
+    "main.f9f3f8da1fdf8e1d.hot-update.json": {
+      "name": "main.f9f3f8da1fdf8e1d.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.f9f3f8da1fdf8e1d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f9f3f8da1fdf8e1d.hot-update.json"
+    },
+    "main.fa9e5ce0b7d524c5.hot-update.js": {
+      "name": "main.fa9e5ce0b7d524c5.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.fa9e5ce0b7d524c5.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.fa9e5ce0b7d524c5.hot-update.js"
+    },
+    "main.fa9e5ce0b7d524c5.hot-update.json": {
+      "name": "main.fa9e5ce0b7d524c5.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.fa9e5ce0b7d524c5.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.fa9e5ce0b7d524c5.hot-update.json"
+    },
+    "main.fab92186df9f89c5.hot-update.js": {
+      "name": "main.fab92186df9f89c5.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.fab92186df9f89c5.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.fab92186df9f89c5.hot-update.js"
+    },
+    "main.fab92186df9f89c5.hot-update.json": {
+      "name": "main.fab92186df9f89c5.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.fab92186df9f89c5.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.fab92186df9f89c5.hot-update.json"
+    },
+    "main.fd9ab489fda76bb8.hot-update.js": {
+      "name": "main.fd9ab489fda76bb8.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.fd9ab489fda76bb8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.fd9ab489fda76bb8.hot-update.js"
+    },
+    "main.fd9ab489fda76bb8.hot-update.json": {
+      "name": "main.fd9ab489fda76bb8.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.fd9ab489fda76bb8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.fd9ab489fda76bb8.hot-update.json"
+    },
+    "main.ff3097d1b18f1046.hot-update.js": {
+      "name": "main.ff3097d1b18f1046.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ff3097d1b18f1046.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.ff3097d1b18f1046.hot-update.js"
+    },
+    "main.ff3097d1b18f1046.hot-update.json": {
+      "name": "main.ff3097d1b18f1046.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.ff3097d1b18f1046.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.ff3097d1b18f1046.hot-update.json"
     },
     "main.html": {
       "name": "main.html",
-      "path": "C:\\Users\\poltj\\Desktop\\proj3\\BrowserGame\\vue-bg\\dist\\main.html",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.html",
       "publicPath": "http://0.0.0.0:8080/main.html"
     }
   },
   "chunks": {
     "main": [
-      "js/main.js"
+      "js/main.js",
+      "main.d63173db806d3785.hot-update.js"
     ]
   },
-  "publicPath": "http://0.0.0.0:8080/"
+  "publicPath": "http://0.0.0.0:8080/",
+  "error": "ModuleBuildError",
+  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/src/components/Ranking.vue: Unexpected keyword 'return'. (7:8)\n\n   5 |     data() {\n   6 |         const charactersInPage = 5,\n>  7 |         return {\n     |         ^\n   8 |             charactersInPage,\n   9 |             nCharacters: charactersInPage,\n  10 |             characters: [],\n    at instantiate (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:653:32)\n    at constructor (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:947:12)\n    at JSXParserMixin.raise (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:3271:19)\n    at JSXParserMixin.checkReservedWord (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12061:12)\n    at JSXParserMixin.parseIdentifierName (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12048:12)\n    at JSXParserMixin.parseIdentifier (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12023:23)\n    at JSXParserMixin.parseBindingAtom (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:7368:17)\n    at JSXParserMixin.parseVarId (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13226:21)\n    at JSXParserMixin.parseVar (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13200:12)\n    at JSXParserMixin.parseVarStatement (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13040:10)\n    at JSXParserMixin.parseStatementContent (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12637:23)\n    at JSXParserMixin.parseStatementLike (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12557:17)\n    at JSXParserMixin.parseStatementListItem (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12537:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13129:61)\n    at JSXParserMixin.parseBlockBody (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13122:10)\n    at JSXParserMixin.parseBlock (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13110:10)\n    at JSXParserMixin.parseFunctionBody (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11932:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11918:10)\n    at JSXParserMixin.parseMethod (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11876:31)\n    at JSXParserMixin.parseObjectMethod (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11775:19)\n    at JSXParserMixin.parseObjPropValue (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11808:23)\n    at JSXParserMixin.parsePropertyDefinition (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11742:17)\n    at JSXParserMixin.parseObjectLike (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11657:21)\n    at JSXParserMixin.parseExprAtom (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11167:23)\n    at JSXParserMixin.parseExprAtom (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:7008:20)\n    at JSXParserMixin.parseExprSubscripts (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10880:23)\n    at JSXParserMixin.parseUpdate (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10863:21)\n    at JSXParserMixin.parseMaybeUnary (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10839:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10677:61)\n    at JSXParserMixin.parseExprOps (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10682:23)\n    at JSXParserMixin.parseMaybeConditional (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10659:23)\n    at JSXParserMixin.parseMaybeAssign (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10620:21)\n    at /home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10590:39\n    at JSXParserMixin.allowInAnd (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12260:16)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10590:17)\n    at JSXParserMixin.parseExportDefaultExpression (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13771:22)\n    at JSXParserMixin.parseExport (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13676:25)\n    at JSXParserMixin.parseStatementContent (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12669:27)\n    at JSXParserMixin.parseStatementLike (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12557:17)\n    at JSXParserMixin.parseModuleItem (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12534:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13129:36)\n    at JSXParserMixin.parseBlockBody (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13122:10)\n    at JSXParserMixin.parseProgram (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12445:10)\n    at JSXParserMixin.parseTopLevel (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12435:25)\n    at JSXParserMixin.parse (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:14258:10)\n    at parse (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:14278:26)\n    at parser (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/core/lib/parser/index.js:41:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/node_modules/@babel/core/lib/transformation/normalize-file.js:64:38)\n    at normalizeFile.next (<anonymous>)"
 }

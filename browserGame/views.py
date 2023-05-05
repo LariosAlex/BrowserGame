@@ -98,3 +98,6 @@ def landing(request):
 
     return HttpResponse(h_dif_time[0])
  """
+
+def ranking(request):
+    return render(request, 'browserGame/ranking.html')
