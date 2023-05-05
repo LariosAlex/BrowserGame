@@ -13,5 +13,5 @@ urlpatterns = [
     path('reset/done/', auth_views.PasswordResetCompleteView.as_view(), name='password_reset_complete'),
     path('', views.landing, name='landingPage'),
     path('landing', views.landing, name='landing'),
-    path('activate_cron/', views.activate_cron, name='activate_cron'),
+    #path('activate_cron/', views.activate_cron, name='activate_cron'),
 ]
