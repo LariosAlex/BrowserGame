@@ -4,7 +4,7 @@
       "builder": "NIXPACKS"
     },
     "deploy": {
-      "startCommand": "python3 manage.py migrate && python3 manage.py collectstatic --noinput && gunicorn mysite.wsgi",
+      "startCommand": "pip install -r requirements.txt && python3 manage.py migrate && python3 manage.py collectstatic --noinput && gunicorn mysite.wsgi",
       "restartPolicyType": "ON_FAILURE",
       "restartPolicyMaxRetries": 10
     }
