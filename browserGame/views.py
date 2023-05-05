@@ -79,12 +79,11 @@ def landing(request):
     }
     return render(request, 'browserGame/landing.html', context)
 
-def activate_cron(request):
-
-    cur_season=Character.objects.last().season
-    dif_time = timezone.make_aware(datetime.now(), timezone.get_default_timezone()) - Season.objects.get(id=str(cur_season)).last_datetime_recharge
+""" def activate_cron(request):
+    season = Season.objects.latest("id")
+    dif_time = timezone.make_aware(datetime.now(), timezone.get_default_timezone()) - season.last_datetime_recharge
     h_dif_time = str(dif_time).split(':')
-    if int(h_dif_time[0]) >= 1:
+    if int(h_dif_time) >= 1:
         for i in Character.objects.all():
             if i.life > 0:
                 if i.level*10 - i.mana > i.level*int(h_dif_time[0]):
@@ -97,4 +96,5 @@ def activate_cron(request):
         a.last_datetime_recharge = timezone.make_aware(datetime.now(), timezone.get_default_timezone())
         a.save()
 
-    return HttpResponse('Cron activated!')
+    return HttpResponse(h_dif_time[0])
+ """

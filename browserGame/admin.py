@@ -21,6 +21,7 @@ class UserLogsInline(admin.TabularInline):
     model = Log
     extra = 0
     fields = ['type_log', 'message']
+    readonly_fields = fields
 
 class UserAdmin(admin.ModelAdmin):
     fields = ['username', 'first_name', 'last_name', 'email', 'password', 'last_login']
@@ -32,6 +33,7 @@ class UserAdmin(admin.ModelAdmin):
 
 class LogsAdmin(admin.ModelAdmin):
     list_per_page = 25
+    readonly_fields = [field.name for field in Log._meta.get_fields()]
 
 admin.site.register(User, UserAdmin)
 admin.site.register(Season)
