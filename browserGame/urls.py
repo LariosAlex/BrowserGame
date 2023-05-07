@@ -15,5 +15,5 @@ urlpatterns = [
     #path('activate_cron/', views.activate_cron, name='activate_cron'),
     path('ranking', views.ranking, name='landing'),
 
-    path('api/getRanking', api.getRanking, name='getRanking'),
+    path('api/getRanking/', api.getRanking, name='getRanking'),
 ]

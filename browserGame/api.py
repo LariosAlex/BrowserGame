@@ -10,6 +10,5 @@ def getRanking(request):
     season = Season.objects.latest("id")
     characters = list(Character.objects.filter(season=season).order_by('-level', '-exp').values())
     return JsonResponse({
-            "status": "OK",
-            "characters": characters,
-        }, safe=False)
+        "characters": characters,
+    }, safe=False)

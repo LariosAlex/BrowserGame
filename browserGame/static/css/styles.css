@@ -140,3 +140,9 @@ body{
 .ranking-table td {
     background-color: #d5c7a5;
 }
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
