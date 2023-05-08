@@ -5,52 +5,9 @@
   <div id="infoCharacter" style="text-align: center;" data="{{ page_data }}">
     {% render_bundle 'main' %}
   </div>
-  <table class="action-table">
-      <thead>
-          <tr>
-          <th colspan="3"><h2>ACCIONS</h2></th>
-          </tr>
-      </thead>
-      <thead>
-          <tr>
-          <th>TIPUS</th>
-          <th>OBJECTIU</th>
-          <th>ATAC</th>
-          </tr>
-      </thead>
-      <tbody>
-          {% for action in actions %}
-          <tr>
-              <td>{{ action.action.category }}</td>
-              <td>{{ action.target }}</td>
-              <td>{{ action.action.name }}</td>
-          </tr>
-          {% endfor %}
-      </tbody>
-  </table>
-  <table class="ranking-table">
-      <thead>
-          <tr>
-          <th colspan="3"><h2>RANKING</h2></th>
-          </tr>
-      </thead>
-      <thead>
-          <tr>
-          <th>USUARI</th>
-          <th>PERSONATGE</th>
-          <th>NIVELL</th>
-          </tr>
-      </thead>
-      <tbody>
-          {% for character in characters %}
-          <tr>
-              <td>{{ character.user }}</td>
-              <td>{{ character.nickname }}</td>
-              <td>{{ character.level }}</td>
-          </tr>
-          {% endfor %}
-      </tbody>
-  </table>
+  <div id="actionsCharacter" style="text-align: center;" data="{{ page_data }}">
+    {% render_bundle 'main' %}
+  </div>
 {% else %}
 <table  class="infoSeason-table">
     <thead>

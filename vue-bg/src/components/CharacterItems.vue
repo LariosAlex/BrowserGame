@@ -1,5 +1,4 @@
 <template>
-    <h3>{{ characterLogged }}</h3>
 <table class = "infoSeason-table" v-if="!loadingCharacter">
     <thead>
           <tr>
@@ -29,6 +28,13 @@
       </tr>
     </tbody>
   </table>
+  <table class="infoSeason-table" v-else>
+      <thead>
+          <tr>
+          <th colspan="3"><h2>CARREGANT ACCIONS</h2></th>
+          </tr>
+      </thead>
+    </table>
 </template>
 <script>
 export default {
@@ -40,8 +46,7 @@ export default {
     }
   },
   methods: {
-
-    async getCharacterItems() {
+    getCharacterItems: async function() {
       try {
         const response = await fetch(`/api/getCharacter/`+this.character.characterLogged.id);
         const data = await response.json();
@@ -55,7 +60,11 @@ export default {
   },
   mounted() {
     this.character = JSON.parse(document.getElementById('infoCharacter').getAttribute('data') || '{}');
-    this.getCharacterItems()
+    this.getCharacterItems();
+    setInterval(() => {
+      this.character = JSON.parse(document.getElementById('infoCharacter').getAttribute('data') || '{}');
+      this.getCharacterItems();
+    }, 5000)
   },
 }
 </script>

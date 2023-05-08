@@ -1,6 +1,6 @@
 <template>
   <div>
-    <table class='ranking-table' v-if="!loadingCharacters">
+    <table class='ranking-table table-auto' v-if="!loadingCharacters">
       <thead>
         <tr>
           <th colspan="4"><h2>RANKING</h2></th>
@@ -17,7 +17,7 @@
       <tbody>
         <tr v-for="(character, index) in pageCharacters" :key="character.id">
           <td>{{ (parseInt(this.currentPage) * this.charactersPerPage) - (this.charactersPerPage - index - 1)}}</td>
-          <td>{{ character.user_id }}</td>
+          <td>{{ character.user__username }}</td>
           <td>{{ character.nickname }}</td>
           <td>{{ character.level }}</td>
         </tr>
