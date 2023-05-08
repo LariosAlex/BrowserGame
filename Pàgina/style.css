@@ -1,0 +1,303 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+}
+  
+button {
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.image {
+    display: none;
+}
+
+.a_escupinada {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0.5;
+    z-index: 2;
+    animation: growAndFade 1.2s linear forwards;
+}
+  
+@keyframes growAndFade {
+    0% {
+      transform: translate(-135%,40%) scale(0);
+    }
+    30% {
+      transform: translate(-50%,-77%) scale(0.5);
+    }
+    100% {
+      transform: translate(-50%,-77%) scale(1.5);
+    }
+}
+
+.a_cowboy1 {
+  position: absolute;
+  width: 35%;
+  top: 7%;
+  left: 32%;
+  z-index: 1;
+}
+
+.a_bota {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 7%;
+  left: 20%;
+  z-index: 1;
+  animation: rotar 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotar {
+  0% {
+    transform: translateX(-50%) rotate(0) scale(1);
+  }
+  50% {
+    transform: translateX(0%) rotate(270deg) scale(0.66);
+  }
+  100% {
+    transform: translateX(50%) rotate(540deg) scale(0.33);
+  }
+}
+
+.a_cowboy2 {
+  position: absolute;
+  top: 15%;
+  left: 58%;
+}
+
+.a_sang2 {
+  position: absolute;
+  width: 12%;
+  top: 19%;
+  left: 59%;
+  z-index: 3;
+  opacity: 0;
+  display: block;
+  animation: aparecer 1s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aparecer {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.a_revolver {
+  position: absolute;
+  width: 23%;
+  top: 45%;
+  left: 20%;
+  z-index: 2;
+  animation: left_to_right 1.3s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes left_to_right {
+  0% {
+
+  }
+  95% {
+    transform: translateX(180%);
+  }
+  100% {
+    transform: translateX(180%) rotate(20deg);
+  }
+}
+
+.a_cowboy3 {
+  position: absolute;
+  width: 23%;
+  top: 5%;
+  left: 65%;
+  z-index: 1;
+  animation: right_to_left 1.3s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes right_to_left {
+  0% {
+
+  }
+  90% {
+    transform: translateX(-215%);
+  }
+  100% {
+    transform: translateX(-215%);
+  }
+}
+
+.a_sang3 {
+  position: absolute;
+  width: 18%;
+  top: 16%;
+  left: 18%;
+  z-index: 3;
+  opacity: 0;
+  display: block;
+  animation: aparecer 1.3s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+.a_locomotora {
+  position: absolute;
+  width: 12%;
+  top: 30%;
+  left: 44%;
+  z-index: 1;
+  animation: acercarse 1.5s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+.a_cowboy4 {
+  position: absolute;
+  width: 40%;
+  top: 10%;
+  left: 30%;
+  z-index: 2;
+  animation: alejarse 1.5s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+.a_sang4 {
+  position: absolute;
+  width: 80%;
+  top: -10%;
+  left: 5%;
+  z-index: 3;
+  opacity: 0;
+  display: block;
+  animation: aparecer 1.5s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aparecer {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes acercarse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(6);
+  }
+}
+
+@keyframes alejarse {
+  0% {
+    transform: scale(2);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+.a_body {
+  animation: green-layer 3s linear forwards;
+}
+
+@keyframes green-layer {
+  0% {
+      background-color: rgba(0, 255, 0, 0.2); /* color de fondo transparente */
+  }
+  50% {
+      background-color: rgba(0, 255, 0, 0.5); /* color de fondo verde claro y opaco */
+  }
+  100% {
+      background-color: rgba(0, 255, 0, 0.2); /* color de fondo verde claro y opaco */
+  }
+}
+
+.a_fletxa1 {
+  position: absolute;
+  top: 80%;
+  left: 8%;
+  width: 3%;
+  z-index: -1;
+  animation-name: amunt 2s linear forwards;
+}
+.a_fletxa2 {
+  position: absolute;
+  top: 80%;
+  left: 24%;
+  width: 2%;
+  z-index: -1;
+  animation-name: amunt 1.5s linear forwards;
+}
+.a_fletxa3 {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  width: 4%;
+  z-index: -1;
+  animation-name: amunt 2.5s linear forwards;
+}
+.a_fletxa4 {
+  position: absolute;
+  top: 80%;
+  left: 56%;
+  width: 3%;
+  z-index: -1;
+  animation-name: amunt 2s linear forwards;
+}
+.a_fletxa5 {
+  position: absolute;
+  top: 80%;
+  left: 72%;
+  width: 2%;
+  z-index: -1;
+  animation-name: amunt 3s linear forwards;
+}
+.a_fletxa6 {
+  position: absolute;
+  top: 80%;
+  left: 88%;
+  width: 3%;
+  z-index: -1;
+  animation-name: amunt 2.5s linear forwards;
+}
+
+@keyframes amunt {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(500%);
+    opacity: 0.3;
+  }
+}
+  
