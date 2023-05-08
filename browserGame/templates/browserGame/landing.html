@@ -1,35 +1,10 @@
 {% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
 {% block content %}
 {% if user.is_authenticated and character %}
-  <table class = "infoSeason-table">
-    <thead>
-      <tr>
-        <th colspan="2"><h2>TEMPORADA {{ season.id }}</h2></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>NOM</td>
-        <td>{{ character.nickname }}</td>
-      </tr>
-      <tr>
-        <td>LVL</td>
-        <td>{{ character.level }}</td>
-      </tr>
-      <tr>
-        <td>EXP</td>
-        <td>{{ character.exp }}</td>
-      </tr>
-      <tr>
-        <td>MANA</td>
-        <td>{{ character.mana }}</td>
-      </tr>
-      <tr>
-        <td>VIDA</td>
-        <td>{{ character.life }}</td>
-      </tr>
-    </tbody>
-  </table>
+  <div id="infoCharacter" style="text-align: center;" data="{{ page_data }}">
+    {% render_bundle 'main' %}
+  </div>
   <table class="action-table">
       <thead>
           <tr>

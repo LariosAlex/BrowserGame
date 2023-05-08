@@ -1,6 +1,11 @@
 <template>
   <div>
-    <table class='ranking-table'>
+    <table class='ranking-table' v-if="!loadingCharacters">
+      <thead>
+        <tr>
+          <th colspan="4"><h2>RANKING</h2></th>
+        </tr>
+      </thead>
       <thead>
         <tr>
           <th>Posició</th>
@@ -11,8 +16,8 @@
       </thead>
       <tbody>
         <tr v-for="(character, index) in pageCharacters" :key="character.id">
-          <td>{{ index + 1 }}</td>
-          <td>{{ character.user }}</td>
+          <td>{{ (parseInt(this.currentPage) * this.charactersPerPage) - (this.charactersPerPage - index - 1)}}</td>
+          <td>{{ character.user_id }}</td>
           <td>{{ character.nickname }}</td>
           <td>{{ character.level }}</td>
         </tr>
@@ -54,7 +59,7 @@ export default {
     const url = new URL(window.location.href);
     if (!url.searchParams.has('p') || !url.searchParams.has('c')){
       url.searchParams.append('p', 1);
-      url.searchParams.append('c', 2);
+      url.searchParams.append('c', 100);
     }
     window.history.replaceState({state: ''}, '', url);
     return {

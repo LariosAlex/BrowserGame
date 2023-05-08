@@ -16,4 +16,5 @@ urlpatterns = [
     path('ranking', views.ranking, name='landing'),
 
     path('api/getRanking/', api.getRanking, name='getRanking'),
+    path('api/getCharacter/<int:character_id>', api.getCharacter, name='getCharacter'),
 ]

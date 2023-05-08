@@ -1,3 +1,6 @@
+import json
+
+from django.forms import model_to_dict
 from .forms import *
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import *
@@ -75,7 +78,8 @@ def landing(request):
         'season': active_season,
         'character' : character,
         'actions' : actions,
-        'characters': characters
+        'characters': characters,
+        'page_data' : json.dumps({"characterLogged":  model_to_dict(character)})
     }
     return render(request, 'browserGame/landing.html', context)
 
