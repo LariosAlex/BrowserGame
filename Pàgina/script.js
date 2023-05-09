@@ -33,8 +33,16 @@ var tabac5 = document.getElementById("tabac5");
 var pot_tabac = document.getElementById("pot_tabac");
 var levelup = document.getElementById("levelup");
 var kill = document.getElementById("kill");
-var whisky_ple = document.getElementById("whisky_ple");
-var whisky_buit = document.getElementById("whisky_buit");
+var whisky_ple1 = document.getElementById("whisky_ple1");
+var whisky_buit1 = document.getElementById("whisky_buit1");
+var whisky_ple2 = document.getElementById("whisky_ple2");
+var whisky_buit2 = document.getElementById("whisky_buit2");
+var whisky_ple3 = document.getElementById("whisky_ple3");
+var whisky_buit3 = document.getElementById("whisky_buit3");
+var whisky_ple4 = document.getElementById("whisky_ple4");
+var whisky_buit4 = document.getElementById("whisky_buit4");
+var whisky_ple5 = document.getElementById("whisky_ple5");
+var whisky_buit5 = document.getElementById("whisky_buit5");
 
 button1.addEventListener("click", function() {
     v_div.style.display = "block";
@@ -95,9 +103,17 @@ button5.addEventListener("click", function() {
 button6.addEventListener("click", function() {
     v_div.style.display = "block";
     v_div.classList.add("a_div");
-    whisky_ple.style.display = "block";
-    whisky_ple.classList.add("a_whisky_ple");
-    whisky_buit.classList.add("a_whisky_buit");
+    whisky_ple1.style.display = "block";
+    whisky_ple1.classList.add("a_whisky_ple1");
+    whisky_buit1.classList.add("a_whisky_buit1");
+    whisky_ple2.classList.add("a_whisky_ple2");
+    whisky_buit2.classList.add("a_whisky_buit2");
+    whisky_ple3.classList.add("a_whisky_ple3");
+    whisky_buit3.classList.add("a_whisky_buit3");
+    whisky_ple4.classList.add("a_whisky_ple4");
+    whisky_buit4.classList.add("a_whisky_buit4");
+    whisky_ple5.classList.add("a_whisky_ple5");
+    whisky_buit5.classList.add("a_whisky_buit5");
 });
 
 button8.addEventListener("click", function() {

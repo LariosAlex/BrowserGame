@@ -543,5 +543,307 @@ button {
     opacity: 0;
   }
 }
-  
-  
+
+.a_whisky_ple1 {
+  position: absolute;
+  width: 9%;
+  top: 20%;
+  left: 46%;
+  z-index: 10;
+  animation: buidar1 4s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buidar1 {
+  0% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.a_whisky_ple2 {
+  display:block;
+  position: absolute;
+  width: 9%;
+  top: 21%;
+  left: 40%;
+  z-index: 20;
+  animation: buidar2 4s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buidar2 {
+  0% {
+    opacity: 0;
+  }
+  59% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  64% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.a_whisky_ple3 {
+  display:block;
+  position: absolute;
+  width: 9%;
+  top: 17%;
+  left: 43%;
+  z-index: 30;
+  animation: buidar3 4s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buidar3 {
+  0% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.a_whisky_ple4 {
+  display:block;
+  position: absolute;
+  width: 9%;
+  top: 14%;
+  left: 38%;
+  z-index: 40;
+  animation: buidar4 4s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buidar4 {
+  0% {
+    opacity: 0;
+  }
+  79% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.a_whisky_ple5 {
+  display:block;
+  position: absolute;
+  width: 9%;
+  top: 15%;
+  left: 49%;
+  z-index: 50;
+  animation: buidar5 4s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buidar5 {
+  0% {
+    opacity: 0;
+  }
+  89% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  94% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.a_whisky_buit1 {
+  display: block;
+  position: absolute;
+  width: 9%;
+  top: 20%;
+  left: 46%;
+  z-index: 10;
+  animation: caure1 4s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes caure1 {
+  0% {
+    opacity: 0;
+  }
+  19% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  39% {
+    opacity: 1;
+    transform: translate(0) rotate(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(100%,50%) rotate(110deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(100%,50%) rotate(110deg);
+  }
+}
+
+.a_whisky_buit2 {
+  display: block;
+  position: absolute;
+  width: 9%;
+  top: 21%;
+  left: 40%;
+  z-index: 20;
+  animation: caure2 4s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes caure2 {
+  0% {
+    opacity: 0;
+  }
+  64% {
+    opacity: 0;
+    transform: translate(0) rotate(0);
+  }
+  65% {
+    opacity: 1;
+    transform: translate(-100%,50%) rotate(-95deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-100%,50%) rotate(-95deg);
+  }
+}
+
+.a_whisky_buit3 {
+  display: block;
+  position: absolute;
+  width: 9%;
+  top: 17%;
+  left: 43%;
+  z-index: 30;
+  animation: caure3 4s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes caure3 {
+  0% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 0;
+    transform: translate(0) rotate(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(70%,60%) rotate(140deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(70%,60%) rotate(140deg);
+  }
+}
+
+.a_whisky_buit4 {
+  display: block;
+  position: absolute;
+  width: 9%;
+  top: 14%;
+  left: 38%;
+  z-index: 40;
+  animation: caure4 4s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes caure4 {
+  0% {
+    opacity: 0;
+  }
+  84% {
+    opacity: 0;
+    transform: translate(0) rotate(0);
+  }
+  85% {
+    opacity: 1;
+    transform: translate(-100%,50%) rotate(-95deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-100%,50%) rotate(-95deg);
+  }
+}
+
+.a_whisky_buit5 {
+  display: block;
+  position: absolute;
+  width: 9%;
+  top: 15%;
+  left: 49%;
+  z-index: 50;
+  animation: caure5 4s linear forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes caure5 {
+  0% {
+    opacity: 0;
+  }
+  94% {
+    opacity: 0;
+    transform: translate(0) rotate(0);
+  }
+  95% {
+    opacity: 1;
+    transform: translate(-100%,50%) rotate(-95deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-100%,50%) rotate(-95deg);
+  }
+}
