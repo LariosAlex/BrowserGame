@@ -19,26 +19,14 @@ var fletxa3 = document.getElementById("fletxa3");
 var fletxa4 = document.getElementById("fletxa4");
 var fletxa5 = document.getElementById("fletxa5");
 var fletxa6 = document.getElementById("fletxa6");
-var skull1 = document.getElementById("skull1");
-var skull2 = document.getElementById("skull2");
-var skull3 = document.getElementById("skull3");
-var skull4 = document.getElementById("skull4");
-var skull5 = document.getElementById("skull5");
-var skull6 = document.getElementById("skull6");
 var tabac1 = document.getElementById("tabac1");
 var tabac2 = document.getElementById("tabac2");
 var tabac3 = document.getElementById("tabac3");
 var tabac4 = document.getElementById("tabac4");
 var tabac5 = document.getElementById("tabac5");
 var pot_tabac = document.getElementById("pot_tabac");
-var levelup = document.getElementById("levelup");
-var kill = document.getElementById("kill");
-var whisky_ple = document.getElementById("whisky_ple");
-var whisky_buit = document.getElementById("whisky_buit");
 
 button1.addEventListener("click", function() {
-    v_div.style.display = "block";
-    v_div.classList.add("a_div");
     escupinada.style.display = "block";
     escupinada.classList.add("a_escupinada");
     cowboy.style.display = "block";
@@ -46,8 +34,6 @@ button1.addEventListener("click", function() {
 });
 
 button2.addEventListener("click", function() {
-    v_div.style.display = "block";
-    v_div.classList.add("a_div");
     bota.style.display = "block";
     bota.classList.add("a_bota");
     cowboy.style.display = "block";
@@ -56,8 +42,6 @@ button2.addEventListener("click", function() {
 });
 
 button3.addEventListener("click", function() {
-    v_div.style.display = "block";
-    v_div.classList.add("a_div");
     revolver.style.display = "block";
     revolver.classList.add("a_revolver");
     cowboy.style.display = "block";
@@ -66,8 +50,6 @@ button3.addEventListener("click", function() {
 });
 
 button4.addEventListener("click", function() {
-    v_div.style.display = "block";
-    v_div.classList.add("a_div");
     locomotora.style.display = "block";
     locomotora.classList.add("a_locomotora");
     cowboy.style.display = "block";
@@ -76,8 +58,6 @@ button4.addEventListener("click", function() {
 });
 
 button5.addEventListener("click", function() {
-    v_div.style.display = "block";
-    v_div.classList.add("a_div");
     tabac1.style.display = "block";
     tabac1.classList.add("a_tabac1");
     tabac2.style.display = "block";
@@ -92,40 +72,7 @@ button5.addEventListener("click", function() {
     pot_tabac.classList.add("a_pot_tabac");
 });
 
-button6.addEventListener("click", function() {
-    v_div.style.display = "block";
-    v_div.classList.add("a_div");
-    whisky_ple.style.display = "block";
-    whisky_ple.classList.add("a_whisky_ple");
-    whisky_buit.classList.add("a_whisky_buit");
-});
-
-button8.addEventListener("click", function() {
-    v_div.style.display = "block";
-    v_div.classList.add("a_div");
-    v_div.classList.add("purple_div");
-    kill.style.display = "block";
-    kill.classList.add("a_kill");
-    skull1.style.display = "block";
-    skull1.classList.add("a_skull1");
-    skull2.style.display = "block";
-    skull2.classList.add("a_skull2");
-    skull3.style.display = "block";
-    skull3.classList.add("a_skull3");
-    skull4.style.display = "block";
-    skull4.classList.add("a_skull4");
-    skull5.style.display = "block";
-    skull5.classList.add("a_skull5");
-    skull6.style.display = "block";
-    skull6.classList.add("a_skull6");
-});
-
 button9.addEventListener("click", function() {
-    v_div.style.display = "block";
-    v_div.classList.add("a_div");
-    v_div.classList.add("green_div");
-    levelup.style.display = "block";
-    levelup.classList.add("a_levelup");
     fletxa1.style.display = "block";
     fletxa1.classList.add("a_fletxa1");
     fletxa2.style.display = "block";
@@ -138,4 +85,5 @@ button9.addEventListener("click", function() {
     fletxa5.classList.add("a_fletxa5");
     fletxa6.style.display = "block";
     fletxa6.classList.add("a_fletxa6");
+    v_div.classList.add("a_div");
 });
