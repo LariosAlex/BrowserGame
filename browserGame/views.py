@@ -61,25 +61,20 @@ def landing(request):
     active_season = Season.objects.latest("id")
     save_log('SQL', 'Season.objects.latest("id")', request)
     save_log('SQL', str(Season.objects.latest("id")), request)
-    actions = None
-    characters = Character.objects.filter(season=active_season).order_by('-level', '-exp')
-    save_log('SQL', "Character.objects.filter(season=active_season).order_by('-level', '-exp')", request)
-    save_log('SQL', str(characters), request)
     save_log('INF', 'Accediendo a vista', request)
     if request.user.is_authenticated:
         try:
             character = Character.objects.get(season=active_season, user=request.user)
-            actions = ActionLog.objects.filter(performer=character)
         except ObjectDoesNotExist:
             character = None
     else:
         character = None
+    
+    page_data = {"characterLogged": model_to_dict(character)} if character else {}
     context = {
         'season': active_season,
         'character' : character,
-        'actions' : actions,
-        'characters': characters,
-        'page_data' : json.dumps({"characterLogged":  model_to_dict(character)})
+        'page_data' : json.dumps(page_data)
     }
     return render(request, 'browserGame/landing.html', context)
 

@@ -19,3 +19,4 @@ def save_log(type_log, message, request):
         line= tb.lineno
     )
     log.save()
+    

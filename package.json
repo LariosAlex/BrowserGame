@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.17",
-    "jquery": "^3.6.4"
+    "jquery": "^3.6.4",
+    "mitt": "^3.0.0"
   }
 }

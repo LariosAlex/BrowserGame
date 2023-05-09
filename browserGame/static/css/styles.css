@@ -104,13 +104,6 @@ body{
 }
 
 
-.ranking-table {
-    width: 80%;
-    margin: 0 auto;
-    table-layout: fixed;
-    border-collapse: collapse;
-}
-
 .action-table th,
 .action-table td,
 .ranking-table th,
@@ -122,11 +115,11 @@ body{
     border: 1px solid black;
 }
 
-.infoSeason-table, .ranking-table, .action-table{
-    width: 100%;
+.infoSeason-table table, .ranking-table table, .action-table table{
+    width: 90%;
     table-layout: fixed;
     border-collapse: collapse;
-    margin-bottom: 5%;
+    margin: 5% auto;
 }
 
 .action-table th,
