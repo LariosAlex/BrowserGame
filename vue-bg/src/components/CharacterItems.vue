@@ -1,5 +1,5 @@
 <template>
-<table class = "infoSeason-table table-auto" v-if="!loadingCharacter">
+  <table class = "infoSeason-table table-auto w-full p-5" v-if="!loadingCharacter">
     <thead>
           <tr>
           <th colspan="2"><h2>TEMPORADA {{ character.season }}</h2></th>
@@ -61,15 +61,17 @@
       </tr>
     </tbody>
   </table>
-  <table class="infoSeason-table" v-else>
+  <table class="infoSeason-table table-auto w-full" v-else>
       <thead>
           <tr>
-          <th colspan="3"><h2>CARREGANT ACCIONS</h2></th>
+          <th colspan="3"><h2>CARREGANT PERSONATGE</h2></th>
           </tr>
       </thead>
     </table>
+    <ActionButtons @recargar-items="rechargeItems" />
 </template>
 <script>
+import ActionButtons from './ActionsButtons.vue'
 export default {
   name: 'CharacterItems',
   data() {
@@ -78,6 +80,7 @@ export default {
       loadingCharacter: true,
     }
   },
+  components:{ActionButtons, },
   methods: {
     getCharacterItems: async function() {
       try {
@@ -90,13 +93,15 @@ export default {
         this.loadingCharacter = false;
       }
     },
-  },
-  mounted() {
-    this.character = JSON.parse(document.getElementById('infoCharacter').getAttribute('data'));
-    this.getCharacterItems();
-    setInterval(() => {
+    rechargeItems(){
       this.character = JSON.parse(document.getElementById('infoCharacter').getAttribute('data'));
       this.getCharacterItems();
+    }
+  },
+  mounted() {
+    this.rechargeItems()
+    setInterval(() => {
+      this.rechargeItems();
     }, 30000)
   },
 }

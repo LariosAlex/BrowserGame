@@ -1,5 +1,5 @@
 <template>
-    <table class="action-table table-auto" v-if="!loadingActions">
+    <table class="action-table table-auto w-full" v-if="!loadingActions">
       <thead>
           <tr>
             <th colspan="5"><h2>ACCIONS</h2></th>
@@ -32,7 +32,7 @@
           </tr>
       </tbody>
     </table>
-    <table class="action-table" v-else>
+    <table class="action-table table-auto w-full" v-else>
       <thead>
           <tr>
           <th colspan="3"><h2>CARREGANT ACCIONS</h2></th>
@@ -54,7 +54,7 @@
     
         getCharacterActions: async function() {
           try {
-            const response = await fetch(`/api/getActions/`+this.character.characterLogged.id);
+            const response = await fetch(`/api/getActionsLog/`+this.character.characterLogged.id);
             const data = await response.json();
             this.actions = data.actions;
             this.loadingActions = false;

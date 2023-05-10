@@ -18,6 +18,10 @@ def getCharacter(request, character_id):
     character_dict = model_to_dict(character)
     return JsonResponse({"character": character_dict})
 
-def getActions(request, character_id):
+def getActionsLog(request, character_id):
     actions = list(ActionLog.objects.filter(Q(target=character_id) | Q(performer=character_id)).order_by('-datetime').distinct().values('action__category', 'action__name', 'target__nickname', 'performer__nickname', 'succeed')[:25])    
+    return JsonResponse({"actions": actions})
+
+def getActions(request):
+    actions = list(Action.objects.all().order_by('category').values())
     return JsonResponse({"actions": actions})

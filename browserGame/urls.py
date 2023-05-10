@@ -17,5 +17,6 @@ urlpatterns = [
 
     path('api/getRanking/', api.getRanking, name='getRanking'),
     path('api/getCharacter/<int:character_id>', api.getCharacter, name='getCharacter'),
-    path('api/getActions/<int:character_id>', api.getActions, name='getActions'),
+    path('api/getActionsLog/<int:character_id>', api.getActionsLog, name='getActionsLog'),
+    path('api/getActions/', api.getActions, name='getActions'),
 ]
