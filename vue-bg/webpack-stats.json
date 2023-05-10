@@ -21,6 +21,26 @@
       "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/js/main.js",
       "publicPath": "http://0.0.0.0:8080/js/main.js"
     },
+    "main.30a1783afe67fbd6.hot-update.js": {
+      "name": "main.30a1783afe67fbd6.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.30a1783afe67fbd6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.30a1783afe67fbd6.hot-update.js"
+    },
+    "main.30a1783afe67fbd6.hot-update.json": {
+      "name": "main.30a1783afe67fbd6.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.30a1783afe67fbd6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.30a1783afe67fbd6.hot-update.json"
+    },
+    "main.cb15689638b5c098.hot-update.js": {
+      "name": "main.cb15689638b5c098.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.cb15689638b5c098.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.cb15689638b5c098.hot-update.js"
+    },
+    "main.cb15689638b5c098.hot-update.json": {
+      "name": "main.cb15689638b5c098.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.cb15689638b5c098.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.cb15689638b5c098.hot-update.json"
+    },
     "main.html": {
       "name": "main.html",
       "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.html",
@@ -32,5 +52,7 @@
       "js/main.js"
     ]
   },
-  "publicPath": "http://0.0.0.0:8080/"
+  "publicPath": "http://0.0.0.0:8080/",
+  "error": "ModuleParseError",
+  "message": "Module parse failed: Unexpected token (1:1)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> {% extends 'base.html' %}\n| {% load render_bundle from webpack_loader %}\n| {% block content %}"
 }

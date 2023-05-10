@@ -1,0 +1,317 @@
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+{% block content %}
+{% if user.is_authenticated and character %}
+<form id="formAction">
+    <label for="action_type">Tipo de accion:</label>
+    <select name="action_type" id="action_type">
+        <option value="">---</option>
+        <option value="OFF">Atac</option>
+        <option value="DEF">Defensa</option>
+        <option value="PAS">Neutra</option>
+    </select>
+    <label for="action">Accion:</label>
+    <select name="action" id="action_selector">
+        <option value="">---</option>
+        {% for action in actions %}
+        {% if action.cost <= character.mana %}
+        <option value="{{ action.id }}" data-hp="{{ action.health }}" data-xp="{{ action.exp }}" data-dp="{{ action.damage }}" data-ep="{{ action.exp }}" data-cost="{{ action.cost }}" data-mp="{{ action.mana }}" data-rate="{{ action.success_rate }}" class="{{ action.category }}" style="display: none;">{{ action.name }}</option>
+        {% endif %}
+        {% endfor %}
+    </select>
+    <label for="character_target">Objetivo:</label>
+    <select name="character_target" id="character_target" disabled>
+    <option value="">---</option>
+{% for character_item in characters %}
+        {% if character_item.id != character.id %}
+    <option value="{{ character_item.id }}" data-hp="{{ character_item.life }}" data-lvl="{{ character_item.level }}" class="level{{ character_item.level }}">{{ character_item.nickname }} Nivel ({{ character_item.level }})</option>
+    {% endif %}
+{% endfor %}
+</select>
+{% csrf_token %}
+<button onclick="enviarAccionForm()" type="button" id="submitButton" disabled>Enviar</button>
+<p id="text_about_action"></p>
+</form>
+  <table class = "infoSeason-table">
+    <thead>
+      <tr>
+        <th colspan="2"><h2>TEMPORADA {{ season.id }}</h2></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NOM</td>
+        <td id="nameCharacter">{{ character.nickname }}</td>
+      </tr>
+      <tr>
+        <td>LVL</td>
+        <td id="lvlCharacter">{{ character.level }}</td>
+      </tr>
+      <tr>
+        <td>EXP</td>
+        <td id="expCharacter">{{ character.exp }}</td>
+      </tr>
+      <tr>
+        <td>MANA</td>
+        <td id="manaCharacter">{{ character.mana }}</td>
+      </tr>
+      <tr>
+        <td>VIDA</td>
+        <td id="hpCharacter">{{ character.life }}</td>
+      </tr>
+    </tbody>
+  </table>
+{% else %}
+<h1>403 Forbiden</h1>
+{% endif %}
+<script>
+    var manaCharacter = '{{ character.mana }}';
+    var hpCharacter = {{ character.life }};
+    var nameCharacter = `{{ character.nickname }}`
+    var lvlCharacter = {{ character.level }};
+    var expCharacter = {{ character.exp }};
+    $('#action_selector').val('')
+    $('#action_type').val('')
+    $('#character_target').val('')
+    $('#character_target').prop('disabled', true);
+    $('#action_type').on('change',function(){
+        $('#action_selector').val('')
+        $('#action_selector option').css('display','none');
+        let action_type = $('#action_type').val();
+        if(action_type!=""){
+            $('#action_selector option.'+action_type).css('display','block');
+            if(action_type != "OFF"){
+                $('#character_target').prop('disabled', true);
+                $('#character_target').val('')
+            }else{
+                $('#character_target').prop('disabled', false);
+            }
+            $('#submitButton').prop('disabled', true);
+        }else{
+            $('#character_target').prop('disabled', true);
+            $('#xcharacter_target').val('')
+            $('#action_selector').val('')
+            $('#submitButton').prop('disabled', true);
+        }
+        $('#action_selector option').each(function(){
+            if(parseInt(this.dataset.cost) > manaCharacter){
+                console.log(manaCharacter)
+                $(this).css('display','none')
+            }
+        });
+        $('#text_about_action').text('')
+    })
+
+    var nivelPersonajeUsuario = `{{ character.level }}`
+    $('#character_target').on('change', function(){
+        if($('#character_target').val() != "" && $('#action_selector').val() != ""){
+            $('#submitButton').prop('disabled', false);
+        }
+    })
+    $('#character_target option').each(function() {
+    var classAttr = $(this).attr('class');
+    if (classAttr) {
+        var nivelPersonaje = classAttr.match(/level(\d+)/)[1];
+        if(nivelPersonaje != nivelPersonajeUsuario && nivelPersonaje + 1 != nivelPersonajeUsuario && nivelPersonaje - 1 != nivelPersonajeUsuario){
+            $(this).hide();
+        }
+    }
+    });
+    $('#action_selector').on('change',function(){
+        let action_type = $('#action_type').val();
+        if(action_type!="OFF"){
+            $('#submitButton').prop('disabled', false);
+        }else{
+            if($('#character_target').val() != "" && $('#action_selector').val() != ""){
+                $('#submitButton').prop('disabled', false);
+            }
+        }
+        let actionSelected = $('#action_selector').val()
+        let tipoAccion = $('#action_type').val()
+        var hpValue = document.querySelector('#action_selector').selectedOptions[0].dataset.hp;
+        var dpValue = document.querySelector('#action_selector').selectedOptions[0].dataset.dp;
+        var mpValue = document.querySelector('#action_selector').selectedOptions[0].dataset.mp;
+        var costValue = document.querySelector('#action_selector').selectedOptions[0].dataset.cost;
+        var epValue = document.querySelector('#action_selector').selectedOptions[0].dataset.ep;
+        var rateValue = document.querySelector('#action_selector ').selectedOptions[0].dataset.rate;
+        if(tipoAccion == 'DEF'){
+            $('#text_about_action').text("Esta acció et cura "+hpValue+" punts, costa: "+costValue+" punts de maná y té un "+rateValue+"% de probabilitats d'encertar");
+        }else if(tipoAccion == 'PAS'){
+            $('#text_about_action').text("Esta acció et genera "+epValue+" punts d'experiencia, i costa: "+costValue+" punts de maná y té un "+rateValue+"% de probabilitats d'encertar");
+        }else if(tipoAccion == 'OFF'){
+            $('#text_about_action').text("Esta acció ataca a l'oponent i li resta "+dpValue+" punts de vida, costa: "+costValue+" punts de maná y té un "+rateValue+"% de probabilitats d'encertar");
+        }
+        
+    })
+    $.ajaxSetup({
+        headers: {
+            'X-CSRFToken': $('input[name="csrfmiddlewaretoken"]').val()
+        }
+    });
+
+    function realizarAccion(idCharacter, idAction, idCharacterTarget, success){
+        
+        var costValue = document.querySelector('#action_selector').selectedOptions[0].dataset.cost;
+        let newExp = parseInt(expCharacter);
+        manaCharacter = (parseInt(manaCharacter) - parseInt(costValue));
+        if(success == 1){
+            if($('#action_type').val() == "OFF"){
+                var targetHp = document.querySelector('#character_target').selectedOptions[0].dataset.hp;
+                var targetLvl = document.querySelector('#character_target').selectedOptions[0].dataset.lvl;
+                var dpValue = document.querySelector('#action_selector').selectedOptions[0].dataset.dp;
+                var expObtained = dpValue;
+                let nivellMinim = 0;
+                let nivellMaxim = 0;
+                if(targetHp<=dpValue){
+                    if(lvlCharacter > targetLvl){
+                        nivellMinim = targetLvl;
+                        nivellMaxim = lvlCharacter;
+                    }else if(lvlCharacter < targetLvl){
+                        nivellMinim = lvlCharacter;
+                        nivellMaxim = targetLvl;
+                    }else if(lvlCharacter == targetLvl){
+                        nivellMaxim = lvlCharacter;
+                        nivellMinim = lvlCharacter;
+                    }
+                    console.log(lvlCharacter>targetLvl)
+                    console.log(targetLvl)
+                    console.log('Matas al enemigo')
+                    let randomNum = Math.floor(Math.random() * (nivellMaxim - nivellMinim + 1)) + nivellMinim;
+                    let expExtra = randomNum*2;
+                    expObtained += expExtra;
+                }
+                newExp += expObtained;
+                limiteXp = lvlCharacter*10;
+                if(newExp > limiteXp){
+                    newExp = 0;
+                    lvlCharacter += 1;
+                    console.log('Subes de nivel')
+                }
+                let data = {
+                    character_id: idCharacterTarget,
+                    csrfmiddlewaretoken: $('input[name="csrfmiddlewaretoken"]').eq(0).val(),
+                    damage: dpValue
+                };
+                console.log(data)
+                $.ajax({
+                    url: '/damage_character/',
+                    type: 'POST',
+                    data: data,
+                    success: function(response) {
+                        console.log('La acción ha sido guardada en la base de datos (matar usuario)');
+                    },
+                    error: function(response){
+                        console.log(response);
+                    }
+                });
+            }else if($('#action_type').val() == "DEF"){
+                var hpValue = parseInt(document.querySelector('#action_selector').selectedOptions[0].dataset.hp);
+                hpCharacter += hpValue;
+                let limitHp = lvlCharacter*10;
+                if(hpCharacter>limitHp){
+                    hpCharacter = limitHp;
+                }
+            }else{
+                var experienceAction = document.querySelector('#action_selector').selectedOptions[0].dataset.xp;
+                newExp += parseInt(experienceAction);
+                let limitExp = lvlCharacter*10;
+                if(newExp>=limitExp){
+                    lvlCharacter +=1;
+                    newExp = 0;
+                }
+            }
+        }
+        let data = {
+            character_id: idCharacter,
+            sendMana:manaCharacter,
+            health:hpCharacter,
+            experience:newExp,
+            level:lvlCharacter,
+            csrfmiddlewaretoken: $('input[name="csrfmiddlewaretoken"]').eq(0).val(),
+            damage: dpValue
+        };
+        $.ajax({
+            url: '/update_character/',
+            type: 'POST',
+            data: data,
+            success: function(response) {
+                console.log('La acción ha sido guardada en la base de datos (actualizar usuario)');
+            },
+            error: function(response){
+                console.log(response);
+            }
+        });
+        $('#action_selector').val('')
+        valorActual = $('#action_type').val()        
+        $('#action_selector option').each(function(){
+            if(this.dataset.cost > manaCharacter){
+                $(this).css('display','none')
+            }
+        });
+        
+        $('#action_type').val(valorActual)
+        $('#action_type').trigger('change')
+        $('#manaCharacter').text(manaCharacter)
+        $('#lvlCharacter').text(lvlCharacter)
+        $('#expCharacter').text(newExp)
+        $('#submitButton').prop('disabled', true);
+        $('#text_about_action').text('')
+
+    }
+
+    function enviarAccionForm(){
+        let idCharacter = `{{ character.id }}`;
+        let idAction = $('#action_selector').val();
+        let idCharacterTarget = $('#character_target').val();
+        let porcentajeExito = document.querySelector('#action_selector ').selectedOptions[0].dataset.rate;
+        let tipoAccion = $('#action_type')
+        enviarAccion(idCharacter,idAction,idCharacterTarget,porcentajeExito,tipoAccion)
+    }
+
+    function enviarAccion(idCharacter,idAction,idCharacterTarget,porcentajeExito,tipoAccion){
+        let randomNum = Math.floor(Math.random() * 100) + 1;
+        if(tipoAccion == 'DEF' && hpCharacter == lvlCharacter*10){
+            console.log('Ya tens el maxim de vida posible, tria un altra opcio')
+        }else{
+            if (randomNum <= porcentajeExito) {
+            console.log('La acción ha tenido éxito');
+            
+            if(idCharacterTarget != ""){
+                console.log('El personaje con id: '+idCharacter+' ha realizado la accion con id: '+ idAction + ' al personaje con id: '+idCharacterTarget)
+            }else{
+                console.log('El personaje con id: '+idCharacter+' ha realizado la accion con id: '+ idAction)
+                idCharacterTarget = idCharacter
+            }
+
+            realizarAccion(idCharacter, idAction, idCharacterTarget, 1);
+
+        } else {
+            realizarAccion(idCharacter, idAction, idCharacterTarget, 0);
+            console.log('La acción ha fallado');
+        }
+        let data = {
+            performer_id: idCharacter,
+            target_id: idCharacterTarget,
+            action_id: idAction,
+            succeed: randomNum <= porcentajeExito,
+            csrfmiddlewaretoken: $('input[name="csrfmiddlewaretoken"]').eq(0).val()
+        };
+        console.log(data)
+
+        $.ajax({
+            url: '/save_action/',
+            type: 'POST',
+            data: data,
+            success: function(response) {
+                console.log('La acción ha sido guardada en la base de datos');
+            },
+            error: function(response){
+            console.log(response);
+            }
+        });
+        }
+        
+
+    }
+</script>
+{% endblock %}
