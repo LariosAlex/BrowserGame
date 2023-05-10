@@ -1,81 +1,13 @@
 {% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
 {% block content %}
 {% if user.is_authenticated and character %}
-  <table class = "infoSeason-table">
-    <thead>
-      <tr>
-        <th colspan="2"><h2>TEMPORADA {{ season.id }}</h2></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>NOM</td>
-        <td>{{ character.nickname }}</td>
-      </tr>
-      <tr>
-        <td>LVL</td>
-        <td>{{ character.level }}</td>
-      </tr>
-      <tr>
-        <td>EXP</td>
-        <td>{{ character.exp }}</td>
-      </tr>
-      <tr>
-        <td>MANA</td>
-        <td>{{ character.mana }}</td>
-      </tr>
-      <tr>
-        <td>VIDA</td>
-        <td>{{ character.life }}</td>
-      </tr>
-    </tbody>
-  </table>
-  <table class="action-table">
-      <thead>
-          <tr>
-          <th colspan="3"><h2>ACCIONS</h2></th>
-          </tr>
-      </thead>
-      <thead>
-          <tr>
-          <th>TIPUS</th>
-          <th>OBJECTIU</th>
-          <th>ATAC</th>
-          </tr>
-      </thead>
-      <tbody>
-          {% for action in actions %}
-          <tr>
-              <td>{{ action.action.category }}</td>
-              <td>{{ action.target }}</td>
-              <td>{{ action.action.name }}</td>
-          </tr>
-          {% endfor %}
-      </tbody>
-  </table>
-  <table class="ranking-table">
-      <thead>
-          <tr>
-          <th colspan="3"><h2>RANKING</h2></th>
-          </tr>
-      </thead>
-      <thead>
-          <tr>
-          <th>USUARI</th>
-          <th>PERSONATGE</th>
-          <th>NIVELL</th>
-          </tr>
-      </thead>
-      <tbody>
-          {% for character in characters %}
-          <tr>
-              <td>{{ character.user }}</td>
-              <td>{{ character.nickname }}</td>
-              <td>{{ character.level }}</td>
-          </tr>
-          {% endfor %}
-      </tbody>
-  </table>
+  <div id="infoCharacter" style="text-align: center;" data="{{ page_data }}">
+    {% render_bundle 'main' %}
+  </div>
+  <div id="actionsCharacter" style="text-align: center;" data="{{ page_data }}">
+    {% render_bundle 'main' %}
+  </div>
 {% else %}
 <table  class="infoSeason-table">
     <thead>
@@ -101,5 +33,20 @@
       </tr>
     </tbody>
   </table>
+  <div class="w-9/12 mx-auto bg-[#bfae8b] rounded-md border border-pink-950 p-4 m-5">
+    <p class="text-sm font-medium text-brown-800">
+      En aquest joc, els jugadors tindran l'oportunitat d'enfrontar-se a intensos duels mà a mà en una sorra plena de pols. Cada jugador tindrà un límit denergia, el que significa que hauràs de planificar acuradament els teus moviments per sortir victoriós.
+    </p>
+    <p class="text-sm font-medium text-brown-800">
+      Trieu el vostre personatge entre una àmplia selecció de personatges de l'oest, cadascun amb habilitats úniques i diferents combinacions d'atacs per triar. Des del ràpid i astut pistoler fins al robust i poderós forjat, cada personatge té la seva pròpia estratègia de lluita i estil de joc.
+    </p>
+    <p class="text-sm font-medium text-brown-800">
+      Prepara't per enfrontar-te als teus oponents en intensos duels, construeix la teva estratègia i converteix-te en el millor lluitador del Salvatge Oest. 1, 2, 3, 4, BANG!</p>
+    </p>
+  </div>
+  <div class="flex justify-around">
+    <a href="./login" class="text-white bg-gray-700 hover:bg-yellow-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" style="color: white;">El meu ranxo</a>
+    <a href="./register" class="text-white bg-gray-700 hover:bg-yellow-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" style="color: white;">Tren a l'Oest </a>
+  </div>
 {% endif %}
 {% endblock %}

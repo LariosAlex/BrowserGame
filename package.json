@@ -1,5 +1,10 @@
 {
   "devDependencies": {
     "webpack-bundle-tracker": "^1.8.1"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.0.17",
+    "jquery": "^3.6.4",
+    "mitt": "^3.0.0"
   }
 }

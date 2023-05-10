@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load render_bundle from webpack_loader %}
+{% block content %}
+	<div id="ranking" style="text-align: center;">
+		{% render_bundle 'main' %}
+	</div>
+{% endblock %}
