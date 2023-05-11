@@ -191,3 +191,6 @@ def activate_cron(request):
 
 def ranking(request):
     return render(request, 'browserGame/ranking.html')
+
+def animations(request):
+    return render(request, 'browserGame/animations.html')

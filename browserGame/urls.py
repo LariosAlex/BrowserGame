@@ -16,9 +16,9 @@ urlpatterns = [
     path('save_action/', views.save_action, name='save_action'),
     path('damage_character/', views.damage_character, name='damage_character'),
     path('update_character/', views.update_character, name='update_character'),
-
     path('activate_cron/', views.activate_cron, name='activate_cron'),
     path('ranking', views.ranking, name='landing'),
+    path('animations', views.animations, name='animations'),
 
     path('api/getRanking/', api.getRanking, name='getRanking'),
     path('api/getCharacter/<int:character_id>', api.getCharacter, name='getCharacter'),
