@@ -1,4 +1,5 @@
-button1.addEventListener("click", function() {
+
+function boton1(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     escupinada.style.display = "block";
@@ -6,7 +7,7 @@ button1.addEventListener("click", function() {
     cowboy.style.display = "block";
     cowboy.classList.add("a_cowboy1");
     setTimeout(rev_b1, 2300);
-});
+}
 
 function rev_b1() {
     i_div.style.display = "none";
@@ -16,8 +17,7 @@ function rev_b1() {
     cowboy.style.display = "none";
     cowboy.classList.remove("a_cowboy1");
 };
-
-button2.addEventListener("click", function() {
+function boton2(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     bota.style.display = "block";
@@ -26,7 +26,8 @@ button2.addEventListener("click", function() {
     cowboy.classList.add("a_cowboy2");
     sang.classList.add("a_sang2");
     setTimeout(rev_b2, 1800);
-});
+}
+
 
 function rev_b2() {
     i_div.style.display = "none";
@@ -38,7 +39,7 @@ function rev_b2() {
     sang.classList.remove("a_sang2");
 };
 
-button3.addEventListener("click", function() {
+function boton3(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     revolver.style.display = "block";
@@ -47,19 +48,8 @@ button3.addEventListener("click", function() {
     cowboy.classList.add("a_cowboy3");
     sang.classList.add("a_sang3");
     setTimeout(rev_b3, 2100);
-});
-
-function rev_b3() {
-    i_div.style.display = "none";
-    i_div.classList.remove("a_div");
-    revolver.style.display = "none";
-    revolver.classList.remove("a_revolver");
-    cowboy.style.display = "none";
-    cowboy.classList.remove("a_cowboy3");
-    sang.classList.remove("a_sang3");
-};
-
-button4.addEventListener("click", function() {
+}
+function boton4(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     locomotora.style.display = "block";
@@ -68,19 +58,8 @@ button4.addEventListener("click", function() {
     cowboy.classList.add("a_cowboy4");
     sang.classList.add("a_sang4");
     setTimeout(rev_b4, 2300);
-});
-
-function rev_b4() {
-    i_div.style.display = "none";
-    i_div.classList.remove("a_div");
-    locomotora.style.display = "none";
-    locomotora.classList.remove("a_locomotora");
-    cowboy.style.display = "none";
-    cowboy.classList.remove("a_cowboy4");
-    sang.classList.remove("a_sang4");
-};
-
-button5.addEventListener("click", function() {
+}
+function boton5(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     tabac1.style.display = "block";
@@ -96,26 +75,8 @@ button5.addEventListener("click", function() {
     pot_tabac.style.display = "block";
     pot_tabac.classList.add("a_pot_tabac");
     setTimeout(rev_b5, 3500);
-});
-
-function rev_b5() {
-    i_div.style.display = "none";
-    i_div.classList.remove("a_div");
-    tabac1.style.display = "none";
-    tabac1.classList.remove("a_tabac1");
-    tabac2.style.display = "none";
-    tabac2.classList.remove("a_tabac2");
-    tabac3.style.display = "none";
-    tabac3.classList.remove("a_tabac3");
-    tabac4.style.display = "none";
-    tabac4.classList.remove("a_tabac4");
-    tabac5.style.display = "none";
-    tabac5.classList.remove("a_tabac5");
-    pot_tabac.style.display = "none";
-    pot_tabac.classList.remove("a_pot_tabac");
-};
-
-button6.addEventListener("click", function() {
+}
+function boton6(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     whisky_ple1.style.display = "block";
@@ -130,25 +91,8 @@ button6.addEventListener("click", function() {
     whisky_ple5.classList.add("a_whisky_ple5");
     whisky_buit5.classList.add("a_whisky_buit5");
     setTimeout(rev_b6, 4500);
-});
-
-function rev_b6() {
-    i_div.style.display = "none";
-    i_div.classList.remove("a_div");
-    whisky_ple1.style.display = "none";
-    whisky_ple1.classList.remove("a_whisky_ple1");
-    whisky_buit1.classList.remove("a_whisky_buit1");
-    whisky_ple2.classList.remove("a_whisky_ple2");
-    whisky_buit2.classList.remove("a_whisky_buit2");
-    whisky_ple3.classList.remove("a_whisky_ple3");
-    whisky_buit3.classList.remove("a_whisky_buit3");
-    whisky_ple4.classList.remove("a_whisky_ple4");
-    whisky_buit4.classList.remove("a_whisky_buit4");
-    whisky_ple5.classList.remove("a_whisky_ple5");
-    whisky_buit5.classList.remove("a_whisky_buit5");
-};
-
-button7.addEventListener("click", function() {
+}
+function boton7(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     bota_e.style.display = "block";
@@ -156,18 +100,8 @@ button7.addEventListener("click", function() {
     bota_d.style.display = "block";
     bota_d.classList.add("a_bota_d");
     setTimeout(rev_b7, 2000);
-});
-
-function rev_b7() {
-    i_div.style.display = "none";
-    i_div.classList.remove("a_div");
-    bota_e.style.display = "none";
-    bota_e.classList.remove("a_bota_e");
-    bota_d.style.display = "none";
-    bota_d.classList.remove("a_bota_d");
-};
-
-button8.addEventListener("click", function() {
+}
+function boton8(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     i_div.classList.add("red_div");
@@ -186,7 +120,91 @@ button8.addEventListener("click", function() {
     skull6.style.display = "block";
     skull6.classList.add("a_skull6");
     setTimeout(rev_b8, 2500);
-});
+}
+function boton9(){
+    i_div.style.display = "block";
+    i_div.classList.add("a_div");
+    i_div.classList.add("green_div");
+    levelup.style.display = "block";
+    levelup.classList.add("a_levelup");
+    fletxa1.style.display = "block";
+    fletxa1.classList.add("a_fletxa1");
+    fletxa2.style.display = "block";
+    fletxa2.classList.add("a_fletxa2");
+    fletxa3.style.display = "block";
+    fletxa3.classList.add("a_fletxa3");
+    fletxa4.style.display = "block";
+    fletxa4.classList.add("a_fletxa4");
+    fletxa5.style.display = "block";
+    fletxa5.classList.add("a_fletxa5");
+    fletxa6.style.display = "block";
+    fletxa6.classList.add("a_fletxa6");
+    setTimeout(rev_b9, 2500);
+}
+
+
+
+function rev_b3() {
+    i_div.style.display = "none";
+    i_div.classList.remove("a_div");
+    revolver.style.display = "none";
+    revolver.classList.remove("a_revolver");
+    cowboy.style.display = "none";
+    cowboy.classList.remove("a_cowboy3");
+    sang.classList.remove("a_sang3");
+};
+
+function rev_b4() {
+    i_div.style.display = "none";
+    i_div.classList.remove("a_div");
+    locomotora.style.display = "none";
+    locomotora.classList.remove("a_locomotora");
+    cowboy.style.display = "none";
+    cowboy.classList.remove("a_cowboy4");
+    sang.classList.remove("a_sang4");
+};
+
+function rev_b5() {
+    i_div.style.display = "none";
+    i_div.classList.remove("a_div");
+    tabac1.style.display = "none";
+    tabac1.classList.remove("a_tabac1");
+    tabac2.style.display = "none";
+    tabac2.classList.remove("a_tabac2");
+    tabac3.style.display = "none";
+    tabac3.classList.remove("a_tabac3");
+    tabac4.style.display = "none";
+    tabac4.classList.remove("a_tabac4");
+    tabac5.style.display = "none";
+    tabac5.classList.remove("a_tabac5");
+    pot_tabac.style.display = "none";
+    pot_tabac.classList.remove("a_pot_tabac");
+};
+
+function rev_b6() {
+    i_div.style.display = "none";
+    i_div.classList.remove("a_div");
+    whisky_ple1.style.display = "none";
+    whisky_ple1.classList.remove("a_whisky_ple1");
+    whisky_buit1.classList.remove("a_whisky_buit1");
+    whisky_ple2.classList.remove("a_whisky_ple2");
+    whisky_buit2.classList.remove("a_whisky_buit2");
+    whisky_ple3.classList.remove("a_whisky_ple3");
+    whisky_buit3.classList.remove("a_whisky_buit3");
+    whisky_ple4.classList.remove("a_whisky_ple4");
+    whisky_buit4.classList.remove("a_whisky_buit4");
+    whisky_ple5.classList.remove("a_whisky_ple5");
+    whisky_buit5.classList.remove("a_whisky_buit5");
+};
+
+function rev_b7() {
+    i_div.style.display = "none";
+    i_div.classList.remove("a_div");
+    bota_e.style.display = "none";
+    bota_e.classList.remove("a_bota_e");
+    bota_d.style.display = "none";
+    bota_d.classList.remove("a_bota_d");
+};
 
 function rev_b8() {
     i_div.style.display = "none";
@@ -207,27 +225,6 @@ function rev_b8() {
     skull6.style.display = "none";
     skull6.classList.remove("a_skull6");
 };
-
-button9.addEventListener("click", function() {
-    i_div.style.display = "block";
-    i_div.classList.add("a_div");
-    i_div.classList.add("green_div");
-    levelup.style.display = "block";
-    levelup.classList.add("a_levelup");
-    fletxa1.style.display = "block";
-    fletxa1.classList.add("a_fletxa1");
-    fletxa2.style.display = "block";
-    fletxa2.classList.add("a_fletxa2");
-    fletxa3.style.display = "block";
-    fletxa3.classList.add("a_fletxa3");
-    fletxa4.style.display = "block";
-    fletxa4.classList.add("a_fletxa4");
-    fletxa5.style.display = "block";
-    fletxa5.classList.add("a_fletxa5");
-    fletxa6.style.display = "block";
-    fletxa6.classList.add("a_fletxa6");
-    setTimeout(rev_b9, 2500);
-});
 
 function rev_b9() {
     i_div.style.display = "none";
