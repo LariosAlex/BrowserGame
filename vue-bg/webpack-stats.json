@@ -3,47 +3,27 @@
   "assets": {
     "favicon.ico": {
       "name": "favicon.ico",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/favicon.ico",
+      "path": "C:\\Users\\poltj\\Desktop\\proj3\\BrowserGame\\vue-bg\\dist\\favicon.ico",
       "publicPath": "http://0.0.0.0:8080/favicon.ico"
     },
     "img/revolver.302a0042.png": {
       "name": "img/revolver.302a0042.png",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/img/revolver.302a0042.png",
+      "path": "C:\\Users\\poltj\\Desktop\\proj3\\BrowserGame\\vue-bg\\dist\\img\\revolver.302a0042.png",
       "publicPath": "http://0.0.0.0:8080/img/revolver.302a0042.png"
     },
     "index.html": {
       "name": "index.html",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/index.html",
+      "path": "C:\\Users\\poltj\\Desktop\\proj3\\BrowserGame\\vue-bg\\dist\\index.html",
       "publicPath": "http://0.0.0.0:8080/index.html"
     },
     "js/main.js": {
       "name": "js/main.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/js/main.js",
+      "path": "C:\\Users\\poltj\\Desktop\\proj3\\BrowserGame\\vue-bg\\dist\\js\\main.js",
       "publicPath": "http://0.0.0.0:8080/js/main.js"
-    },
-    "main.30a1783afe67fbd6.hot-update.js": {
-      "name": "main.30a1783afe67fbd6.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.30a1783afe67fbd6.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.30a1783afe67fbd6.hot-update.js"
-    },
-    "main.30a1783afe67fbd6.hot-update.json": {
-      "name": "main.30a1783afe67fbd6.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.30a1783afe67fbd6.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.30a1783afe67fbd6.hot-update.json"
-    },
-    "main.cb15689638b5c098.hot-update.js": {
-      "name": "main.cb15689638b5c098.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.cb15689638b5c098.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.cb15689638b5c098.hot-update.js"
-    },
-    "main.cb15689638b5c098.hot-update.json": {
-      "name": "main.cb15689638b5c098.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.cb15689638b5c098.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.cb15689638b5c098.hot-update.json"
     },
     "main.html": {
       "name": "main.html",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.html",
+      "path": "C:\\Users\\poltj\\Desktop\\proj3\\BrowserGame\\vue-bg\\dist\\main.html",
       "publicPath": "http://0.0.0.0:8080/main.html"
     }
   },
@@ -52,7 +32,5 @@
       "js/main.js"
     ]
   },
-  "publicPath": "http://0.0.0.0:8080/",
-  "error": "ModuleParseError",
-  "message": "Module parse failed: Unexpected token (1:1)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> {% extends 'base.html' %}\n| {% load render_bundle from webpack_loader %}\n| {% block content %}"
+  "publicPath": "http://0.0.0.0:8080/"
 }

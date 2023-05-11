@@ -16,6 +16,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 from django.core import serializers
 from django.http import JsonResponse
+from datetime import timedelta
 
 def vue(request):
     context = {}
@@ -171,21 +172,21 @@ def update_character(request):
 def activate_cron(request):
     season = Season.objects.latest("id")
     dif_time = timezone.make_aware(datetime.now(), timezone.get_default_timezone()) - season.last_datetime_recharge
-    h_dif_time = str(dif_time).split(':')
-    if int(h_dif_time) >= 1:
+    h_dif_time = dif_time.total_seconds()//3600
+    if h_dif_time >= 1:
         for i in Character.objects.all():
             if i.life > 0:
-                if i.level*10 - i.mana > i.level*int(h_dif_time[0]):
-                    i.mana += i.level*int(h_dif_time[0])
+                if i.level*10 - i.mana > i.level*h_dif_time:
+                    i.mana += i.level*h_dif_time
                 else:
                     i.mana = i.level*10
                 i.save()
         
-        a = Season.objects.get(id=str(cur_season))
+        a = Season.objects.get(id=str(season))
         a.last_datetime_recharge = timezone.make_aware(datetime.now(), timezone.get_default_timezone())
         a.save()
 
-    return HttpResponse(h_dif_time[0])
+    return HttpResponse('Cron activated!')
  
 
 def ranking(request):
