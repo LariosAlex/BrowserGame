@@ -149,8 +149,117 @@
         }
     });
 
-    function realizarAccion(idCharacter, idAction, idCharacterTarget, success){
+    /*function realizarAccion(idCharacter, idAction, idCharacterTarget, success){
+
+        // Establecer el token CSRF en la solicitud AJAX
+        $.ajaxSetup({
+            headers: {
+            'X-CSRFToken': $('input[name="csrfmiddlewaretoken"]').val()
+        }
+        });
+        var character = getCharacter(idCharacter);
+        var character_target = getCharacter(idCharacterTarget);
+        var action = getAction(idAction);
         
+        Promise.all([character,character_target, action]).then(function(responses) {
+            var characterData = responses[0];
+            var characterTargetData = responses[1];
+            var actionData = responses[2];
+
+            var expCharacter = characterData.character.exp;
+            var manaCharacter = characterData.character.mana;
+            var levelCharacter = characterData.character.level;
+            var lifeCharacter = characterData.character.life;
+            var lifeCharacterTarget = characterTargetData.character.life;
+            var levelCharacterTarget = characterTargetData.character.level;
+
+            var costValue = actionData.action.cost;
+            var damage = actionData.action.damage;
+            var health = actionData.action.health;
+            var exp = actionData.action.exp;
+            var actionType = actionData.action.category;
+
+            var newExp = 0;
+            var newMana = manaCharacter - costValue;
+            if(actionType == "OFF"){
+                var expObtained = damage;
+                let nivellMinim = 1;
+                let nivellMaxim = 1;
+                if(lifeCharacterTarget<=damage){
+                    if(lvlCharacter > targetLvl){
+                        nivellMinim = levelCharacter;
+                        nivellMaxim = levelCharacterTarget;
+                    }else if(lvlCharacter < targetLvl){
+                        nivellMinim = levelCharacter;
+                        nivellMaxim = levelCharacterTarget;
+                    }else if(lvlCharacter == targetLvl){
+                        nivellMaxim = levelCharacter;
+                        nivellMinim = levelCharacter;
+                    }
+                    console.log('Matas al enemigo')
+                    let randomNum = Math.floor(Math.random() * (nivellMaxim - nivellMinim + 1)) + nivellMinim;
+                    let expExtra = randomNum*2;
+                    expObtained += expExtra;
+                }
+                newExp += expObtained;
+                limiteXp = levelCharacter*10;
+                if(newExp > limiteXp){
+                    newExp = 0;
+                    levelCharacter += 1;
+                    console.log('Subes de nivel')
+                }
+                let data = {
+                    character_id: idCharacterTarget,
+                    damage: damage
+                };
+                console.log(data)
+                $.ajax({
+                    url: '/damage_character/',
+                    type: 'POST',
+                    data: data,
+                    success: function(response) {
+                        console.log('La acción ha sido guardada en la base de datos (matar usuario)');
+                    },
+                    error: function(response){
+                        console.log(response);
+                    }
+                });
+            }else if($('#action_type').val() == "DEF"){
+                lifeCharacter += health;
+                let limitHp = levelCharacter*10;
+                if(lifeCharacter>limitHp){
+                    lifeCharacter = limitHp;
+                }
+            }else{
+                newExp += exp;
+                let limitExp = lvlCharacter*10;
+                if(newExp>=limitExp){
+                    levelCharacter +=1;
+                    newExp = 0;
+                }
+            }
+            let data = {
+                character_id: idCharacter,
+                sendMana:manaCharacter,
+                health:lifeCharacter,
+                experience:newExp,
+                level:levelCharacter,
+            };
+            $.ajax({
+                url: '/update_character/',
+                type: 'POST',
+                data: data,
+                success: function(response) {
+                    console.log('La acción ha sido guardada en la base de datos (actualizar usuario)');
+                },
+                error: function(response){
+                    console.log(response);
+                }
+            });
+
+        }).catch(function(error) {
+            console.log(error);
+        });
         var costValue = document.querySelector('#action_selector').selectedOptions[0].dataset.cost;
         let newExp = parseInt(expCharacter);
         manaCharacter = (parseInt(manaCharacter) - parseInt(costValue));
@@ -256,8 +365,7 @@
         $('#expCharacter').text(newExp)
         $('#submitButton').prop('disabled', true);
         $('#text_about_action').text('')
-
-    }
+    }*/
 
     function enviarAccionForm(){
         let idCharacter = `{{ character.id }}`;

@@ -19,9 +19,11 @@ urlpatterns = [
     path('activate_cron/', views.activate_cron, name='activate_cron'),
     path('ranking', views.ranking, name='landing'),
     path('animations', views.animations, name='animations'),
+    path('actions/', views.actions, name='actions'),
 
     path('api/getRanking/', api.getRanking, name='getRanking'),
     path('api/getCharacter/<int:character_id>', api.getCharacter, name='getCharacter'),
+    path('api/getAction/<int:action_id>', api.getAction, name='getAction'),
     path('api/getActionsLog/<int:character_id>', api.getActionsLog, name='getActionsLog'),
     path('api/getActions/', api.getActions, name='getActions'),
 ]

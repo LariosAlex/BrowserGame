@@ -245,3 +245,155 @@ function rev_b9() {
     fletxa6.style.display = "none";
     fletxa6.classList.remove("a_fletxa6");
 };
+
+function getCharacter(idCharacter) {
+    console.log('IDCHARACTER:'+idCharacter)
+    return new Promise(function(resolve, reject) {
+      $.ajax({
+        url: 'api/getCharacter/'+idCharacter,
+        type: 'POST',
+        success: function(response) {
+          console.log('El personaje se ha cogido de la base de datos');
+          resolve(response);
+        },
+        error: function(response){
+          reject(response);
+        }
+      });
+    });
+  }
+
+function getAction(idAction) {
+    return new Promise(function(resolve, reject) {
+        $.ajax({
+        url: 'api/getAction/'+idAction,
+        type: 'POST',
+        success: function(response) {
+            console.log('La acción se ha cogido de la base de datos');
+            resolve(response);
+        },
+        error: function(response){
+            reject(response);
+        }
+        });
+    });
+}
+
+function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter, success){
+
+    $.ajaxSetup({
+        headers: {
+        'X-CSRFToken': $('input[name="csrfmiddlewaretoken"]').val()
+    }
+    });
+    if(idCharacterTarget==""){
+        idCharacterTarget = idCharacter
+    }
+    var character = getCharacter(idCharacter);
+    var character_target = getCharacter(idCharacterTarget);
+    var action = getAction(idAction);
+    
+    Promise.all([character,character_target, action]).then(function(responses) {
+        var characterData = responses[0];
+        var characterTargetData = responses[1];
+        var actionData = responses[2];
+
+        var expCharacter = characterData.character.exp;
+        var manaCharacter = characterData.character.mana;
+        var levelCharacter = characterData.character.level;
+        var lifeCharacter = characterData.character.life;
+        var lifeCharacterTarget = characterTargetData.character.life;
+        var levelCharacterTarget = characterTargetData.character.level;
+
+        var costValue = actionData.action.cost;
+        var damage = actionData.action.damage;
+        var health = actionData.action.health;
+        var exp = actionData.action.exp;
+        var actionType = actionData.action.category;
+
+        var newExp = expCharacter;
+        var newMana = manaCharacter - costValue;
+
+        if(success == 1){
+            if(actionType == "OFF"){
+                var expObtained = damage;
+                let nivellMinim = 1;
+                let nivellMaxim = 1;
+                if(lifeCharacterTarget<=damage){
+                    if(lvlCharacter > targetLvl){
+                        nivellMinim = levelCharacter;
+                        nivellMaxim = levelCharacterTarget;
+                    }else if(lvlCharacter < targetLvl){
+                        nivellMinim = levelCharacter;
+                        nivellMaxim = levelCharacterTarget;
+                    }else if(lvlCharacter == targetLvl){
+                        nivellMaxim = levelCharacter;
+                        nivellMinim = levelCharacter;
+                    }
+                    console.log('Matas al enemigo')
+                    let randomNum = Math.floor(Math.random() * (nivellMaxim - nivellMinim + 1)) + nivellMinim;
+                    let expExtra = randomNum*2;
+                    expObtained += expExtra;
+                }
+                newExp += expObtained;
+                limiteXp = levelCharacter*10;
+                if(newExp > limiteXp){
+                    newExp = 0;
+                    levelCharacter += 1;
+                    console.log('Subes de nivel')
+                }
+                let data = {
+                    character_id: idCharacterTarget,
+                    damage: damage
+                };
+                console.log(data)
+                $.ajax({
+                    url: '/damage_character/',
+                    type: 'POST',
+                    data: data,
+                    success: function(response) {
+                        console.log('La acción ha sido guardada en la base de datos (matar usuario)');
+                    },
+                    error: function(response){
+                        console.log(response);
+                    }
+                });
+            }else if(actionType == "DEF"){
+                lifeCharacter += health;
+                let limitHp = levelCharacter*10;
+                if(lifeCharacter>limitHp){
+                    lifeCharacter = limitHp;
+                }
+            }else{
+                newExp += exp;
+                let limitExp = levelCharacter*10;
+                if(newExp>=limitExp){
+                    levelCharacter +=1;
+                    newExp = 0;
+                }
+            }
+        }
+        
+        let data = {
+            character_id: idCharacter,
+            sendMana:newMana,
+            health:lifeCharacter,
+            experience:newExp,
+            level:levelCharacter,
+        };
+        $.ajax({
+            url: '/update_character/',
+            type: 'POST',
+            data: data,
+            success: function(response) {
+                console.log('La acción ha sido guardada en la base de datos (actualizar usuario)');
+            },
+            error: function(response){
+                console.log(response);
+            }
+        });
+
+    }).catch(function(error) {
+        console.log(error);
+    });
+}

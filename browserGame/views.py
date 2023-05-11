@@ -194,3 +194,6 @@ def ranking(request):
 
 def animations(request):
     return render(request, 'browserGame/animations.html')
+
+def actions(request):
+    return render(request, 'browserGame/ataques.html')

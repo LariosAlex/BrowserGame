@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load render_bundle from webpack_loader %}
+{% block content %}
+<body>
+    <main class="container mx-auto my-4">
+        <h2 class="text-lg font-semibold mb-2">Accions</h2>
+        <table class="border border-black">
+            <thead class="bg-yellow-800 text-white text-center">
+                <tr>
+                    <th class="p-2">
+                        Accio
+                    </th>
+                    <th class="p-2">
+                        Categoria
+                    </th>
+                    <th class="p-2">
+                        Cost
+                    </th>
+                    <th class="p-2">
+                        Percentatge 
+                    </th>
+                    <th class="p-2">
+                        Punts d'Experiencia/Vida 
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tbodyAtacs">
+            </tbody>
+        </table>
+    </main>
+    <script>
+        $(document).ready(function() { 
+            function getActions() {
+                $.getJSON("/api/getActions/",function(actions){
+                    actions.actions.forEach(action =>{
+                        $('#tbodyAtacs').append('<tr class="border-b border-black text-center">');
+                        $('#tbodyAtacs').append(`<td class="p-2">`+action.name+`</td>`);
+                        if (action.category =='OFF'){
+                           $('#tbodyAtacs').append(`<td class="p-2">Agressiva</td>`);
+                        }else if (action.category  == 'DEF'){
+                           $('#tbodyAtacs').append(`<td class="p-2">Defensiva</td>`);
+                        }else{
+                           $('#tbodyAtacs').append(`<td class="p-2">Neutral</td>`);
+                        }
+                        
+                        $('#tbodyAtacs').append(`<td class="p-2 text-center">`+action.cost+`</td>`);
+                        $('#tbodyAtacs').append(`<td class="p-2 text-center">`+action.success_rate+`</td>`);
+                        if (action.category =='OFF'){
+                            $('#tbodyAtacs').append(`<td class="p-2 text-center">`+action.damage+`</td>`);
+                        }else if (action.category  == 'DEF'){
+                            $('#tbodyAtacs').append(`<td class="p-2 text-center">`+action.health+`</td>`);
+                        }else{
+                            $('#tbodyAtacs').append(`<td class="p-2 text-center">`+action.exp+`</td>`);
+                        }
+                        $('#tbodyAtacs').append('</tr>');
+                    })
+                });
+            }
+            getActions();
+        });
+    </script>
+</body>
+{% endblock %}
