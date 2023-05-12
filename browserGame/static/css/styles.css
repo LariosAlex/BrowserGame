@@ -1110,27 +1110,24 @@ button {
     left: 0%;
     transform: rotate(0deg);
   }
-  15% {
-    left: 10%;
-  }
   34% {
     left: 30%;
-    transform: rotate(360deg);
+    transform: rotate(720deg);
   }
   35% {
     top:2%;
-    left: 30%;
+    left: 31%;
     transform: rotate(0deg);
   }
-  50% {
+  40% {
     top:0%;
-    left: 50%;
-    transform: rotate(425deg);
+    left: 37%;
+    transform: rotate(270deg);
   }
   60% {
     top:2%;
     left: 75%;
-    transform: rotate(0deg);
+    transform: rotate(-270deg);
   }
   90% {
     top:0%;

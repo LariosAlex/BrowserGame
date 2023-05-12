@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load render_bundle from webpack_loader %}
+{% block content %}
+<body>
+    <main class="container mx-auto my-4">
+        <h2 class="text-lg font-semibold mb-2">Usuari</h2>
+        <table class="border border-black">
+            <thead class="bg-yellow-800 text-white text-center">
+                <tr>
+                    <th class="p-2">
+                        Nom
+                    </th>
+                    <th class="p-2">
+                        Nivell
+                    </th>
+                    <th class="p-2">
+                        Posició Ranking
+                    </th>
+                    <th class="p-2">
+                        Percentatge d'exit a les accions
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tbodyAtacs">
+                <tr>
+                    <td class="p-2">{{character.nickname}}</td>
+                    <td class="p-2">{{character.level}}</td>
+                    <td class="p-2">{{character.ranking}}</td>
+                    <td class="p-2">{{character.success_percentage}}%</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+{% endblock %}
