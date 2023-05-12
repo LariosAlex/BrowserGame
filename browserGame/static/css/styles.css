@@ -1093,3 +1093,98 @@ button {
       transform: rotate(0deg) translate(0%);
   }
 }
+
+.ball {
+  background-image: url('../images/pngwing.com.png');
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 2%;
+  left: 100%;
+  animation: roll 7s linear infinite, spin 2s linear infinite;
+}
+
+@keyframes roll {
+  0% {
+    left: 0%;
+    transform: rotate(0deg);
+  }
+  15% {
+    left: 10%;
+  }
+  34% {
+    left: 30%;
+    transform: rotate(360deg);
+  }
+  35% {
+    top:2%;
+    left: 30%;
+    transform: rotate(0deg);
+  }
+  50% {
+    top:0%;
+    left: 50%;
+    transform: rotate(425deg);
+  }
+  60% {
+    top:2%;
+    left: 75%;
+    transform: rotate(0deg);
+  }
+  90% {
+    top:0%;
+    left: 90%;
+    transform: rotate(270deg);
+  }
+  100% {
+    left: 96%;
+    transform: rotate(360deg);
+  }
+}
+
+#notificaciones {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.notificacion {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 100%;
+  overflow: hidden;
+  transition: opacity .3s ease;
+}
+
+.notificacion.warning {
+  background-color: #ffdf85;
+  color: #333;
+}
+
+.notificacion.info {
+  background-color: #a9d7f7;
+  color: #333;
+}
+
+.notificacion.error {
+  background-color: #ff867e;
+  color: #333;
+}
+
+.notificacion.success {
+  background-color: #b0eacd;
+  color: #333;
+}
