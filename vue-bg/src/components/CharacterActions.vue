@@ -51,12 +51,14 @@
         }
       },
       methods: {
-    
         getCharacterActions: async function() {
           try {
-            const response = await fetch(`/api/getActionsLog/`+this.character.characterLogged.id);
-            const data = await response.json();
-            this.actions = data.actions;
+            const getCharacterLoggedAPI = await fetch('api/getCharacterLogged');
+            const dataCharacterLogged = await getCharacterLoggedAPI.json();
+            this.character = dataCharacterLogged.character
+            const getActionsAPI = await fetch(`/api/getActionsLog/`+this.character.id);
+            const dataActions = await getActionsAPI.json();
+            this.actions = dataActions.actions;
             this.loadingActions = false;
           } catch (error) {
             console.error(error);
@@ -65,9 +67,8 @@
         },
       },
       mounted() {
-        this.character = JSON.parse(document.getElementById('infoCharacter').getAttribute('data'));
         this.getCharacterActions()
-        setInterval(this.getCharacterActions, 30000);
+        setInterval(this.getCharacterActions, 3000);
       },
     }
     </script>

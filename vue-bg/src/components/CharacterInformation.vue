@@ -1,19 +1,6 @@
 <template>
-  <table class = "infoSeason-table table-auto w-full p-5" v-if="!loadingCharacter">
-    <thead>
-          <tr>
-          <th colspan="2"><h2>TEMPORADA {{ character.season }}</h2></th>
-          </tr>
-      </thead>
+  <table class = "infoSeason-table table-auto w-50 p-5" v-if="!loadingCharacter">
     <tbody>
-      <tr>
-        <th>NOM</th>
-        <td>{{ character.nickname }}</td>
-      </tr>
-      <tr>
-        <th>NIVELL</th>
-        <td>{{ character.level }}</td>
-      </tr>
       <tr>
         <td colspan="2">  
           <div class="flex justify-between mb-1">
@@ -61,26 +48,16 @@
       </tr>
     </tbody>
   </table>
-  <table class="infoSeason-table table-auto w-full" v-else>
-      <thead>
-          <tr>
-          <th colspan="3"><h2>CARREGANT PERSONATGE</h2></th>
-          </tr>
-      </thead>
-    </table>
-    <ActionButtons @recargar-items="rechargeItems" />
 </template>
 <script>
-import ActionButtons from './ActionsButtons.vue'
 export default {
-  name: 'CharacterItems',
+  name: 'CharacterInfo',
   data() {
     return {
       character: null,
       loadingCharacter: true,
     }
   },
-  components:{ActionButtons, },
   methods: {
     getCharacterItems: async function() {
       try {

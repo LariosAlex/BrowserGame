@@ -23,6 +23,7 @@ urlpatterns = [
 
     path('api/getRanking/', api.getRanking, name='getRanking'),
     path('api/getCharacter/<int:character_id>', api.getCharacter, name='getCharacter'),
+    path('api/getCharacterLogged', api.getCharacterLogged, name='getCharcaterLogged'),
     path('api/getAction/<int:action_id>', api.getAction, name='getAction'),
     path('api/getActionsLog/<int:character_id>', api.getActionsLog, name='getActionsLog'),
     path('api/getActions/', api.getActions, name='getActions'),
