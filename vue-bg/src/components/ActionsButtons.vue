@@ -19,13 +19,13 @@
               <span class="flex items-center text-sm font-medium text-gray-900 dark:text-white"><span class="flex w-2.5 h-2.5 bg-blue-700 rounded-full mr-1.5 flex-shrink-0"></span>{{ action.exp }}</span>
             </div>
             <div class="flex mt-4 space-x-3 md:mt-6">
-                <a @click="rechargeCharactreItems" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                <a @click="actionAnimations($event)" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 :class="{
                   'bg-orange-300 hover:bg-orange-700 border-orange-700': action.category === 'PAS',
                   'bg-green-300 hover:bg-green-700 border-green-700': action.category === 'DEF',
                   'bg-red-300 hover:bg-red-700 border-red-700': action.category === 'OFF'
                 }"
-                >EXECUTAR ACCIÓ</a>
+                :id="action.id">EXECUTAR ACCIÓ</a>
             </div>
         </div>
     </div>
@@ -33,6 +33,7 @@
 </template>
   
 <script>
+    import * as animationFunctions from '../../../browserGame/static/js/script.js';
     export default {
     name: "ActionButtons",
     data() {
@@ -57,15 +58,43 @@
 
         rechargeCharactreItems(){
           this.$emit('recargar-items');
-        }
+        },
 
-        /*funcionesDeLasAcciones(){
-          FuncionQueLlamaAnimacion
-          FuncionQueGuardaLosDatos
-        } */
+        actionAnimations(event){
+          console.log(event.target.id)
+          if(event.target.id == 25){
+            animationFunctions.boton6();
+          }
+          if(event.target.id == 26){
+            animationFunctions.boton5();
+          }
+          if(event.target.id == 27){
+            animationFunctions.boton4();
+          }
+          if(event.target.id == 28){
+            animationFunctions.boton3();
+          }
+          if(event.target.id == 29){
+            animationFunctions.boton2();
+          }
+          if(event.target.id == 30){
+            animationFunctions.boton1();
+          }
+          if(event.target.id == 24){
+            animationFunctions.boton7();
+          }
+          // animationFunctions.boton1();
+          // animationFunctions.boton2();
+          // animationFunctions.boton3();
+          // animationFunctions.boton4();
+          // animationFunctions.boton5();
+          // animationFunctions.boton6();
+          // animationFunctions.boton7();
+        }
+        
     },
     mounted() {
         this.getActions();
     },
-}
+};
 </script>

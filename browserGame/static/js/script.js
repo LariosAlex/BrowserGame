@@ -1,7 +1,11 @@
-
-function boton1(){
+function focalizar(){
+    const div = document.getElementById('i_div');
+    div.scrollIntoView();
+}
+export function boton1(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     escupinada.style.display = "block";
     escupinada.classList.add("a_escupinada");
     cowboy.style.display = "block";
@@ -17,9 +21,10 @@ function rev_b1() {
     cowboy.style.display = "none";
     cowboy.classList.remove("a_cowboy1");
 };
-function boton2(){
+export function boton2(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     bota.style.display = "block";
     bota.classList.add("a_bota");
     cowboy.style.display = "block";
@@ -39,9 +44,10 @@ function rev_b2() {
     sang.classList.remove("a_sang2");
 };
 
-function boton3(){
+export function boton3(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     revolver.style.display = "block";
     revolver.classList.add("a_revolver");
     cowboy.style.display = "block";
@@ -49,9 +55,10 @@ function boton3(){
     sang.classList.add("a_sang3");
     setTimeout(rev_b3, 2100);
 }
-function boton4(){
+export function boton4(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     locomotora.style.display = "block";
     locomotora.classList.add("a_locomotora");
     cowboy.style.display = "block";
@@ -59,9 +66,10 @@ function boton4(){
     sang.classList.add("a_sang4");
     setTimeout(rev_b4, 2300);
 }
-function boton5(){
+export function boton5(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     tabac1.style.display = "block";
     tabac1.classList.add("a_tabac1");
     tabac2.style.display = "block";
@@ -76,9 +84,10 @@ function boton5(){
     pot_tabac.classList.add("a_pot_tabac");
     setTimeout(rev_b5, 3500);
 }
-function boton6(){
+export function boton6(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     whisky_ple1.style.display = "block";
     whisky_ple1.classList.add("a_whisky_ple1");
     whisky_buit1.classList.add("a_whisky_buit1");
@@ -92,9 +101,10 @@ function boton6(){
     whisky_buit5.classList.add("a_whisky_buit5");
     setTimeout(rev_b6, 4500);
 }
-function boton7(){
+export function boton7(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     bota_e.style.display = "block";
     bota_e.classList.add("a_bota_e");
     bota_d.style.display = "block";
@@ -330,7 +340,8 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter, 
                         nivellMaxim = levelCharacter;
                         nivellMinim = levelCharacter;
                     }
-                    console.log('Matas al enemigo')
+                    console.log('Matas al enemigo');
+                    boton8();
                     let randomNum = Math.floor(Math.random() * (nivellMaxim - nivellMinim + 1)) + nivellMinim;
                     let expExtra = randomNum*2;
                     expObtained += expExtra;
@@ -341,6 +352,7 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter, 
                     newExp = 0;
                     levelCharacter += 1;
                     console.log('Subes de nivel')
+                    boton9();
                 }
                 let data = {
                     character_id: idCharacterTarget,
@@ -370,6 +382,8 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter, 
                 if(newExp>=limitExp){
                     levelCharacter +=1;
                     newExp = 0;
+                    console.log('Subes de nivel')
+                    boton9();
                 }
             }
         }
