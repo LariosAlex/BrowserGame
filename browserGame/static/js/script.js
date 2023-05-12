@@ -279,7 +279,7 @@ function getAction(idAction) {
     });
 }
 
-function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter, success){
+function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
 
     $.ajaxSetup({
         headers: {
@@ -310,90 +310,141 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter, 
         var health = actionData.action.health;
         var exp = actionData.action.exp;
         var actionType = actionData.action.category;
+        var actionName = actionData.action.name;
+        var actionChance = actionData.action.success_rate;
 
         var newExp = expCharacter;
         var newMana = manaCharacter - costValue;
-
-        if(success == 1){
-            if(actionType == "OFF"){
-                var expObtained = damage;
-                let nivellMinim = 1;
-                let nivellMaxim = 1;
-                if(lifeCharacterTarget<=damage){
-                    if(lvlCharacter > targetLvl){
-                        nivellMinim = levelCharacter;
-                        nivellMaxim = levelCharacterTarget;
-                    }else if(lvlCharacter < targetLvl){
-                        nivellMinim = levelCharacter;
-                        nivellMaxim = levelCharacterTarget;
-                    }else if(lvlCharacter == targetLvl){
-                        nivellMaxim = levelCharacter;
-                        nivellMinim = levelCharacter;
+        let randomNum = Math.floor(Math.random() * 100) + 1;
+        let success = 0;
+        if(actionType == 'DEF' && lifeCharacter == levelCharacter*10){
+            notificacion("info", "La teva acció: "+actionName+" no s'ha pogut realitzar perque ja tens la vida maxima.");
+        }else if(costValue > manaCharacter){
+            notificacion("info", "La teva acció: "+actionName+" no s'ha pogut realitzar perque no tens maná.");
+        }
+        else{
+            if (randomNum <= actionChance) {  
+                success = 1;          
+                notificacion("success", "Tu accion: "+actionName+" ha tenido exito.");
+                if(actionType == "OFF"){
+                    var expObtained = damage;
+                    let nivellMinim = 1;
+                    let nivellMaxim = 1;
+                    if(lifeCharacterTarget<=damage){
+                        if(lvlCharacter > targetLvl){
+                            nivellMinim = levelCharacter;
+                            nivellMaxim = levelCharacterTarget;
+                        }else if(lvlCharacter < targetLvl){
+                            nivellMinim = levelCharacter;
+                            nivellMaxim = levelCharacterTarget;
+                        }else if(lvlCharacter == targetLvl){
+                            nivellMaxim = levelCharacter;
+                            nivellMinim = levelCharacter;
+                        }
+                        console.log('Matas al enemigo')
+                        let randomNum = Math.floor(Math.random() * (nivellMaxim - nivellMinim + 1)) + nivellMinim;
+                        let expExtra = randomNum*2;
+                        expObtained += expExtra;
                     }
-                    console.log('Matas al enemigo')
-                    let randomNum = Math.floor(Math.random() * (nivellMaxim - nivellMinim + 1)) + nivellMinim;
-                    let expExtra = randomNum*2;
-                    expObtained += expExtra;
-                }
-                newExp += expObtained;
-                limiteXp = levelCharacter*10;
-                if(newExp > limiteXp){
-                    newExp = 0;
-                    levelCharacter += 1;
-                    console.log('Subes de nivel')
+                    newExp += expObtained;
+                    limiteXp = levelCharacter*10;
+                    if(newExp > limiteXp){
+                        newExp = 0;
+                        levelCharacter += 1;
+                        console.log('Subes de nivel')
+                    }
+                    let data = {
+                        character_id: idCharacterTarget,
+                        damage: damage
+                    };
+                    console.log(data)
+                    $.ajax({
+                        url: '/damage_character/',
+                        type: 'POST',
+                        data: data,
+                        success: function(response) {
+                            console.log('La acción ha sido guardada en la base de datos (matar usuario)');
+                        },
+                        error: function(response){
+                            console.log(response);
+                        }
+                    });
+                }else if(actionType == "DEF"){
+                    lifeCharacter += health;
+                    let limitHp = levelCharacter*10;
+                    if(lifeCharacter>limitHp){
+                        lifeCharacter = limitHp;
+                    }
+                }else{
+                    newExp += exp;
+                    let limitExp = levelCharacter*10;
+                    if(newExp>=limitExp){
+                        levelCharacter +=1;
+                        newExp = 0;
+                    }
                 }
                 let data = {
-                    character_id: idCharacterTarget,
-                    damage: damage
+                    character_id: idCharacter,
+                    sendMana:newMana,
+                    health:lifeCharacter,
+                    experience:newExp,
+                    level:levelCharacter,
                 };
-                console.log(data)
                 $.ajax({
-                    url: '/damage_character/',
+                    url: '/update_character/',
                     type: 'POST',
                     data: data,
                     success: function(response) {
-                        console.log('La acción ha sido guardada en la base de datos (matar usuario)');
+                        console.log('La acción ha sido guardada en la base de datos (actualizar usuario)');
                     },
                     error: function(response){
                         console.log(response);
                     }
                 });
-            }else if(actionType == "DEF"){
-                lifeCharacter += health;
-                let limitHp = levelCharacter*10;
-                if(lifeCharacter>limitHp){
-                    lifeCharacter = limitHp;
-                }
-            }else{
-                newExp += exp;
-                let limitExp = levelCharacter*10;
-                if(newExp>=limitExp){
-                    levelCharacter +=1;
-                    newExp = 0;
-                }
+            } else {
+                notificacion("warning", "Tu accion: "+actionName+" no ha tenido exito.");
+                success = 0;
             }
-        }
-        
-        let data = {
-            character_id: idCharacter,
-            sendMana:newMana,
-            health:lifeCharacter,
-            experience:newExp,
-            level:levelCharacter,
-        };
-        $.ajax({
-            url: '/update_character/',
-            type: 'POST',
-            data: data,
-            success: function(response) {
-                console.log('La acción ha sido guardada en la base de datos (actualizar usuario)');
-            },
-            error: function(response){
+            newData = {
+                performer_id: idCharacter,
+                target_id: idCharacterTarget,
+                action_id: idAction,
+                succeed: success,
+            };
+            $.ajax({
+                url: '/save_action/',
+                type: 'POST',
+                data: newData,
+                success: function(response) {
+                    console.log('La acción ha sido guardada en la base de datos');
+                },
+                error: function(response){
                 console.log(response);
-            }
-        });
-
+                }
+            });
+        }
     }).catch(function(error) {
         console.log(error);
     });
 }
+
+function notificacion(status, message) {
+    const container = document.getElementById("notificaciones");
+  
+    const notification = document.createElement("div");
+    notification.classList.add("notificacion", status);
+    notification.textContent = message;
+  
+    container.appendChild(notification);
+  
+    setTimeout(() => {
+      notification.style.opacity = 0;
+      setTimeout(() => {
+        notification.remove();
+      }, 300);
+    }, 3000);
+  }
+  //notificacion("warning", "Advertencia: Este es un mensaje de advertencia.");
+  //notificacion("info", "Información: Este es un mensaje informativo.");
+  //notificacion("error", "Error: Este es un mensaje de error.");
+  //notificacion("success", "Éxito: Este es un mensaje de éxito.");

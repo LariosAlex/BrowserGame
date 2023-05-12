@@ -113,7 +113,7 @@ def save_action(request):
     else:
         target_id = performer_id
     action_id = request.POST.get('action_id')
-    succeed = request.POST.get('succeed') == 'true'
+    succeed = request.POST.get('succeed')
 
     if Character.objects.filter(id=performer_id).exists():
         performer = Character.objects.get(id=performer_id)
