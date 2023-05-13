@@ -29,13 +29,13 @@
               <span class="text-gray-500 text-sm">{{ action.cost }}</span>
             </div>
             <div class="flex mt-4 space-x-3 md:mt-6">
-                <a @click="rechargeCharactreItems" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                <a @click="actionAnimations($event)" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 :class="{
                   'bg-orange-300 hover:bg-orange-700 border-orange-700': action.category === 'PAS',
                   'bg-green-300 hover:bg-green-700 border-green-700': action.category === 'DEF',
                   'bg-red-300 hover:bg-red-700 border-red-700': action.category === 'OFF'
                 }"
-                >EXECUTAR</a>
+                :id="action.id">EXECUTAR ACCIÓ</a>
             </div>
         </div>
     </div>
@@ -43,6 +43,7 @@
 </template>
   
 <script>
+    import * as animationFunctions from '../../../browserGame/static/js/script.js';
     export default {
     name: "ActionButtons",
     data() {
@@ -67,15 +68,47 @@
 
         rechargeCharactreItems(){
           this.$emit('recargar-items');
-        }
+        },
 
-        /*funcionesDeLasAcciones(){
-          FuncionQueLlamaAnimacion
-          FuncionQueGuardaLosDatos
-        } */
+        actionAnimations(event){
+          let idAction = event.target.id
+          let idCharacter = `{{ character.id }}`
+          console.log(idCharacter)
+          console.log(idAction)
+          ///realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter)
+          if(idAction == 25){
+            animationFunctions.boton6();
+          }
+          if(idAction == 26){
+            animationFunctions.boton5();
+          }
+          if(idAction == 27){
+            animationFunctions.boton4();
+          }
+          if(idAction == 28){
+            animationFunctions.boton3();
+          }
+          if(idAction == 29){
+            animationFunctions.boton2();
+          }
+          if(idAction == 30){
+            animationFunctions.boton1();
+          }
+          if(idAction == 24){
+            animationFunctions.boton7();
+          }
+          // animationFunctions.boton1();
+          // animationFunctions.boton2();
+          // animationFunctions.boton3();
+          // animationFunctions.boton4();
+          // animationFunctions.boton5();
+          // animationFunctions.boton6();
+          // animationFunctions.boton7();
+        }
+        
     },
     mounted() {
         this.getActions();
     },
-}
+};
 </script>
