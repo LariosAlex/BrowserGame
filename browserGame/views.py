@@ -173,15 +173,16 @@ def update_character(request):
 def activate_cron(request):
     season = Season.objects.latest("id")
     dif_time = timezone.make_aware(datetime.now(), timezone.get_default_timezone()) - season.last_datetime_recharge
-    h_dif_time = dif_time.total_seconds()//3600
-    if h_dif_time >= 1:
-        for i in Character.objects.all():
-            if i.life > 0:
-                if i.level*10 - i.mana > i.level*h_dif_time:
-                    i.mana += i.level*h_dif_time
+    time = season.time_between_recharge
+    cantidadDeVecesRecargar = dif_time.total_seconds()//60 *time
+    if cantidadDeVecesRecargar >= 1:
+        for character in Character.objects.all():
+            if character.life > 0:
+                if character.level*10 - character.mana > character.level*cantidadDeVecesRecargar:
+                    character.mana += character.level*cantidadDeVecesRecargar
                 else:
-                    i.mana = i.level*10
-                i.save()
+                    character.mana = character.level*10
+                character.save()
         
         a = Season.objects.get(id=str(season))
         a.last_datetime_recharge = timezone.make_aware(datetime.now(), timezone.get_default_timezone())

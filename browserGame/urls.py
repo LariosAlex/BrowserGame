@@ -27,4 +27,5 @@ urlpatterns = [
     path('api/getAction/<int:action_id>', api.getAction, name='getAction'),
     path('api/getActionsLog/<int:character_id>', api.getActionsLog, name='getActionsLog'),
     path('api/getActions/', api.getActions, name='getActions'),
+    path('api/getCharacters/', api.getCharacters, name='getCharacters'),
 ]

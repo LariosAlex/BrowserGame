@@ -1,8 +1,9 @@
-export { boton1, boton2, boton3, boton4, boton5, boton6, boton7, boton8, boton9 }
+export { boton1, boton2, boton3, boton4, boton5, boton6, boton7, boton8, boton9, realizarAccion }
 function focalizar(){
     const div = document.getElementById('i_div');
     div.scrollIntoView();
 }
+
 function boton1(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
@@ -386,7 +387,7 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                     console.log('Realizas accion neutral');
                 }
                 expCharacter += expObtained;
-                limiteXp = levelCharacter*10;
+                let limiteXp = levelCharacter*10;
                 if(expCharacter > limiteXp){
                     expCharacter = 0;
                     levelCharacter += 1;
@@ -416,7 +417,7 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                 success = 0;
             }
             
-            newData = {
+            let newData = {
                 performer_id: idCharacter,
                 target_id: idCharacterTarget,
                 action_id: idAction,

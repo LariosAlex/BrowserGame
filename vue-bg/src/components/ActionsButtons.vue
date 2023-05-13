@@ -29,7 +29,9 @@
               <span class="text-gray-500 text-sm">{{ action.cost }}</span>
             </div>
             <div class="flex mt-4 space-x-3 md:mt-6">
-                <a @click="actionAnimations($event)" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                <a v-if="action.category === 'OFF'" @click="selectCharacterPopup($event)" class="bg-red-300 hover:bg-red-700 border-red-700 inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                :id="action.id">SELECCIONAR USUARI</a>
+                <a v-else @click="actionAnimations($event)" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 :class="{
                   'bg-orange-300 hover:bg-orange-700 border-orange-700': action.category === 'PAS',
                   'bg-green-300 hover:bg-green-700 border-green-700': action.category === 'DEF',
@@ -40,10 +42,24 @@
         </div>
     </div>
   </div>
+  <div id="popupContainer">
+    <div id="popup">
+      <button @click="cerrarPopup()" id="cerrarPopup">x</button>
+      <h2>Selecciona un usuario:</h2>
+      <select id="characterSelect" @change="puedoEnviar()">
+        <option value="" disabled selected>---</option>
+
+      </select>
+      <a style="display:none" @click="actionAnimations($event)" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> Atacar </a>
+    </div>
+    <div id="fondoPopup"></div>
+  </div>
+
+
 </template>
   
 <script>
-    import * as animationFunctions from '../../../browserGame/static/js/script.js';
+    import * as functions from '../../../browserGame/static/js/script.js';
     export default {
     name: "ActionButtons",
     data() {
@@ -69,41 +85,86 @@
         rechargeCharactreItems(){
           this.$emit('recargar-items');
         },
-
+        puedoEnviar(){
+          document.querySelector('#popup a').style.display = 'block';
+        },
+        selectCharacterPopup(event){
+          let userCharacter = JSON.parse(document.getElementById('infoCharacter').getAttribute('data')).characterLogged
+          const popup = document.getElementById("popup");
+          const fondoPopup = document.getElementById('fondoPopup');
+          document.querySelector('#popup a').setAttribute('id', event.target.id);
+          const selectUsuarios = document.getElementById("characterSelect");
+  
+          // Creamos una nueva opción y la añadimos al final del select
+          try {
+            fetch("/api/getCharacters")
+              .then(response => response.json())
+              .then(data => {
+                let characters = data.characters;
+                characters.forEach(character => {
+                  if((character.level-1 == userCharacter.level || character.level+1 == userCharacter.level || character.level == userCharacter.level) && character.id!=userCharacter.id){
+                    let nuevaOpcion = document.createElement("option");
+                    nuevaOpcion.text = character.nickname + " nivell: "+ character.level;
+                    nuevaOpcion.value = character.id
+                    selectUsuarios.appendChild(nuevaOpcion);
+                  }
+                });
+              });
+            }
+            catch (error) {
+                console.error(error);
+            }
+          popup.style.display = 'block';
+          fondoPopup.style.display = 'block';
+        },
+        cerrarPopup() {
+          const popup = document.getElementById("popup");
+          const fondoPopup = document.getElementById('fondoPopup');
+          popup.style.display = 'none';
+          fondoPopup.style.display = 'none';
+        },
         actionAnimations(event){
           let idAction = event.target.id
-          let idCharacter = `{{ character.id }}`
-          console.log(idCharacter)
-          console.log(idAction)
-          ///realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter)
+          let character = JSON.parse(document.getElementById('infoCharacter').getAttribute('data')).characterLogged
+          let idCharacter = character.id
+          if(idAction != 27 && idAction != 28 && idAction != 29 && idAction != 30){
+            functions.realizarAccion(idCharacter, idAction)
+          }else{
+            const popup = document.getElementById("popup");
+            const fondoPopup = document.getElementById('fondoPopup');
+            popup.style.display = 'none';
+            fondoPopup.style.display = 'none';
+            let idCharacterTarget = document.getElementById('characterSelect').value
+            functions.realizarAccion(idCharacter, idAction, idCharacterTarget)
+          }
           if(idAction == 25){
-            animationFunctions.boton6();
+            functions.boton6();
           }
           if(idAction == 26){
-            animationFunctions.boton5();
+            functions.boton5();
           }
           if(idAction == 27){
-            animationFunctions.boton4();
+            functions.boton4();
           }
           if(idAction == 28){
-            animationFunctions.boton3();
+            functions.boton3();
           }
           if(idAction == 29){
-            animationFunctions.boton2();
+            functions.boton2();
           }
           if(idAction == 30){
-            animationFunctions.boton1();
+            functions.boton1();
           }
           if(idAction == 24){
-            animationFunctions.boton7();
+            functions.boton7();
           }
-          // animationFunctions.boton1();
-          // animationFunctions.boton2();
-          // animationFunctions.boton3();
-          // animationFunctions.boton4();
-          // animationFunctions.boton5();
-          // animationFunctions.boton6();
-          // animationFunctions.boton7();
+          // functions.boton1();
+          // functions.boton2();
+          // functions.boton3();
+          // functions.boton4();
+          // functions.boton5();
+          // functions.boton6();
+          // functions.boton7();
         }
         
     },
@@ -111,4 +172,7 @@
         this.getActions();
     },
 };
+
+  
+
 </script>

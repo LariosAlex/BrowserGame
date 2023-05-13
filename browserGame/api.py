@@ -30,3 +30,7 @@ def getActionsLog(request, character_id):
 def getActions(request):
     actions = list(Action.objects.all().order_by('category').values())
     return JsonResponse({"actions": actions})
+
+def getCharacters(request):
+    characters = list(Character.objects.all().order_by('level').values())
+    return JsonResponse({"characters": characters})
