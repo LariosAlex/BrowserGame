@@ -381,6 +381,7 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                     if(newExp>=limitExp){
                         levelCharacter +=1;
                         newExp = 0;
+                        console.log('Subes de nivel')
                     }
                 }
                 let data = {
