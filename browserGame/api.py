@@ -7,6 +7,8 @@ from django.shortcuts import redirect
 from django.http import JsonResponse
 from django.forms.models import model_to_dict
 from django.db.models import Q
+from datetime import datetime
+from django.utils.timesince import timesince
 
 def getRanking(request):
     season = Season.objects.latest("id")
@@ -23,8 +25,20 @@ def getAction(request, action_id):
     action_dict = model_to_dict(action)
     return JsonResponse({"action": action_dict}) 
 
+
 def getActionsLog(request, character_id):
-    actions = list(ActionLog.objects.filter(Q(target=character_id) | Q(performer=character_id)).order_by('-datetime').distinct().values('action__category', 'action__name', 'target__nickname', 'performer__nickname', 'succeed')[:25])    
+    actions = list(ActionLog.objects.filter(Q(target=character_id) | Q(performer=character_id)).order_by('-datetime').distinct().values('action__category', 'action__name', 'target__nickname', 'performer__nickname', 'succeed', 'datetime')[:25])    
+    
+    # Formatear la fecha y hora de cada acción
+    for action in actions:
+        datetime_object = action['datetime']
+        formatted_datetime = datetime_object.strftime('%d/%m/%Y %H:%M')
+        action['datetime'] = formatted_datetime
+        
+        # Calcular la diferencia de tiempo entre la acción y la hora actual
+        time_since = timesince(datetime_object)
+        action['time_since'] = time_since
+    
     return JsonResponse({"actions": actions})
 
 def getActions(request):
