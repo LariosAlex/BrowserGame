@@ -31,6 +31,10 @@ def getActions(request):
     actions = list(Action.objects.all().order_by('category').values())
     return JsonResponse({"actions": actions})
 
+def getLastActions(request, character_id):
+    actions = list(ActionLog.objects.filter(performer=character_id).order_by('-datetime').distinct().values('action__name', 'datetime', 'action__success_rate', 'run_number', 'succeed', 'performer__nickname')[:10])    
+    return JsonResponse({"actions": actions})
+
 def getCharacterLogged(request):
     user = request.user
     last_season = Season.objects.last()

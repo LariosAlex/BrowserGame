@@ -3,6 +3,9 @@
 {% block content %}
 {% if user.is_authenticated and character %}
 <div class="ball"></div>
+<div id="lastActionsCharacter" style="text-align: center;">
+  {% render_bundle 'main' %}
+</div>
   <div id="infoCharacter" style="text-align: center;">
     {% render_bundle 'main' %}
   </div>

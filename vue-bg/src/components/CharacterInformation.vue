@@ -81,7 +81,7 @@ export default {
     this.rechargeItems()
     setInterval(() => {
       this.rechargeItems();
-    }, 5000)
+    }, 30000)
   },
 }
 </script>
