@@ -31,6 +31,15 @@ def getActions(request):
     actions = list(Action.objects.all().order_by('category').values())
     return JsonResponse({"actions": actions})
 
+def getCharacterLogged(request):
+    user = request.user
+    last_season = Season.objects.last()
+    character = Character.objects.filter(user=user, season=last_season).first()
+    if character:
+        character_dict = model_to_dict(character)
+        return JsonResponse({"character": character_dict})
+    else:
+        return JsonResponse({"character": None})
 def getCharacters(request):
     characters = list(Character.objects.all().order_by('level').values())
     return JsonResponse({"characters": characters})

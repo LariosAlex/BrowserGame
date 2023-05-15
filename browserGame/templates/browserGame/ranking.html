@@ -4,4 +4,9 @@
 	<div id="ranking" style="text-align: center;">
 		{% render_bundle 'main' %}
 	</div>
+	{% if user.is_authenticated %}
+		<div id="miniInformationCharacter" style="text-align: center;">
+			{% render_bundle 'main' %}
+		</div>
+	{% endif %}
 {% endblock %}

@@ -3,10 +3,10 @@
 {% block content %}
 {% if user.is_authenticated and character %}
 <div class="ball"></div>
-  <div id="infoCharacter" style="text-align: center;" data="{{ page_data }}">
+  <div id="infoCharacter" style="text-align: center;">
     {% render_bundle 'main' %}
   </div>
-  <div id="actionsCharacter" style="text-align: center;" data="{{ page_data }}">
+  <div id="actionsCharacter" style="text-align: center;">
     {% render_bundle 'main' %}
   </div>
 {% else %}
