@@ -100,7 +100,7 @@ function boton6(){
     whisky_buit4.classList.add("a_whisky_buit4");
     whisky_ple5.classList.add("a_whisky_ple5");
     whisky_buit5.classList.add("a_whisky_buit5");
-    setTimeout(rev_b6, 4500);
+    setTimeout(rev_b6, 3500);
 }
 function boton7(){
     i_div.style.display = "block";
@@ -328,6 +328,7 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
         let randomNum = Math.floor(Math.random() * 100) + 1;
         let success = 0;
         var expObtained = 0;
+        var killed = false;
 
         if(actionType == 'DEF' && lifeCharacter == levelCharacter*10){
             notificacion("info", "La teva acció: "+actionName+" no s'ha pogut realitzar perque ja tens la vida maxima.");
@@ -354,7 +355,8 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                             nivellMinim = levelCharacter;
                         }
                         console.log('Matas al enemigo')
-                        boton8();
+                        killed = true;
+                        setTimeout(boton8,2800);
                         let randomNum = Math.floor(Math.random() * (nivellMaxim - nivellMinim + 1)) + nivellMinim;
                         let expExtra = randomNum*2;
                         expObtained += expExtra;
@@ -391,7 +393,13 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                     expCharacter = 0;
                     levelCharacter += 1;
                     console.log('Subes de nivel')
-                    boton9();
+                    console.log(killed)
+                    if(killed==true){
+                        setTimeout(boton9,5500);
+                        killed = false;
+                    } else{
+                        setTimeout(boton9,2800);
+                    }
                 }
                 let data = {
                     character_id: idCharacter,

@@ -236,7 +236,7 @@ button {
   top: 5%;
   left: 20%;
   z-index: 1;
-  animation: rotar 1s linear;
+  animation: rotar 1.5s linear;
   animation-fill-mode: forwards;
 }
 
@@ -538,6 +538,7 @@ button {
   text-align: center;
   color: darkred;
   animation: text-appear 2s ease-in-out forwards;
+  animation-delay: 4s;
 }
 
 .a_fletxa1 {
@@ -733,7 +734,7 @@ button {
   top: 20%;
   left: 46%;
   z-index: 10;
-  animation: buidar1 4s linear forwards;
+  animation: buidar1 3s linear forwards;
   animation-fill-mode: forwards;
 }
 
@@ -759,7 +760,7 @@ button {
   top: 21%;
   left: 40%;
   z-index: 20;
-  animation: buidar2 4s linear forwards;
+  animation: buidar2 3s linear forwards;
   animation-fill-mode: forwards;
 }
 
@@ -791,7 +792,7 @@ button {
   top: 17%;
   left: 43%;
   z-index: 30;
-  animation: buidar3 4s linear forwards;
+  animation: buidar3 3s linear forwards;
   animation-fill-mode: forwards;
 }
 
@@ -823,7 +824,7 @@ button {
   top: 14%;
   left: 38%;
   z-index: 40;
-  animation: buidar4 4s linear forwards;
+  animation: buidar4 3s linear forwards;
   animation-fill-mode: forwards;
 }
 
@@ -855,7 +856,7 @@ button {
   top: 15%;
   left: 44%;
   z-index: 50;
-  animation: buidar5 4s linear forwards;
+  animation: buidar5 3s linear forwards;
   animation-fill-mode: forwards;
 }
 
@@ -887,7 +888,7 @@ button {
   top: 20%;
   left: 46%;
   z-index: 10;
-  animation: caure1 4s linear forwards;
+  animation: caure1 3s linear forwards;
   animation-fill-mode: forwards;
 }
 
@@ -922,7 +923,7 @@ button {
   top: 21%;
   left: 40%;
   z-index: 20;
-  animation: caure2 4s linear forwards;
+  animation: caure2 3s linear forwards;
   animation-fill-mode: forwards;
 }
 
@@ -951,7 +952,7 @@ button {
   top: 17%;
   left: 43%;
   z-index: 30;
-  animation: caure3 4s linear forwards;
+  animation: caure3 3s linear forwards;
   animation-fill-mode: forwards;
 }
 
@@ -980,7 +981,7 @@ button {
   top: 14%;
   left: 38%;
   z-index: 40;
-  animation: caure4 4s linear forwards;
+  animation: caure4 3s linear forwards;
   animation-fill-mode: forwards;
 }
 
@@ -1009,7 +1010,7 @@ button {
   top: 15%;
   left: 49%;
   z-index: 50;
-  animation: caure5 4s linear forwards;
+  animation: caure5 3s linear forwards;
   animation-fill-mode: forwards;
 }
 
@@ -1227,13 +1228,61 @@ button {
   position: relative;
 }
 
-#fondoPopup {
+#nav_pages {
+  padding: 20px;
   position: fixed;
-  z-index: 99;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
+}
+
+.menu-icon {
+  float: left;
+  padding: 18px 20px;
+  color: #50300F;
+  cursor: pointer;
+}
+
+.menu {
+  float: left;
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 60px;
+  left: -250px;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: left 0.3s ease;
+}
+
+.menu li {
+  border-bottom: 1px solid #ccc;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  background-color: #be9575
+}
+
+.menu-icon:hover {
+  background-color: #be9575;
+}
+
+.menu-icon:hover + .menu, .menu:hover {
+  left: 0;
 }
