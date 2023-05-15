@@ -1,5 +1,5 @@
 <template>
-  <table class = "infoSeason-table table-auto w-50 p-5" v-if="!loadingCharacter">
+  <table class = "infoSeason-table max-md:w-full table-auto w-50 p-5" v-if="!loadingCharacter">
     <tbody>
       <tr>
         <td colspan="2">  

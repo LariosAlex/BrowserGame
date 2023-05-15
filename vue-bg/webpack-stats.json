@@ -21,189 +21,316 @@
       "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/js/main.js",
       "publicPath": "http://0.0.0.0:8080/js/main.js"
     },
-<<<<<<< HEAD
-=======
-    "main.0fcf8c7e2c9bd220.hot-update.js": {
-      "name": "main.0fcf8c7e2c9bd220.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.0fcf8c7e2c9bd220.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.0fcf8c7e2c9bd220.hot-update.js"
+    "main.0068c3480c03bad8.hot-update.js": {
+      "name": "main.0068c3480c03bad8.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.0068c3480c03bad8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.0068c3480c03bad8.hot-update.js"
     },
-    "main.0fcf8c7e2c9bd220.hot-update.json": {
-      "name": "main.0fcf8c7e2c9bd220.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.0fcf8c7e2c9bd220.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.0fcf8c7e2c9bd220.hot-update.json"
+    "main.0068c3480c03bad8.hot-update.json": {
+      "name": "main.0068c3480c03bad8.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.0068c3480c03bad8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.0068c3480c03bad8.hot-update.json"
     },
-    "main.1a43ad52ebcd9318.hot-update.js": {
-      "name": "main.1a43ad52ebcd9318.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.1a43ad52ebcd9318.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.1a43ad52ebcd9318.hot-update.js"
+    "main.023de57404f98cda.hot-update.js": {
+      "name": "main.023de57404f98cda.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.023de57404f98cda.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.023de57404f98cda.hot-update.js"
     },
-    "main.1a43ad52ebcd9318.hot-update.json": {
-      "name": "main.1a43ad52ebcd9318.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.1a43ad52ebcd9318.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.1a43ad52ebcd9318.hot-update.json"
+    "main.023de57404f98cda.hot-update.json": {
+      "name": "main.023de57404f98cda.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.023de57404f98cda.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.023de57404f98cda.hot-update.json"
     },
-    "main.3672677587eb7144.hot-update.js": {
-      "name": "main.3672677587eb7144.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.3672677587eb7144.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.3672677587eb7144.hot-update.js"
+    "main.04c8245eb52df6fe.hot-update.js": {
+      "name": "main.04c8245eb52df6fe.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.04c8245eb52df6fe.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.04c8245eb52df6fe.hot-update.js"
     },
-    "main.3672677587eb7144.hot-update.json": {
-      "name": "main.3672677587eb7144.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.3672677587eb7144.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.3672677587eb7144.hot-update.json"
+    "main.04c8245eb52df6fe.hot-update.json": {
+      "name": "main.04c8245eb52df6fe.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.04c8245eb52df6fe.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.04c8245eb52df6fe.hot-update.json"
     },
-    "main.3a94ac63ac02fd1a.hot-update.js": {
-      "name": "main.3a94ac63ac02fd1a.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.3a94ac63ac02fd1a.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.3a94ac63ac02fd1a.hot-update.js"
+    "main.0a7a9cd99ea4976a.hot-update.js": {
+      "name": "main.0a7a9cd99ea4976a.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.0a7a9cd99ea4976a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.0a7a9cd99ea4976a.hot-update.js"
     },
-    "main.3a94ac63ac02fd1a.hot-update.json": {
-      "name": "main.3a94ac63ac02fd1a.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.3a94ac63ac02fd1a.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.3a94ac63ac02fd1a.hot-update.json"
+    "main.0a7a9cd99ea4976a.hot-update.json": {
+      "name": "main.0a7a9cd99ea4976a.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.0a7a9cd99ea4976a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.0a7a9cd99ea4976a.hot-update.json"
     },
-    "main.4aeb487f8f1e1ae6.hot-update.js": {
-      "name": "main.4aeb487f8f1e1ae6.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.4aeb487f8f1e1ae6.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.4aeb487f8f1e1ae6.hot-update.js"
+    "main.0d0325420adf4523.hot-update.js": {
+      "name": "main.0d0325420adf4523.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.0d0325420adf4523.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.0d0325420adf4523.hot-update.js"
     },
-    "main.4aeb487f8f1e1ae6.hot-update.json": {
-      "name": "main.4aeb487f8f1e1ae6.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.4aeb487f8f1e1ae6.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.4aeb487f8f1e1ae6.hot-update.json"
+    "main.0d0325420adf4523.hot-update.json": {
+      "name": "main.0d0325420adf4523.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.0d0325420adf4523.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.0d0325420adf4523.hot-update.json"
     },
-    "main.5d9a46aba1ba654d.hot-update.js": {
-      "name": "main.5d9a46aba1ba654d.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.5d9a46aba1ba654d.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.5d9a46aba1ba654d.hot-update.js"
+    "main.1c6d745bd81a6c86.hot-update.js": {
+      "name": "main.1c6d745bd81a6c86.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.1c6d745bd81a6c86.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.1c6d745bd81a6c86.hot-update.js"
     },
-    "main.5d9a46aba1ba654d.hot-update.json": {
-      "name": "main.5d9a46aba1ba654d.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.5d9a46aba1ba654d.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.5d9a46aba1ba654d.hot-update.json"
+    "main.1c6d745bd81a6c86.hot-update.json": {
+      "name": "main.1c6d745bd81a6c86.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.1c6d745bd81a6c86.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.1c6d745bd81a6c86.hot-update.json"
     },
-    "main.63ce6c5b3d940232.hot-update.js": {
-      "name": "main.63ce6c5b3d940232.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.63ce6c5b3d940232.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.63ce6c5b3d940232.hot-update.js"
+    "main.278b190cc2bb65b9.hot-update.js": {
+      "name": "main.278b190cc2bb65b9.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.278b190cc2bb65b9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.278b190cc2bb65b9.hot-update.js"
     },
-    "main.63ce6c5b3d940232.hot-update.json": {
-      "name": "main.63ce6c5b3d940232.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.63ce6c5b3d940232.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.63ce6c5b3d940232.hot-update.json"
+    "main.278b190cc2bb65b9.hot-update.json": {
+      "name": "main.278b190cc2bb65b9.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.278b190cc2bb65b9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.278b190cc2bb65b9.hot-update.json"
     },
-    "main.697dce046deae2c0.hot-update.js": {
-      "name": "main.697dce046deae2c0.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.697dce046deae2c0.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.697dce046deae2c0.hot-update.js"
+    "main.495a90961bd624a4.hot-update.js": {
+      "name": "main.495a90961bd624a4.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.495a90961bd624a4.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.495a90961bd624a4.hot-update.js"
     },
-    "main.697dce046deae2c0.hot-update.json": {
-      "name": "main.697dce046deae2c0.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.697dce046deae2c0.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.697dce046deae2c0.hot-update.json"
+    "main.495a90961bd624a4.hot-update.json": {
+      "name": "main.495a90961bd624a4.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.495a90961bd624a4.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.495a90961bd624a4.hot-update.json"
     },
-    "main.6d8e2c8fe975e412.hot-update.js": {
-      "name": "main.6d8e2c8fe975e412.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.6d8e2c8fe975e412.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.6d8e2c8fe975e412.hot-update.js"
+    "main.4c24a250b91b4713.hot-update.js": {
+      "name": "main.4c24a250b91b4713.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.4c24a250b91b4713.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.4c24a250b91b4713.hot-update.js"
     },
-    "main.6d8e2c8fe975e412.hot-update.json": {
-      "name": "main.6d8e2c8fe975e412.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.6d8e2c8fe975e412.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.6d8e2c8fe975e412.hot-update.json"
+    "main.4c24a250b91b4713.hot-update.json": {
+      "name": "main.4c24a250b91b4713.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.4c24a250b91b4713.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.4c24a250b91b4713.hot-update.json"
     },
-    "main.79853f00353c4dfd.hot-update.js": {
-      "name": "main.79853f00353c4dfd.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.79853f00353c4dfd.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.79853f00353c4dfd.hot-update.js"
+    "main.595f32f490345664.hot-update.js": {
+      "name": "main.595f32f490345664.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.595f32f490345664.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.595f32f490345664.hot-update.js"
     },
-    "main.79853f00353c4dfd.hot-update.json": {
-      "name": "main.79853f00353c4dfd.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.79853f00353c4dfd.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.79853f00353c4dfd.hot-update.json"
+    "main.595f32f490345664.hot-update.json": {
+      "name": "main.595f32f490345664.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.595f32f490345664.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.595f32f490345664.hot-update.json"
     },
-    "main.913f3c063cfc7653.hot-update.js": {
-      "name": "main.913f3c063cfc7653.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.913f3c063cfc7653.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.913f3c063cfc7653.hot-update.js"
+    "main.5a941dd8ed071c09.hot-update.js": {
+      "name": "main.5a941dd8ed071c09.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.5a941dd8ed071c09.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.5a941dd8ed071c09.hot-update.js"
     },
-    "main.913f3c063cfc7653.hot-update.json": {
-      "name": "main.913f3c063cfc7653.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.913f3c063cfc7653.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.913f3c063cfc7653.hot-update.json"
+    "main.5a941dd8ed071c09.hot-update.json": {
+      "name": "main.5a941dd8ed071c09.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.5a941dd8ed071c09.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.5a941dd8ed071c09.hot-update.json"
     },
-    "main.ac396420e3183515.hot-update.js": {
-      "name": "main.ac396420e3183515.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.ac396420e3183515.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.ac396420e3183515.hot-update.js"
+    "main.5b336455ce5f0ba6.hot-update.js": {
+      "name": "main.5b336455ce5f0ba6.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.5b336455ce5f0ba6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.5b336455ce5f0ba6.hot-update.js"
     },
-    "main.ac396420e3183515.hot-update.json": {
-      "name": "main.ac396420e3183515.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.ac396420e3183515.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.ac396420e3183515.hot-update.json"
+    "main.5b336455ce5f0ba6.hot-update.json": {
+      "name": "main.5b336455ce5f0ba6.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.5b336455ce5f0ba6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.5b336455ce5f0ba6.hot-update.json"
     },
-    "main.cb8bda80beec978d.hot-update.js": {
-      "name": "main.cb8bda80beec978d.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.cb8bda80beec978d.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.cb8bda80beec978d.hot-update.js"
+    "main.79fb0782c67640ce.hot-update.js": {
+      "name": "main.79fb0782c67640ce.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.79fb0782c67640ce.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.79fb0782c67640ce.hot-update.js"
     },
-    "main.cb8bda80beec978d.hot-update.json": {
-      "name": "main.cb8bda80beec978d.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.cb8bda80beec978d.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.cb8bda80beec978d.hot-update.json"
+    "main.79fb0782c67640ce.hot-update.json": {
+      "name": "main.79fb0782c67640ce.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.79fb0782c67640ce.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.79fb0782c67640ce.hot-update.json"
     },
-    "main.d748ab7599e477a2.hot-update.js": {
-      "name": "main.d748ab7599e477a2.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.d748ab7599e477a2.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.d748ab7599e477a2.hot-update.js"
+    "main.7d9c06dcc94b98b3.hot-update.js": {
+      "name": "main.7d9c06dcc94b98b3.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.7d9c06dcc94b98b3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.7d9c06dcc94b98b3.hot-update.js"
     },
-    "main.d748ab7599e477a2.hot-update.json": {
-      "name": "main.d748ab7599e477a2.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.d748ab7599e477a2.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.d748ab7599e477a2.hot-update.json"
+    "main.7d9c06dcc94b98b3.hot-update.json": {
+      "name": "main.7d9c06dcc94b98b3.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.7d9c06dcc94b98b3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.7d9c06dcc94b98b3.hot-update.json"
     },
-    "main.d905bcd2f3ea0288.hot-update.js": {
-      "name": "main.d905bcd2f3ea0288.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.d905bcd2f3ea0288.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.d905bcd2f3ea0288.hot-update.js"
+    "main.859761c6b278f8a9.hot-update.js": {
+      "name": "main.859761c6b278f8a9.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.859761c6b278f8a9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.859761c6b278f8a9.hot-update.js"
     },
-    "main.d905bcd2f3ea0288.hot-update.json": {
-      "name": "main.d905bcd2f3ea0288.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.d905bcd2f3ea0288.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.d905bcd2f3ea0288.hot-update.json"
+    "main.859761c6b278f8a9.hot-update.json": {
+      "name": "main.859761c6b278f8a9.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.859761c6b278f8a9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.859761c6b278f8a9.hot-update.json"
     },
-    "main.ddb0f28b21af0745.hot-update.js": {
-      "name": "main.ddb0f28b21af0745.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.ddb0f28b21af0745.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.ddb0f28b21af0745.hot-update.js"
+    "main.88bb6964dc42fb9f.hot-update.js": {
+      "name": "main.88bb6964dc42fb9f.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.88bb6964dc42fb9f.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.88bb6964dc42fb9f.hot-update.js"
     },
-    "main.ddb0f28b21af0745.hot-update.json": {
-      "name": "main.ddb0f28b21af0745.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.ddb0f28b21af0745.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.ddb0f28b21af0745.hot-update.json"
+    "main.88bb6964dc42fb9f.hot-update.json": {
+      "name": "main.88bb6964dc42fb9f.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.88bb6964dc42fb9f.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.88bb6964dc42fb9f.hot-update.json"
     },
-    "main.e853f00b9af3fe82.hot-update.js": {
-      "name": "main.e853f00b9af3fe82.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.e853f00b9af3fe82.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.e853f00b9af3fe82.hot-update.js"
+    "main.8da6a6770824f9ce.hot-update.js": {
+      "name": "main.8da6a6770824f9ce.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.8da6a6770824f9ce.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.8da6a6770824f9ce.hot-update.js"
     },
-    "main.e853f00b9af3fe82.hot-update.json": {
-      "name": "main.e853f00b9af3fe82.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.e853f00b9af3fe82.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.e853f00b9af3fe82.hot-update.json"
+    "main.8da6a6770824f9ce.hot-update.json": {
+      "name": "main.8da6a6770824f9ce.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.8da6a6770824f9ce.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.8da6a6770824f9ce.hot-update.json"
     },
-    "main.fcb33440330f68bb.hot-update.js": {
-      "name": "main.fcb33440330f68bb.hot-update.js",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.fcb33440330f68bb.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.fcb33440330f68bb.hot-update.js"
+    "main.8eea7c7518d055dd.hot-update.js": {
+      "name": "main.8eea7c7518d055dd.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.8eea7c7518d055dd.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.8eea7c7518d055dd.hot-update.js"
     },
-    "main.fcb33440330f68bb.hot-update.json": {
-      "name": "main.fcb33440330f68bb.hot-update.json",
-      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.fcb33440330f68bb.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.fcb33440330f68bb.hot-update.json"
+    "main.8eea7c7518d055dd.hot-update.json": {
+      "name": "main.8eea7c7518d055dd.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.8eea7c7518d055dd.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.8eea7c7518d055dd.hot-update.json"
     },
->>>>>>> 5b8c6ac6d40140c6ce3b8d02d234d77be6328c03
+    "main.9dadd827f2e13fe6.hot-update.js": {
+      "name": "main.9dadd827f2e13fe6.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.9dadd827f2e13fe6.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.9dadd827f2e13fe6.hot-update.js"
+    },
+    "main.9dadd827f2e13fe6.hot-update.json": {
+      "name": "main.9dadd827f2e13fe6.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.9dadd827f2e13fe6.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.9dadd827f2e13fe6.hot-update.json"
+    },
+    "main.a6fed1ca68a167f7.hot-update.js": {
+      "name": "main.a6fed1ca68a167f7.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.a6fed1ca68a167f7.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.a6fed1ca68a167f7.hot-update.js"
+    },
+    "main.a6fed1ca68a167f7.hot-update.json": {
+      "name": "main.a6fed1ca68a167f7.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.a6fed1ca68a167f7.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.a6fed1ca68a167f7.hot-update.json"
+    },
+    "main.b582a926af4f3f62.hot-update.js": {
+      "name": "main.b582a926af4f3f62.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.b582a926af4f3f62.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.b582a926af4f3f62.hot-update.js"
+    },
+    "main.b582a926af4f3f62.hot-update.json": {
+      "name": "main.b582a926af4f3f62.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.b582a926af4f3f62.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.b582a926af4f3f62.hot-update.json"
+    },
+    "main.b914d6722d6d6c24.hot-update.js": {
+      "name": "main.b914d6722d6d6c24.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.b914d6722d6d6c24.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.b914d6722d6d6c24.hot-update.js"
+    },
+    "main.b914d6722d6d6c24.hot-update.json": {
+      "name": "main.b914d6722d6d6c24.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.b914d6722d6d6c24.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.b914d6722d6d6c24.hot-update.json"
+    },
+    "main.bed6388eaf162772.hot-update.js": {
+      "name": "main.bed6388eaf162772.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.bed6388eaf162772.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.bed6388eaf162772.hot-update.js"
+    },
+    "main.bed6388eaf162772.hot-update.json": {
+      "name": "main.bed6388eaf162772.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.bed6388eaf162772.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.bed6388eaf162772.hot-update.json"
+    },
+    "main.c2fa60a5f4ad861a.hot-update.js": {
+      "name": "main.c2fa60a5f4ad861a.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.c2fa60a5f4ad861a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c2fa60a5f4ad861a.hot-update.js"
+    },
+    "main.c2fa60a5f4ad861a.hot-update.json": {
+      "name": "main.c2fa60a5f4ad861a.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.c2fa60a5f4ad861a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c2fa60a5f4ad861a.hot-update.json"
+    },
+    "main.c8f483994d91f878.hot-update.js": {
+      "name": "main.c8f483994d91f878.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.c8f483994d91f878.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c8f483994d91f878.hot-update.js"
+    },
+    "main.c8f483994d91f878.hot-update.json": {
+      "name": "main.c8f483994d91f878.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.c8f483994d91f878.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c8f483994d91f878.hot-update.json"
+    },
+    "main.d6929e44b08fe2ca.hot-update.js": {
+      "name": "main.d6929e44b08fe2ca.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.d6929e44b08fe2ca.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d6929e44b08fe2ca.hot-update.js"
+    },
+    "main.d6929e44b08fe2ca.hot-update.json": {
+      "name": "main.d6929e44b08fe2ca.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.d6929e44b08fe2ca.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d6929e44b08fe2ca.hot-update.json"
+    },
+    "main.dd80e932a6cc0a8b.hot-update.js": {
+      "name": "main.dd80e932a6cc0a8b.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.dd80e932a6cc0a8b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.dd80e932a6cc0a8b.hot-update.js"
+    },
+    "main.dd80e932a6cc0a8b.hot-update.json": {
+      "name": "main.dd80e932a6cc0a8b.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.dd80e932a6cc0a8b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.dd80e932a6cc0a8b.hot-update.json"
+    },
+    "main.de749a4a3c50eefb.hot-update.js": {
+      "name": "main.de749a4a3c50eefb.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.de749a4a3c50eefb.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.de749a4a3c50eefb.hot-update.js"
+    },
+    "main.de749a4a3c50eefb.hot-update.json": {
+      "name": "main.de749a4a3c50eefb.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.de749a4a3c50eefb.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.de749a4a3c50eefb.hot-update.json"
+    },
+    "main.f8389c3c658948aa.hot-update.js": {
+      "name": "main.f8389c3c658948aa.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.f8389c3c658948aa.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.f8389c3c658948aa.hot-update.js"
+    },
+    "main.f8389c3c658948aa.hot-update.json": {
+      "name": "main.f8389c3c658948aa.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.f8389c3c658948aa.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.f8389c3c658948aa.hot-update.json"
+    },
+    "main.fd17e75e52a1c8bf.hot-update.js": {
+      "name": "main.fd17e75e52a1c8bf.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.fd17e75e52a1c8bf.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.fd17e75e52a1c8bf.hot-update.js"
+    },
+    "main.fd17e75e52a1c8bf.hot-update.json": {
+      "name": "main.fd17e75e52a1c8bf.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.fd17e75e52a1c8bf.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.fd17e75e52a1c8bf.hot-update.json"
+    },
+    "main.ff3e3b0261d15823.hot-update.js": {
+      "name": "main.ff3e3b0261d15823.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.ff3e3b0261d15823.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.ff3e3b0261d15823.hot-update.js"
+    },
+    "main.ff3e3b0261d15823.hot-update.json": {
+      "name": "main.ff3e3b0261d15823.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.ff3e3b0261d15823.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.ff3e3b0261d15823.hot-update.json"
+    },
     "main.html": {
       "name": "main.html",
       "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.html",
@@ -212,10 +339,9 @@
   },
   "chunks": {
     "main": [
-      "js/main.js"
+      "js/main.js",
+      "main.79fb0782c67640ce.hot-update.js"
     ]
   },
-  "publicPath": "http://0.0.0.0:8080/",
-  "error": "ModuleBuildError",
-  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/unai/Escriptori/BrowserGame/vue-bg/src/components/ActionsButtons.vue: Unexpected reserved word 'await'. (34:42)\n\n  32 |         selectCharacterPopup(event){\n  33 |           try {\n> 34 |             const getCharacterLoggedAPI = await fetch('api/getCharacterLogged');\n     |                                           ^\n  35 |             const dataCharacterLogged = await getCharacterLoggedAPI.json();\n  36 |             this.character = dataCharacterLogged.character\n  37 |             console.log(this.character)\n    at instantiate (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:653:32)\n    at constructor (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:947:12)\n    at JSXParserMixin.raise (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:3271:19)\n    at JSXParserMixin.checkReservedWord (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12069:12)\n    at JSXParserMixin.parseIdentifierName (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12048:12)\n    at JSXParserMixin.parseIdentifier (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12023:23)\n    at JSXParserMixin.parseExprAtom (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11243:27)\n    at JSXParserMixin.parseExprAtom (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:7008:20)\n    at JSXParserMixin.parseExprSubscripts (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10880:23)\n    at JSXParserMixin.parseUpdate (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10863:21)\n    at JSXParserMixin.parseMaybeUnary (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10839:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10677:61)\n    at JSXParserMixin.parseExprOps (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10682:23)\n    at JSXParserMixin.parseMaybeConditional (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10659:23)\n    at JSXParserMixin.parseMaybeAssign (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10620:21)\n    at /home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10590:39\n    at JSXParserMixin.allowInAnd (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12260:16)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10590:17)\n    at JSXParserMixin.parseVar (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13201:91)\n    at JSXParserMixin.parseVarStatement (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13040:10)\n    at JSXParserMixin.parseStatementContent (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12637:23)\n    at JSXParserMixin.parseStatementLike (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12557:17)\n    at JSXParserMixin.parseStatementListItem (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12537:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13129:61)\n    at JSXParserMixin.parseBlockBody (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13122:10)\n    at JSXParserMixin.parseBlock (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13110:10)\n    at JSXParserMixin.parseTryStatement (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13013:23)\n    at JSXParserMixin.parseStatementContent (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12596:21)\n    at JSXParserMixin.parseStatementLike (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12557:17)\n    at JSXParserMixin.parseStatementListItem (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:12537:17)\n    at JSXParserMixin.parseBlockOrModuleBlockBody (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13129:61)\n    at JSXParserMixin.parseBlockBody (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13122:10)\n    at JSXParserMixin.parseBlock (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:13110:10)\n    at JSXParserMixin.parseFunctionBody (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11932:24)\n    at JSXParserMixin.parseFunctionBodyAndFinish (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11918:10)\n    at JSXParserMixin.parseMethod (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11876:31)\n    at JSXParserMixin.parseObjectMethod (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11775:19)\n    at JSXParserMixin.parseObjPropValue (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11808:23)\n    at JSXParserMixin.parsePropertyDefinition (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11742:17)\n    at JSXParserMixin.parseObjectLike (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11657:21)\n    at JSXParserMixin.parseExprAtom (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:11167:23)\n    at JSXParserMixin.parseExprAtom (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:7008:20)\n    at JSXParserMixin.parseExprSubscripts (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10880:23)\n    at JSXParserMixin.parseUpdate (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10863:21)\n    at JSXParserMixin.parseMaybeUnary (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10839:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10677:61)\n    at JSXParserMixin.parseExprOps (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10682:23)\n    at JSXParserMixin.parseMaybeConditional (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10659:23)\n    at JSXParserMixin.parseMaybeAssign (/home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10620:21)\n    at /home/unai/Escriptori/BrowserGame/vue-bg/node_modules/@babel/parser/lib/index.js:10590:39"
+  "publicPath": "http://0.0.0.0:8080/"
 }

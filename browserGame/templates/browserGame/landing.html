@@ -6,7 +6,7 @@
   <div id="infoCharacter" style="text-align: center;">
     {% render_bundle 'main' %}
   </div>
-  <div id="actionsCharacter" style="text-align: center;">
+  <div id="actionsCharacter" style="text-align: center; overflow: scroll;">
     {% render_bundle 'main' %}
   </div>
 {% else %}
@@ -35,7 +35,7 @@
       </tr>
     </tbody>
   </table>
-  <div class="w-9/12 mx-auto bg-[#bfae8b] rounded-md border border-pink-950 p-4 m-5">
+  <div id="descGame" class="w-9/12 mx-auto bg-[#bfae8b] rounded-md border border-pink-950 p-4 m-5">
     <p class="text-sm font-medium text-brown-800">
       En aquest joc, els jugadors tindran l'oportunitat d'enfrontar-se a intensos duels mà a mà en una sorra plena de pols. Cada jugador tindrà un límit denergia, el que significa que hauràs de planificar acuradament els teus moviments per sortir victoriós.
     </p>
@@ -46,7 +46,7 @@
       Prepara't per enfrontar-te als teus oponents en intensos duels, construeix la teva estratègia i converteix-te en el millor lluitador del Salvatge Oest. 1, 2, 3, 4, BANG!</p>
     </p>
   </div>
-  <div class="flex justify-around">
+  <div id="logRegButtons" class="flex justify-around">
     <a href="./login" class="text-white bg-gray-700 hover:bg-yellow-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" style="color: white;">El meu ranxo</a>
     <a href="./register" class="text-white bg-gray-700 hover:bg-yellow-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" style="color: white;">Tren a l'Oest </a>
   </div>

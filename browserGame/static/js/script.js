@@ -72,15 +72,15 @@ function boton5(){
     i_div.classList.add("a_div");
     focalizar();
     tabac1.style.display = "block";
-    tabac1.classList.add("a_tabac1");
+    tabac1.classList.add("a_tabac1",'tabac');
     tabac2.style.display = "block";
-    tabac2.classList.add("a_tabac2");
+    tabac2.classList.add("a_tabac2",'tabac');
     tabac3.style.display = "block";
-    tabac3.classList.add("a_tabac3");
+    tabac3.classList.add("a_tabac3",'tabac');
     tabac4.style.display = "block";
-    tabac4.classList.add("a_tabac4");
+    tabac4.classList.add("a_tabac4",'tabac');
     tabac5.style.display = "block";
-    tabac5.classList.add("a_tabac5");
+    tabac5.classList.add("a_tabac5",'tabac');
     pot_tabac.style.display = "block";
     pot_tabac.classList.add("a_pot_tabac");
     setTimeout(rev_b5, 3500);
@@ -90,16 +90,16 @@ function boton6(){
     i_div.classList.add("a_div");
     focalizar();
     whisky_ple1.style.display = "block";
-    whisky_ple1.classList.add("a_whisky_ple1");
-    whisky_buit1.classList.add("a_whisky_buit1");
-    whisky_ple2.classList.add("a_whisky_ple2");
-    whisky_buit2.classList.add("a_whisky_buit2");
-    whisky_ple3.classList.add("a_whisky_ple3");
-    whisky_buit3.classList.add("a_whisky_buit3");
-    whisky_ple4.classList.add("a_whisky_ple4");
-    whisky_buit4.classList.add("a_whisky_buit4");
-    whisky_ple5.classList.add("a_whisky_ple5");
-    whisky_buit5.classList.add("a_whisky_buit5");
+    whisky_ple1.classList.add("a_whisky_ple1",'whisky');
+    whisky_buit1.classList.add("a_whisky_buit1",'whisky');
+    whisky_ple2.classList.add("a_whisky_ple2",'whisky');
+    whisky_buit2.classList.add("a_whisky_buit2",'whisky');
+    whisky_ple3.classList.add("a_whisky_ple3",'whisky');
+    whisky_buit3.classList.add("a_whisky_buit3",'whisky');
+    whisky_ple4.classList.add("a_whisky_ple4",'whisky');
+    whisky_buit4.classList.add("a_whisky_buit4",'whisky');
+    whisky_ple5.classList.add("a_whisky_ple5",'whisky');
+    whisky_buit5.classList.add("a_whisky_buit5",'whisky');
     setTimeout(rev_b6, 4500);
 }
 function boton7(){

@@ -172,6 +172,11 @@ body{
     margin-top: 10px;
 }
 
+#submitButton:hover{
+  color: #50300F;
+  background-color: #9e885d; 
+}
+
 #bodyAnimations {
     display: flex;
     justify-content: center;
@@ -205,6 +210,13 @@ button {
     opacity: 0.5;
     z-index: 2;
     animation: growAndFade 1.5s linear forwards;
+}
+
+#i_div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
 }
   
 @keyframes growAndFade {
@@ -1124,19 +1136,40 @@ button {
     left: 37%;
     transform: rotate(270deg);
   }
-  60% {
+  50% {
     top:2%;
-    left: 75%;
+    left: 48%;
     transform: rotate(-270deg);
   }
-  90% {
+  53% {
+    top:0.5%;
+  }
+  56% {
+    top:2%;
+  }
+  61% {
+    top:0.8%;
+  }
+  70% {
+    top:2%;
+  }
+
+  75% {
+    top:2%;
+  }
+  80% {
+    top:2%;
+    left: 76%;
+    transform: rotate(360deg);
+  }
+  92% {
     top:0%;
     left: 90%;
-    transform: rotate(270deg);
+    transform: rotate(990deg);
   }
   100% {
     left: 96%;
-    transform: rotate(360deg);
+    transform: rotate(600deg);
   }
 }
 
@@ -1236,4 +1269,228 @@ button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+}
+
+
+@media (max-width: 700px) {
+  .ball {
+    background-image: url('../images/pngwing.com.png');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    animation: roll 5s linear infinite, spin 2s linear infinite;
+  }
+
+  @keyframes roll {
+    0% {
+      left: 0%;
+      transform: rotate(0deg);
+    }
+    34% {
+      left: 30%;
+      transform: rotate(720deg);
+    }
+    35% {
+      top:2%;
+      left: 31%;
+      transform: rotate(0deg);
+    }
+    40% {
+      top:0%;
+      left: 37%;
+      transform: rotate(270deg);
+    }
+    50% {
+      top:2%;
+      left: 48%;
+      transform: rotate(-270deg);
+    }
+    55% {
+      top:0.5%;
+    }
+    58% {
+      top:2%;
+    }
+    61% {
+      top:0.8%;
+    }
+    64% {
+      top:2%;
+    }
+    67% {
+      top:1%;
+    }
+    75% {
+      top:2%;
+    }
+    80% {
+      top:2%;
+      left: 73%;
+      transform: rotate(360deg);
+    }
+    92% {
+      top:0%;
+      left: 81%;
+      transform: rotate(990deg);
+    }
+    100% {
+      left: 85%;
+      transform: rotate(600deg);
+    }
+  }
+  }
+
+  #base-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  #logRegButtons{
+    order: 1;
+    margin: 0 auto;
+  }
+  #descGame{
+    order: 2;
+  }
+  .card-title{
+    width: 90%;
+  }
+  .card-content{
+    width: 90%;
+  }
+
+  #formAction{
+    width: auto;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    background-color: #5c3b1e3a;
+    height: auto;
+  }
+  #action_type{
+    width: 70%;
+  }
+  #action_selector{
+    width: 70%;
+  }
+  #character_target{
+    width: 70%;
+  }
+  .a_pot_tabac {
+    width: 65%;
+    top: 25%;
+    left: 17%;
+    z-index: 5;
+  }
+  .tabac{
+    width: 25%;
+  }
+  .a_tabac1 {
+    top: 40%;
+    left: 26%;
+  }
+  .a_tabac2 {
+    top: 43%;
+    left: 45%;
+  }
+  .a_tabac3 {
+    top: 36%;
+    left: 21%;
+  }
+  .a_tabac4 {
+    top: 34%;
+    left: 65%;
+  }
+  .a_tabac5 {
+    top: 37%;
+    left: 8%;
+  }
+  .whisky{
+    width: 19%;
+  }
+  .a_locomotora {
+    top: 50%;
+  }
+  
+  .a_cowboy4 {
+    top: 50%;
+  }
+
+  .a_sang4{
+    top:45%;
+    left: 5%;
+    transform: scale(1.8)
+  }
+  @keyframes acercarse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(15);
+    }
+  }
+  
+  @keyframes alejarse {
+    0% {
+      transform: scale(2);
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+  }
+
+  .a_cowboy3{
+    width: 37%;
+    top: 20%;
+    left: 90%;
+  }
+  .a_sang3{
+    width: 30%;
+    top:18%;
+    left: 11%;
+  }
+  .a_cowboy2{
+    width: 40%;
+    top: 30%;
+    left: 50%;
+  }
+  .a_sang2{
+    width: 27%;
+    top:28%;
+    left: 55%;
+  }
+  .a_bota{
+    width: 50%;
+    top:28%;
+    left: 10%;
+  }
+  .a_escupinada{
+    width: 40%;
+    top: 40%;
+    left: 55%;
+  }
+  .a_cowboy1{
+    width: 59%;
+    top: 20%;
+    left: 26%;
+  }
+  .a_bota_d{
+    top: 30%;
+    width: 34%;
+    right: 10%;
+  }
+  .a_bota_e{
+    top: 30%;
+    width: 34%;
+    left: 18%;
+
+  }
 }

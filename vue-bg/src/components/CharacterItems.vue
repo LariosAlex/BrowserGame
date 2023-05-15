@@ -1,5 +1,5 @@
 <template>
-  <table class = "infoSeason-table table-auto w-90 p-5" v-if="!loadingCharacter">
+  <table class = "infoSeason-table max-md:w-full table-auto w-90 p-5" v-if="!loadingCharacter">
     <thead>
           <tr>
           <th colspan="2"><h2>TEMPORADA {{ character.season }}</h2></th>

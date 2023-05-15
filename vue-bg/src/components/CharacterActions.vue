@@ -1,5 +1,5 @@
 <template>
-    <table class="action-table table-auto w-90" v-if="!loadingActions">
+    <table class="action-table table-auto w-90 max-md:w-full" v-if="!loadingActions">
       <thead>
           <tr>
             <th colspan="6"><h2>ACCIONS</h2></th>
