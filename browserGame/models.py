@@ -30,7 +30,7 @@ class Season(models.Model):
 class Character(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     season = models.ForeignKey(Season, on_delete=models.CASCADE)
-    nickname = models.CharField(max_length=255)
+    nickname = models.CharField(max_length=255, unique=True)
     life = models.IntegerField()
     mana = models.IntegerField()
     level = models.IntegerField()

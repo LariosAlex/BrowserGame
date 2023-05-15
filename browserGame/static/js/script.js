@@ -1,14 +1,19 @@
+export { boton1, boton2, boton3, boton4, boton5, boton6, boton7, boton8, boton9, realizarAccion }
+function focalizar(){
+    const div = document.getElementById('i_div');
+    div.scrollIntoView();
+}
 
 function boton1(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     escupinada.style.display = "block";
     escupinada.classList.add("a_escupinada");
     cowboy.style.display = "block";
     cowboy.classList.add("a_cowboy1");
     setTimeout(rev_b1, 2300);
 }
-
 function rev_b1() {
     i_div.style.display = "none";
     i_div.classList.remove("a_div");
@@ -20,6 +25,7 @@ function rev_b1() {
 function boton2(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     bota.style.display = "block";
     bota.classList.add("a_bota");
     cowboy.style.display = "block";
@@ -42,6 +48,7 @@ function rev_b2() {
 function boton3(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     revolver.style.display = "block";
     revolver.classList.add("a_revolver");
     cowboy.style.display = "block";
@@ -52,6 +59,7 @@ function boton3(){
 function boton4(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     locomotora.style.display = "block";
     locomotora.classList.add("a_locomotora");
     cowboy.style.display = "block";
@@ -62,6 +70,7 @@ function boton4(){
 function boton5(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     tabac1.style.display = "block";
     tabac1.classList.add("a_tabac1");
     tabac2.style.display = "block";
@@ -79,6 +88,7 @@ function boton5(){
 function boton6(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     whisky_ple1.style.display = "block";
     whisky_ple1.classList.add("a_whisky_ple1");
     whisky_buit1.classList.add("a_whisky_buit1");
@@ -95,6 +105,7 @@ function boton6(){
 function boton7(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
+    focalizar();
     bota_e.style.display = "block";
     bota_e.classList.add("a_bota_e");
     bota_d.style.display = "block";
@@ -313,10 +324,12 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
         var actionName = actionData.action.name;
         var actionChance = actionData.action.success_rate;
 
-        var newExp = expCharacter;
+        var expCharacter = expCharacter;
         var newMana = manaCharacter - costValue;
         let randomNum = Math.floor(Math.random() * 100) + 1;
         let success = 0;
+        var expObtained = 0;
+
         if(actionType == 'DEF' && lifeCharacter == levelCharacter*10){
             notificacion("info", "La teva acció: "+actionName+" no s'ha pogut realitzar perque ja tens la vida maxima.");
         }else if(costValue > manaCharacter){
@@ -331,27 +344,21 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                     let nivellMinim = 1;
                     let nivellMaxim = 1;
                     if(lifeCharacterTarget<=damage){
-                        if(lvlCharacter > targetLvl){
+                        if(levelCharacter > levelCharacterTarget){
                             nivellMinim = levelCharacter;
                             nivellMaxim = levelCharacterTarget;
-                        }else if(lvlCharacter < targetLvl){
+                        }else if(levelCharacter < levelCharacterTarget){
                             nivellMinim = levelCharacter;
                             nivellMaxim = levelCharacterTarget;
-                        }else if(lvlCharacter == targetLvl){
+                        }else if(levelCharacter == levelCharacterTarget){
                             nivellMaxim = levelCharacter;
                             nivellMinim = levelCharacter;
                         }
                         console.log('Matas al enemigo')
+                        boton8();
                         let randomNum = Math.floor(Math.random() * (nivellMaxim - nivellMinim + 1)) + nivellMinim;
                         let expExtra = randomNum*2;
                         expObtained += expExtra;
-                    }
-                    newExp += expObtained;
-                    limiteXp = levelCharacter*10;
-                    if(newExp > limiteXp){
-                        newExp = 0;
-                        levelCharacter += 1;
-                        console.log('Subes de nivel')
                     }
                     let data = {
                         character_id: idCharacterTarget,
@@ -376,18 +383,22 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                         lifeCharacter = limitHp;
                     }
                 }else{
-                    newExp += exp;
-                    let limitExp = levelCharacter*10;
-                    if(newExp>=limitExp){
-                        levelCharacter +=1;
-                        newExp = 0;
-                    }
+                    expObtained += exp;
+                    console.log('Realizas accion neutral');
+                }
+                expCharacter += expObtained;
+                let limiteXp = levelCharacter*10;
+                if(expCharacter > limiteXp){
+                    expCharacter = 0;
+                    levelCharacter += 1;
+                    console.log('Subes de nivel')
+                    boton9();
                 }
                 let data = {
                     character_id: idCharacter,
                     sendMana:newMana,
                     health:lifeCharacter,
-                    experience:newExp,
+                    experience:expCharacter,
                     level:levelCharacter,
                 };
                 $.ajax({
@@ -405,7 +416,8 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                 notificacion("warning", "Tu accion: "+actionName+" no ha tenido exito.");
                 success = 0;
             }
-            newData = {
+            
+            let newData = {
                 performer_id: idCharacter,
                 target_id: idCharacterTarget,
                 action_id: idAction,
@@ -419,7 +431,7 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                     console.log('La acción ha sido guardada en la base de datos');
                 },
                 error: function(response){
-                console.log(response);
+                    console.log(response);
                 }
             });
         }

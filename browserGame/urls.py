@@ -20,6 +20,7 @@ urlpatterns = [
     path('ranking', views.ranking, name='landing'),
     path('animations', views.animations, name='animations'),
     path('actions/', views.actions, name='actions'),
+    path('user/<str:character_name>', views.userInfo, name='userInfo'),
 
     path('api/getRanking/', api.getRanking, name='getRanking'),
     path('api/getCharacter/<int:character_id>', api.getCharacter, name='getCharacter'),
@@ -27,4 +28,5 @@ urlpatterns = [
     path('api/getAction/<int:action_id>', api.getAction, name='getAction'),
     path('api/getActionsLog/<int:character_id>', api.getActionsLog, name='getActionsLog'),
     path('api/getActions/', api.getActions, name='getActions'),
+    path('api/getCharacters/', api.getCharacters, name='getCharacters'),
 ]

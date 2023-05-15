@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script type="module" src="{% static 'js/script.js' %}"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -16,6 +17,7 @@
     </nav>
     
     <main id="base-page">
+        {% csrf_token %}
         <div id="notificaciones"></div>
         {% block content %}{% endblock %}
     </main>
@@ -24,8 +26,7 @@
         <!-- Pie de página -->
     </footer>
 
-    <script src="{% static 'js/script.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
         $(document).ready(function() {
             // hide the password help text on page load

@@ -40,3 +40,6 @@ def getCharacterLogged(request):
         return JsonResponse({"character": character_dict})
     else:
         return JsonResponse({"character": None})
+def getCharacters(request):
+    characters = list(Character.objects.all().order_by('level').values())
+    return JsonResponse({"characters": characters})

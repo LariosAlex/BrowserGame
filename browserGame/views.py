@@ -17,6 +17,7 @@ from django.conf import settings
 from django.core import serializers
 from django.http import JsonResponse
 from datetime import timedelta
+from django.shortcuts import get_object_or_404, render
 
 def vue(request):
     context = {}
@@ -172,15 +173,16 @@ def update_character(request):
 def activate_cron(request):
     season = Season.objects.latest("id")
     dif_time = timezone.make_aware(datetime.now(), timezone.get_default_timezone()) - season.last_datetime_recharge
-    h_dif_time = dif_time.total_seconds()//3600
-    if h_dif_time >= 1:
-        for i in Character.objects.all():
-            if i.life > 0:
-                if i.level*10 - i.mana > i.level*h_dif_time:
-                    i.mana += i.level*h_dif_time
+    time = season.time_between_recharge
+    cantidadDeVecesRecargar = dif_time.total_seconds()//60 *time
+    if cantidadDeVecesRecargar >= 1:
+        for character in Character.objects.all():
+            if character.life > 0:
+                if character.level*10 - character.mana > character.level*cantidadDeVecesRecargar:
+                    character.mana += character.level*cantidadDeVecesRecargar
                 else:
-                    i.mana = i.level*10
-                i.save()
+                    character.mana = character.level*10
+                character.save()
         
         a = Season.objects.get(id=str(season))
         a.last_datetime_recharge = timezone.make_aware(datetime.now(), timezone.get_default_timezone())
@@ -197,3 +199,30 @@ def animations(request):
 
 def actions(request):
     return render(request, 'browserGame/ataques.html')
+
+def userInfo(request, character_name):
+    character = Character.objects.get(nickname=character_name)
+    season = Season.objects.latest("id")
+    characters = list(Character.objects.filter(season=season).order_by('-level', '-exp'))
+    character_dict = model_to_dict(character)
+    # Obtener el ranking del personaje
+    ranking = 0
+    for i, c in enumerate(characters):
+        if c.id == character.id:
+            ranking = i + 1
+            break
+
+    character_dict['ranking'] = ranking
+    # Obtener el porcentaje de éxito de las acciones del personaje
+    success_count = 0
+    actions = ActionLog.objects.filter(performer = character)
+    for action in actions:
+        if action.succeed:
+            success_count += 1
+    total_actions = actions.count()
+    success_percentage = 0
+    if total_actions > 0:
+        success_percentage = (success_count / total_actions) * 100
+    character_dict['success_percentage'] = success_percentage
+    context = {'character': character_dict}
+    return render(request, 'browserGame/character.html', context)
