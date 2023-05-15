@@ -258,7 +258,6 @@ function rev_b9() {
 };
 
 function getCharacter(idCharacter) {
-    console.log('IDCHARACTER:'+idCharacter)
     return new Promise(function(resolve, reject) {
       $.ajax({
         url: 'api/getCharacter/'+idCharacter,

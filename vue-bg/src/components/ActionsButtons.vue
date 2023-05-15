@@ -66,6 +66,7 @@
         return {
             actions: null,
             loadingActions: true,
+            character: null
         };
     },
     methods: {
@@ -88,8 +89,16 @@
         puedoEnviar(){
           document.querySelector('#popup a').style.display = 'block';
         },
-        selectCharacterPopup(event){
-          let userCharacter = JSON.parse(document.getElementById('infoCharacter').getAttribute('data')).characterLogged
+        selectCharacterPopup: async function(event){
+          try {
+            const getCharacterLoggedAPI = await fetch('api/getCharacterLogged');
+            const dataCharacterLogged = await getCharacterLoggedAPI.json();
+            this.character = dataCharacterLogged.character
+            console.log(this.character)
+          }catch(error){
+            console.log(error)
+          }
+          let userCharacter = this.character
           const popup = document.getElementById("popup");
           const fondoPopup = document.getElementById('fondoPopup');
           document.querySelector('#popup a').setAttribute('id', event.target.id);
@@ -123,10 +132,17 @@
           popup.style.display = 'none';
           fondoPopup.style.display = 'none';
         },
-        actionAnimations(event){
+        actionAnimations: async function(event){
+          try {
+            const getCharacterLoggedAPI = await fetch('api/getCharacterLogged');
+            const dataCharacterLogged = await getCharacterLoggedAPI.json();
+            this.character = dataCharacterLogged.character
+            console.log(this.character)
+          }catch(error){
+            console.log(error)
+          }
+          let idCharacter = this.character.id
           let idAction = event.target.id
-          let character = JSON.parse(document.getElementById('infoCharacter').getAttribute('data')).characterLogged
-          let idCharacter = character.id
           if(idAction != 27 && idAction != 28 && idAction != 29 && idAction != 30){
             functions.realizarAccion(idCharacter, idAction)
           }else{
@@ -157,16 +173,8 @@
           }
           if(idAction == 24){
             functions.boton7();
-          }
-          // functions.boton1();
-          // functions.boton2();
-          // functions.boton3();
-          // functions.boton4();
-          // functions.boton5();
-          // functions.boton6();
-          // functions.boton7();
+          } 
         }
-        
     },
     mounted() {
         this.getActions();
