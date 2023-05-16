@@ -21,235 +21,25 @@
       "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/js/main.js",
       "publicPath": "http://0.0.0.0:8080/js/main.js"
     },
-    "main.02700ba90d6c85ba.hot-update.js": {
-      "name": "main.02700ba90d6c85ba.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.02700ba90d6c85ba.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.02700ba90d6c85ba.hot-update.js"
+    "main.411ab23b119212e0.hot-update.js": {
+      "name": "main.411ab23b119212e0.hot-update.js",
+      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.411ab23b119212e0.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.411ab23b119212e0.hot-update.js"
     },
-    "main.02700ba90d6c85ba.hot-update.json": {
-      "name": "main.02700ba90d6c85ba.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.02700ba90d6c85ba.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.02700ba90d6c85ba.hot-update.json"
+    "main.411ab23b119212e0.hot-update.json": {
+      "name": "main.411ab23b119212e0.hot-update.json",
+      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.411ab23b119212e0.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.411ab23b119212e0.hot-update.json"
     },
-    "main.08940680ee109444.hot-update.js": {
-      "name": "main.08940680ee109444.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.08940680ee109444.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.08940680ee109444.hot-update.js"
+    "main.5d517d6c6c8d0bee.hot-update.js": {
+      "name": "main.5d517d6c6c8d0bee.hot-update.js",
+      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.5d517d6c6c8d0bee.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.5d517d6c6c8d0bee.hot-update.js"
     },
-    "main.08940680ee109444.hot-update.json": {
-      "name": "main.08940680ee109444.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.08940680ee109444.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.08940680ee109444.hot-update.json"
-    },
-    "main.1aba40697b2ec72b.hot-update.js": {
-      "name": "main.1aba40697b2ec72b.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.1aba40697b2ec72b.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.1aba40697b2ec72b.hot-update.js"
-    },
-    "main.1aba40697b2ec72b.hot-update.json": {
-      "name": "main.1aba40697b2ec72b.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.1aba40697b2ec72b.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.1aba40697b2ec72b.hot-update.json"
-    },
-    "main.21221314e89d0d2f.hot-update.js": {
-      "name": "main.21221314e89d0d2f.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.21221314e89d0d2f.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.21221314e89d0d2f.hot-update.js"
-    },
-    "main.21221314e89d0d2f.hot-update.json": {
-      "name": "main.21221314e89d0d2f.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.21221314e89d0d2f.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.21221314e89d0d2f.hot-update.json"
-    },
-    "main.33885e6d05e9a7e9.hot-update.js": {
-      "name": "main.33885e6d05e9a7e9.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.33885e6d05e9a7e9.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.33885e6d05e9a7e9.hot-update.js"
-    },
-    "main.33885e6d05e9a7e9.hot-update.json": {
-      "name": "main.33885e6d05e9a7e9.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.33885e6d05e9a7e9.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.33885e6d05e9a7e9.hot-update.json"
-    },
-    "main.34d7444f10e66520.hot-update.js": {
-      "name": "main.34d7444f10e66520.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.34d7444f10e66520.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.34d7444f10e66520.hot-update.js"
-    },
-    "main.34d7444f10e66520.hot-update.json": {
-      "name": "main.34d7444f10e66520.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.34d7444f10e66520.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.34d7444f10e66520.hot-update.json"
-    },
-    "main.584cfd8eeb330e4f.hot-update.js": {
-      "name": "main.584cfd8eeb330e4f.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.584cfd8eeb330e4f.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.584cfd8eeb330e4f.hot-update.js"
-    },
-    "main.584cfd8eeb330e4f.hot-update.json": {
-      "name": "main.584cfd8eeb330e4f.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.584cfd8eeb330e4f.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.584cfd8eeb330e4f.hot-update.json"
-    },
-    "main.5ac185e4ee77002f.hot-update.js": {
-      "name": "main.5ac185e4ee77002f.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.5ac185e4ee77002f.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.5ac185e4ee77002f.hot-update.js"
-    },
-    "main.5ac185e4ee77002f.hot-update.json": {
-      "name": "main.5ac185e4ee77002f.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.5ac185e4ee77002f.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.5ac185e4ee77002f.hot-update.json"
-    },
-    "main.68e58fb7ab78a37a.hot-update.js": {
-      "name": "main.68e58fb7ab78a37a.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.68e58fb7ab78a37a.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.68e58fb7ab78a37a.hot-update.js"
-    },
-    "main.68e58fb7ab78a37a.hot-update.json": {
-      "name": "main.68e58fb7ab78a37a.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.68e58fb7ab78a37a.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.68e58fb7ab78a37a.hot-update.json"
-    },
-    "main.76a8c502f6278a59.hot-update.js": {
-      "name": "main.76a8c502f6278a59.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.76a8c502f6278a59.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.76a8c502f6278a59.hot-update.js"
-    },
-    "main.76a8c502f6278a59.hot-update.json": {
-      "name": "main.76a8c502f6278a59.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.76a8c502f6278a59.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.76a8c502f6278a59.hot-update.json"
-    },
-    "main.79c747f42893a72a.hot-update.js": {
-      "name": "main.79c747f42893a72a.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.79c747f42893a72a.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.79c747f42893a72a.hot-update.js"
-    },
-    "main.79c747f42893a72a.hot-update.json": {
-      "name": "main.79c747f42893a72a.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.79c747f42893a72a.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.79c747f42893a72a.hot-update.json"
-    },
-    "main.7a21662aee2493ea.hot-update.js": {
-      "name": "main.7a21662aee2493ea.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.7a21662aee2493ea.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.7a21662aee2493ea.hot-update.js"
-    },
-    "main.7a21662aee2493ea.hot-update.json": {
-      "name": "main.7a21662aee2493ea.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.7a21662aee2493ea.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.7a21662aee2493ea.hot-update.json"
-    },
-    "main.7bd2cb88d06aff2c.hot-update.js": {
-      "name": "main.7bd2cb88d06aff2c.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.7bd2cb88d06aff2c.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.7bd2cb88d06aff2c.hot-update.js"
-    },
-    "main.7bd2cb88d06aff2c.hot-update.json": {
-      "name": "main.7bd2cb88d06aff2c.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.7bd2cb88d06aff2c.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.7bd2cb88d06aff2c.hot-update.json"
-    },
-    "main.7f1c1988a1ab8a87.hot-update.js": {
-      "name": "main.7f1c1988a1ab8a87.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.7f1c1988a1ab8a87.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.7f1c1988a1ab8a87.hot-update.js"
-    },
-    "main.7f1c1988a1ab8a87.hot-update.json": {
-      "name": "main.7f1c1988a1ab8a87.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.7f1c1988a1ab8a87.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.7f1c1988a1ab8a87.hot-update.json"
-    },
-    "main.8e2447294129aa13.hot-update.js": {
-      "name": "main.8e2447294129aa13.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.8e2447294129aa13.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.8e2447294129aa13.hot-update.js"
-    },
-    "main.8e2447294129aa13.hot-update.json": {
-      "name": "main.8e2447294129aa13.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.8e2447294129aa13.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.8e2447294129aa13.hot-update.json"
-    },
-    "main.a6a8613db2e6de67.hot-update.js": {
-      "name": "main.a6a8613db2e6de67.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.a6a8613db2e6de67.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.a6a8613db2e6de67.hot-update.js"
-    },
-    "main.a6a8613db2e6de67.hot-update.json": {
-      "name": "main.a6a8613db2e6de67.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.a6a8613db2e6de67.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.a6a8613db2e6de67.hot-update.json"
-    },
-    "main.b489a5eab51b6b1d.hot-update.js": {
-      "name": "main.b489a5eab51b6b1d.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.b489a5eab51b6b1d.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.b489a5eab51b6b1d.hot-update.js"
-    },
-    "main.b489a5eab51b6b1d.hot-update.json": {
-      "name": "main.b489a5eab51b6b1d.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.b489a5eab51b6b1d.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.b489a5eab51b6b1d.hot-update.json"
-    },
-    "main.b64ab0122536ba8e.hot-update.js": {
-      "name": "main.b64ab0122536ba8e.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.b64ab0122536ba8e.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.b64ab0122536ba8e.hot-update.js"
-    },
-    "main.b64ab0122536ba8e.hot-update.json": {
-      "name": "main.b64ab0122536ba8e.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.b64ab0122536ba8e.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.b64ab0122536ba8e.hot-update.json"
-    },
-    "main.b71d339a40711573.hot-update.js": {
-      "name": "main.b71d339a40711573.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.b71d339a40711573.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.b71d339a40711573.hot-update.js"
-    },
-    "main.b71d339a40711573.hot-update.json": {
-      "name": "main.b71d339a40711573.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.b71d339a40711573.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.b71d339a40711573.hot-update.json"
-    },
-    "main.c8b2012357ef90ce.hot-update.js": {
-      "name": "main.c8b2012357ef90ce.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.c8b2012357ef90ce.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.c8b2012357ef90ce.hot-update.js"
-    },
-    "main.c8b2012357ef90ce.hot-update.json": {
-      "name": "main.c8b2012357ef90ce.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.c8b2012357ef90ce.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.c8b2012357ef90ce.hot-update.json"
-    },
-    "main.e3b44c0c2c2f48e7.hot-update.js": {
-      "name": "main.e3b44c0c2c2f48e7.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.e3b44c0c2c2f48e7.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.e3b44c0c2c2f48e7.hot-update.js"
-    },
-    "main.e3b44c0c2c2f48e7.hot-update.json": {
-      "name": "main.e3b44c0c2c2f48e7.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.e3b44c0c2c2f48e7.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.e3b44c0c2c2f48e7.hot-update.json"
-    },
-    "main.edeedd1cc2026bac.hot-update.js": {
-      "name": "main.edeedd1cc2026bac.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.edeedd1cc2026bac.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.edeedd1cc2026bac.hot-update.js"
-    },
-    "main.edeedd1cc2026bac.hot-update.json": {
-      "name": "main.edeedd1cc2026bac.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.edeedd1cc2026bac.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.edeedd1cc2026bac.hot-update.json"
-    },
-    "main.f608417af906a86d.hot-update.js": {
-      "name": "main.f608417af906a86d.hot-update.js",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.f608417af906a86d.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.f608417af906a86d.hot-update.js"
-    },
-    "main.f608417af906a86d.hot-update.json": {
-      "name": "main.f608417af906a86d.hot-update.json",
-      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.f608417af906a86d.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.f608417af906a86d.hot-update.json"
+    "main.5d517d6c6c8d0bee.hot-update.json": {
+      "name": "main.5d517d6c6c8d0bee.hot-update.json",
+      "path": "/home/alum-01/CosasDePolito/proj3/BrowserGame/vue-bg/dist/main.5d517d6c6c8d0bee.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.5d517d6c6c8d0bee.hot-update.json"
     },
     "main.html": {
       "name": "main.html",
@@ -260,7 +50,7 @@
   "chunks": {
     "main": [
       "js/main.js",
-      "main.08940680ee109444.hot-update.js"
+      "main.411ab23b119212e0.hot-update.js"
     ]
   },
   "publicPath": "http://0.0.0.0:8080/"

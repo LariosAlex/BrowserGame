@@ -8,6 +8,8 @@ function boton1(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    audio1.currentTime = 0;
+    audio1.play();
     escupinada.style.display = "block";
     escupinada.classList.add("a_escupinada");
     cowboy.style.display = "block";
@@ -26,6 +28,10 @@ function boton2(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    setTimeout(() => {
+        audio2.currentTime = 0;
+        audio2.play();
+      }, 300);
     bota.style.display = "block";
     bota.classList.add("a_bota");
     cowboy.style.display = "block";
@@ -49,6 +55,10 @@ function boton3(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    setTimeout(() => {
+        audio3.currentTime = 0;
+        audio3.play();
+      }, 1200);
     revolver.style.display = "block";
     revolver.classList.add("a_revolver");
     cowboy.style.display = "block";
@@ -60,6 +70,11 @@ function boton4(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    audio4.currentTime = 0;
+    audio4.play();
+    setTimeout(() => {
+        audio4.pause();
+      }, 1500);
     locomotora.style.display = "block";
     locomotora.classList.add("a_locomotora");
     cowboy.style.display = "block";
@@ -71,6 +86,8 @@ function boton5(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    audio5.currentTime = 0;
+    audio5.play();
     tabac1.style.display = "block";
     tabac1.classList.add("a_tabac1");
     tabac2.style.display = "block";
@@ -89,6 +106,11 @@ function boton6(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    audio6.currentTime = 0;
+    audio6.play();
+    setTimeout(() => {
+        audio6.pause();
+      }, 3000);
     whisky_ple1.style.display = "block";
     whisky_ple1.classList.add("a_whisky_ple1");
     whisky_buit1.classList.add("a_whisky_buit1");
@@ -106,6 +128,11 @@ function boton7(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    audio7.currentTime = 0;
+    audio7.play();
+    setTimeout(() => {
+        audio7.pause();
+    }, 1500);
     bota_e.style.display = "block";
     bota_e.classList.add("a_bota_e");
     bota_d.style.display = "block";
@@ -357,6 +384,10 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                         console.log('Matas al enemigo')
                         killed = true;
                         setTimeout(boton8,2800);
+                        setTimeout(() => {
+                            audio8.currentTime = 0;
+                            audio8.play();
+                          }, 2800);
                         let randomNum = Math.floor(Math.random() * (nivellMaxim - nivellMinim + 1)) + nivellMinim;
                         let expExtra = randomNum*2;
                         expObtained += expExtra;
@@ -396,9 +427,17 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                     console.log(killed)
                     if(killed==true){
                         setTimeout(boton9,5500);
+                        setTimeout(() => {
+                            audio9.currentTime = 0;
+                            audio9.play();
+                          }, 5500);
                         killed = false;
                     } else{
                         setTimeout(boton9,2800);
+                        setTimeout(() => {
+                            audio9.currentTime = 0;
+                            audio9.play();
+                          }, 2800);
                     }
                 }
                 let data = {

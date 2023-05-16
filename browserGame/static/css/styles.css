@@ -267,7 +267,7 @@ button {
   z-index: 3;
   opacity: 0;
   display: block;
-  animation: aparecer 1s linear forwards;
+  animation: aparecer 1.5s linear forwards;
   animation-fill-mode: forwards;
 }
 
