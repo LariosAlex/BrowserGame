@@ -161,6 +161,16 @@
       "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.6cb6afd61c970f49.hot-update.json",
       "publicPath": "http://0.0.0.0:8080/main.6cb6afd61c970f49.hot-update.json"
     },
+    "main.715915d7e1a2d4ec.hot-update.js": {
+      "name": "main.715915d7e1a2d4ec.hot-update.js",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.715915d7e1a2d4ec.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.715915d7e1a2d4ec.hot-update.js"
+    },
+    "main.715915d7e1a2d4ec.hot-update.json": {
+      "name": "main.715915d7e1a2d4ec.hot-update.json",
+      "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.715915d7e1a2d4ec.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.715915d7e1a2d4ec.hot-update.json"
+    },
     "main.73474586404234c2.hot-update.js": {
       "name": "main.73474586404234c2.hot-update.js",
       "path": "/home/larios/Escritorio/djangoProjects/browserGame/BrowserGame/vue-bg/dist/main.73474586404234c2.hot-update.js",
@@ -380,7 +390,7 @@
   "chunks": {
     "main": [
       "js/main.js",
-      "main.fe9520b3069ac1f6.hot-update.js"
+      "main.715915d7e1a2d4ec.hot-update.js"
     ]
   },
   "publicPath": "http://0.0.0.0:8080/",
