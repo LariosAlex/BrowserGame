@@ -115,7 +115,7 @@ def save_action(request):
         target_id = performer_id
     action_id = request.POST.get('action_id')
     succeed = request.POST.get('succeed')
-
+    num = request.POST.get('num')
     if Character.objects.filter(id=performer_id).exists():
         performer = Character.objects.get(id=performer_id)
     else:
@@ -133,6 +133,7 @@ def save_action(request):
         action=action,
         succeed=succeed,
         datetime=datetime,
+        run_number=num,
     )
 
     return JsonResponse({'status': 'ok'})

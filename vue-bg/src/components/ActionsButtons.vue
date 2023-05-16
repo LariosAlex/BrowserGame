@@ -93,7 +93,6 @@
             const getCharacterLoggedAPI = await fetch('api/getCharacterLogged');
             const dataCharacterLogged = await getCharacterLoggedAPI.json();
             this.character = dataCharacterLogged.character
-            console.log(this.character)
           }catch(error){
             console.log(error)
           }
@@ -136,7 +135,6 @@
             const getCharacterLoggedAPI = await fetch('api/getCharacterLogged');
             const dataCharacterLogged = await getCharacterLoggedAPI.json();
             this.character = dataCharacterLogged.character
-            console.log(this.character)
           }catch(error){
             console.log(error)
           }

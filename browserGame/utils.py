@@ -2,6 +2,7 @@ from django.utils import timezone
 from .models import Log
 from django.contrib.auth import get_user_model
 import traceback, os
+from django.shortcuts import render
 
 
 def save_log(type_log, message, request):
@@ -19,4 +20,5 @@ def save_log(type_log, message, request):
         line= tb.lineno
     )
     log.save()
+
     

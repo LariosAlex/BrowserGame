@@ -72,7 +72,7 @@
       },
       mounted() {
         this.getCharacterActions()
-        setInterval(this.getCharacterActions, 3000);
+        setInterval(this.getCharacterActions, 30000);
       },
     }
     </script>

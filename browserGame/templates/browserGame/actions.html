@@ -63,11 +63,11 @@
     </tbody>
   </table>
   <script>
-    var manaCharacter = '{{ character.mana }}';
-    var hpCharacter = {{ character.life }};
-    var nameCharacter = `{{ character.nickname }}`
-    var lvlCharacter = {{ character.level }};
-    var expCharacter = {{ character.exp }};
+    var manaCharacter = character.mana
+    var hpCharacter = character.life 
+    var nameCharacter = character.nickname
+    var lvlCharacter = character.level 
+    var expCharacter = character.exp 
     $('#action_selector').val('')
     $('#action_type').val('')
     $('#character_target').val('')
@@ -100,7 +100,7 @@
         $('#text_about_action').text('')
     })
 
-    var nivelPersonajeUsuario = `{{ character.level }}`
+    var nivelPersonajeUsuario = character.level
     $('#character_target').on('change', function(){
         if($('#character_target').val() != "" && $('#action_selector').val() != ""){
             $('#submitButton').prop('disabled', false);
@@ -190,9 +190,9 @@ Promise.all([character,character_target, action]).then(function(responses) {
     var expCharacter = expCharacter;
     var newMana = manaCharacter - costValue;
     let randomNum = Math.floor(Math.random() * 100) + 1;
+    
     let success = 0;
     var expObtained = 0;
-
     if(actionType == 'DEF' && lifeCharacter == levelCharacter*10){
         notificacion("info", "La teva acció: "+actionName+" no s'ha pogut realitzar perque ja tens la vida maxima.");
     }else if(costValue > manaCharacter){
