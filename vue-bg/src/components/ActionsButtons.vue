@@ -130,6 +130,7 @@
           popup.style.display = 'none';
           fondoPopup.style.display = 'none';
         },
+        
         actionAnimations: async function(event){
           try {
             const getCharacterLoggedAPI = await fetch('api/getCharacterLogged');
@@ -171,10 +172,45 @@
           if(idAction == 24){
             functions.boton7();
           } 
-        }
+        },
+
+        keyAction(event) {
+          if (event.key === '1') { // Por ejemplo, asignamos la tecla "Enter"
+            const button = document.getElementById('25');
+            button.click();
+          }
+          if (event.key === '2') { // Por ejemplo, asignamos la tecla "Enter"
+            const button = document.getElementById('26');
+            button.click();
+          }
+          if (event.key === '3') { // Por ejemplo, asignamos la tecla "Enter"
+            const button = document.getElementById('27');
+            button.click();
+          }
+          if (event.key === '4') { // Por ejemplo, asignamos la tecla "Enter"
+            const button = document.getElementById('28');
+            button.click();
+          }
+          if (event.key === '5') { // Por ejemplo, asignamos la tecla "Enter"
+            const button = document.getElementById('29');
+            button.click();
+          }
+          if (event.key === '6') { // Por ejemplo, asignamos la tecla "Enter"
+            const button = document.getElementById('30');
+            button.click();
+          }
+          if (event.key === '7') { // Por ejemplo, asignamos la tecla "Enter"
+            const button = document.getElementById('24');
+            button.click();
+          }
+        },
     },
     mounted() {
         this.getActions();
+        document.addEventListener('keydown', this.keyAction);
+    },
+    beforeUnmount() {
+      document.removeEventListener('keydown', this.keyAction);
     },
 };
 

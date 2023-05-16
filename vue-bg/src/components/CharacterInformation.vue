@@ -23,7 +23,7 @@
             <span class="text-base font-medium text-orange-400 dark:text-white">{{ (character.level * 10) }}</span>
           </div>       
           <div class="flex w-full h-6 bg-orange-200 rounded-full dark:bg-gray-700">
-            <div class="h-6 bg-blue-600 rounded-full dark:bg-blue-500 bg-orange-400 border-2 border-orange-800" role="progressbar"
+            <div class="h-6 bg-orange-600 rounded-full dark:bg-blue-500 bg-orange-400 border-2 border-orange-800" role="progressbar"
             :style="{width: ((((character.level * 10) - 0) > 0) ? (( character.mana  - 0) * 100) / ((character.level * 10) - 0) : 0) + '%'}"
             :aria-valuenow="character.mana" 
             :aria-valuemin="0" 
