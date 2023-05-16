@@ -1,6 +1,5 @@
 <template>
-  <div v-if="!loadingActions" class="grid grid-cols-4 auto-cols-fr gap-4 bg-black w-4/5 mx-auto flex justify-around items-center p-5">
-    <div v-for="action in actions" :key="action.id" class="w-full max-w-sm overflow-hidden border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+  <div v-if="!loadingActions" class="grid grid-cols-4 max-md:grid-cols-2 auto-cols-fr gap-4 w-4/5 max-md:w-full mx-auto flex justify-around items-center p-5">    <div v-for="action in actions" :key="action.id" class="w-full max-w-sm overflow-hidden border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
     :class="{
       'bg-orange-100': action.category === 'PAS',
       'bg-green-100': action.category === 'DEF',

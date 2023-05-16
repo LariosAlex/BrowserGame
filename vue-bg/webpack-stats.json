@@ -1601,6 +1601,16 @@
       "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.e904e6abccf68d38.hot-update.json",
       "publicPath": "http://0.0.0.0:8080/main.e904e6abccf68d38.hot-update.json"
     },
+    "main.e9a696057a8a5016.hot-update.js": {
+      "name": "main.e9a696057a8a5016.hot-update.js",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.e9a696057a8a5016.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.e9a696057a8a5016.hot-update.js"
+    },
+    "main.e9a696057a8a5016.hot-update.json": {
+      "name": "main.e9a696057a8a5016.hot-update.json",
+      "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.e9a696057a8a5016.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.e9a696057a8a5016.hot-update.json"
+    },
     "main.e9a6b0a980041633.hot-update.js": {
       "name": "main.e9a6b0a980041633.hot-update.js",
       "path": "/home/unai/Escriptori/BrowserGame/vue-bg/dist/main.e9a6b0a980041633.hot-update.js",
@@ -1759,7 +1769,8 @@
   },
   "chunks": {
     "main": [
-      "js/main.js"
+      "js/main.js",
+      "main.e9a696057a8a5016.hot-update.js"
     ]
   },
   "publicPath": "http://0.0.0.0:8080/",
