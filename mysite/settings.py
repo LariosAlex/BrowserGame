@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-s2(*z_&z9u%bkcw*087t=m^oie8co#(8fsxlwmeofqdkcmiiut
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','broken-tooth-production.up.railway.app']
+ALLOWED_HOSTS = ['*']
+
 
 # Application definition
 
@@ -124,11 +125,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT =os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'public/media/')
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static/'),
+    #os.path.join(BASE_DIR, "vue-bg/dist"), # Bundle de VUE
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
