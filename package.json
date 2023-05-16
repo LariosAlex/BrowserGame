@@ -5,6 +5,8 @@
   "dependencies": {
     "@heroicons/vue": "^2.0.17",
     "jquery": "^3.6.4",
-    "mitt": "^3.0.0"
+    "mitt": "^3.0.0",
+    "vue-resizable": "^2.1.7",
+    "vue-resize": "^1.0.1"
   }
 }
