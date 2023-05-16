@@ -61,6 +61,7 @@ class ActionLog(models.Model):
     performer = models.ForeignKey(Character, related_name='performer', on_delete=models.CASCADE)
     target = models.ForeignKey(Character, related_name='target', on_delete=models.CASCADE)
     action = models.ForeignKey(Action, on_delete=models.CASCADE)
+    run_number = models.IntegerField(default=0)
     succeed = models.BooleanField()
     datetime = models.DateTimeField()
     def __str__(self):

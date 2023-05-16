@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views, api
+from . import views, api, utils
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -29,4 +29,5 @@ urlpatterns = [
     path('api/getActionsLog/<int:character_id>', api.getActionsLog, name='getActionsLog'),
     path('api/getActions/', api.getActions, name='getActions'),
     path('api/getCharacters/', api.getCharacters, name='getCharacters'),
+    path('api/getLastActions/<int:character_id>', api.getLastActions, name='getLastActions'),
 ]

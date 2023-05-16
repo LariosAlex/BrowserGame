@@ -361,7 +361,7 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                     }
                     let data = {
                         character_id: idCharacterTarget,
-                        damage: damage
+                        damage: damage,
                     };
                     console.log(data)
                     $.ajax({
@@ -421,6 +421,7 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                 target_id: idCharacterTarget,
                 action_id: idAction,
                 succeed: success,
+                num: randomNum
             };
             $.ajax({
                 url: '/save_action/',
