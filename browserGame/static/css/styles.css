@@ -1494,4 +1494,64 @@ button {
     left: 18%;
 
   }
+
+  #nav_pages {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .menu-icon {
+    float: left;
+    padding: 18px 20px;
+    color: #50300F;
+    cursor: pointer;
+  }
+  
+  .menu {
+    float: left;
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: -250px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: left 0.3s ease;
+  }
+  
+  .menu li {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    background-color: #be9575
+  }
+  
+  .menu-icon:hover {
+    background-color: #be9575;
+  }
+  
+  .menu-icon:hover + .menu, .menu:hover {
+    left: 0;
+  }
+
 }

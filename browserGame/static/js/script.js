@@ -8,6 +8,8 @@ function boton1(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    audio1.currentTime = 0;
+    audio1.play();
     escupinada.style.display = "block";
     escupinada.classList.add("a_escupinada");
     cowboy.style.display = "block";
@@ -26,6 +28,10 @@ function boton2(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    setTimeout(() => {
+        audio2.currentTime = 0;
+        audio2.play();
+      }, 300);
     bota.style.display = "block";
     bota.classList.add("a_bota");
     cowboy.style.display = "block";
@@ -49,6 +55,10 @@ function boton3(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    setTimeout(() => {
+        audio3.currentTime = 0;
+        audio3.play();
+      }, 1200);
     revolver.style.display = "block";
     revolver.classList.add("a_revolver");
     cowboy.style.display = "block";
@@ -60,6 +70,11 @@ function boton4(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    audio4.currentTime = 0;
+    audio4.play();
+    setTimeout(() => {
+        audio4.pause();
+      }, 1500);
     locomotora.style.display = "block";
     locomotora.classList.add("a_locomotora");
     cowboy.style.display = "block";
@@ -71,16 +86,18 @@ function boton5(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    audio5.currentTime = 0;
+    audio5.play();
     tabac1.style.display = "block";
-    tabac1.classList.add("a_tabac1",'tabac');
+    tabac1.classList.add("a_tabac1");
     tabac2.style.display = "block";
-    tabac2.classList.add("a_tabac2",'tabac');
+    tabac2.classList.add("a_tabac2");
     tabac3.style.display = "block";
-    tabac3.classList.add("a_tabac3",'tabac');
+    tabac3.classList.add("a_tabac3");
     tabac4.style.display = "block";
-    tabac4.classList.add("a_tabac4",'tabac');
+    tabac4.classList.add("a_tabac4");
     tabac5.style.display = "block";
-    tabac5.classList.add("a_tabac5",'tabac');
+    tabac5.classList.add("a_tabac5");
     pot_tabac.style.display = "block";
     pot_tabac.classList.add("a_pot_tabac");
     setTimeout(rev_b5, 3500);
@@ -89,23 +106,33 @@ function boton6(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    audio6.currentTime = 0;
+    audio6.play();
+    setTimeout(() => {
+        audio6.pause();
+      }, 3000);
     whisky_ple1.style.display = "block";
-    whisky_ple1.classList.add("a_whisky_ple1",'whisky');
-    whisky_buit1.classList.add("a_whisky_buit1",'whisky');
-    whisky_ple2.classList.add("a_whisky_ple2",'whisky');
-    whisky_buit2.classList.add("a_whisky_buit2",'whisky');
-    whisky_ple3.classList.add("a_whisky_ple3",'whisky');
-    whisky_buit3.classList.add("a_whisky_buit3",'whisky');
-    whisky_ple4.classList.add("a_whisky_ple4",'whisky');
-    whisky_buit4.classList.add("a_whisky_buit4",'whisky');
-    whisky_ple5.classList.add("a_whisky_ple5",'whisky');
-    whisky_buit5.classList.add("a_whisky_buit5",'whisky');
-    setTimeout(rev_b6, 4500);
+    whisky_ple1.classList.add("a_whisky_ple1");
+    whisky_buit1.classList.add("a_whisky_buit1");
+    whisky_ple2.classList.add("a_whisky_ple2");
+    whisky_buit2.classList.add("a_whisky_buit2");
+    whisky_ple3.classList.add("a_whisky_ple3");
+    whisky_buit3.classList.add("a_whisky_buit3");
+    whisky_ple4.classList.add("a_whisky_ple4");
+    whisky_buit4.classList.add("a_whisky_buit4");
+    whisky_ple5.classList.add("a_whisky_ple5");
+    whisky_buit5.classList.add("a_whisky_buit5");
+    setTimeout(rev_b6, 3500);
 }
 function boton7(){
     i_div.style.display = "block";
     i_div.classList.add("a_div");
     focalizar();
+    audio7.currentTime = 0;
+    audio7.play();
+    setTimeout(() => {
+        audio7.pause();
+    }, 1500);
     bota_e.style.display = "block";
     bota_e.classList.add("a_bota_e");
     bota_d.style.display = "block";
@@ -328,11 +355,12 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
         let randomNum = Math.floor(Math.random() * 100) + 1;
         let success = 0;
         var expObtained = 0;
+        var killed = false;
 
         if(actionType == 'DEF' && lifeCharacter == levelCharacter*10){
             notificacion("info", "La teva acció: "+actionName+" no s'ha pogut realitzar perque ja tens la vida maxima.");
         }else if(costValue > manaCharacter){
-            notificacion("info", "La teva acció: "+actionName+" no s'ha pogut realitzar perque no tens maná.");
+            notificacion("info", "La teva acció: "+actionName+" no s'ha pogut realitzar perque no tens manÃ¡.");
         }
         else{
             if (randomNum <= actionChance) {  
@@ -354,7 +382,12 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                             nivellMinim = levelCharacter;
                         }
                         console.log('Matas al enemigo')
-                        boton8();
+                        killed = true;
+                        setTimeout(boton8,2800);
+                        setTimeout(() => {
+                            audio8.currentTime = 0;
+                            audio8.play();
+                          }, 2800);
                         let randomNum = Math.floor(Math.random() * (nivellMaxim - nivellMinim + 1)) + nivellMinim;
                         let expExtra = randomNum*2;
                         expObtained += expExtra;
@@ -391,7 +424,21 @@ function realizarAccion(idCharacter, idAction, idCharacterTarget = idCharacter){
                     expCharacter = 0;
                     levelCharacter += 1;
                     console.log('Subes de nivel')
-                    boton9();
+                    console.log(killed)
+                    if(killed==true){
+                        setTimeout(boton9,5500);
+                        setTimeout(() => {
+                            audio9.currentTime = 0;
+                            audio9.play();
+                          }, 5500);
+                        killed = false;
+                    } else{
+                        setTimeout(boton9,2800);
+                        setTimeout(() => {
+                            audio9.currentTime = 0;
+                            audio9.play();
+                          }, 2800);
+                    }
                 }
                 let data = {
                     character_id: idCharacter,
@@ -459,4 +506,4 @@ function notificacion(status, message) {
   //notificacion("warning", "Advertencia: Este es un mensaje de advertencia.");
   //notificacion("info", "Información: Este es un mensaje informativo.");
   //notificacion("error", "Error: Este es un mensaje de error.");
-  //notificacion("success", "Éxito: Este es un mensaje de éxito.");
+  //notificacion("success", "Éxito: Este es un mensaje de Ã©xito.");
